@@ -9,4 +9,6 @@ img{position:relative;}
   bottom:-200px;
   font-size:10px;}
   }
+#sidebar{position:float;}
+#contentarea{position:float;}
 
