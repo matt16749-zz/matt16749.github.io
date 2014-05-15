@@ -6,7 +6,7 @@ a.hover{color:#FF00FF;}
 #footer{
 img{position:relative;}
 #caption{position:absolute;
-  bottom:-200px;
+  bottom:-150px;
   font-size:10px;}
   }
 #sidebar{position:float;}
