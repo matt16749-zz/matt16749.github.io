@@ -4,10 +4,9 @@ a.link{color:#FF0000;}
 a.visited{color:#00FF00;}
 a.hover{color:#FF00FF;}
 #footer{
- img{position:relative;}
+img{position:relative;}
 #caption{position:absolute;
-  bottom:-400px;
-  font-size:10px;
-}
+  bottom:-200px;
+  font-size:10px;}
   }
 
