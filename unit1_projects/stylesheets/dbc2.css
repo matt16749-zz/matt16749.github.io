@@ -2,12 +2,10 @@
 .blue {color:blue;}
 a.link{color:#FF0000;}
 a.visited{color:#00FF00;}
-a.hover{color:yellow;}
+a.hover{color:#FF00FF;}
+a.active{color:#0000FF;}
 
-#footer{position:relative;}
-#image{positon:absolute;}
-#caption{position:relative;}
-
-#sidebar{position:float;}
-#contentarea{position:float;}
-
+#footer {position:relative;}
+#footer #caption{position:absolute;
+top:40px;
+background-color: yellow;}
