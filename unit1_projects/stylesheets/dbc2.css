@@ -9,3 +9,8 @@ a.active{color:#0000FF;}
 #footer #caption{position:absolute;
 top:40px;
 background-color: yellow;}
+#sidebar{float:left;}
+#contentarea{float:right;}
+#border{padding:15px;
+ border:1px solid red;
+ margin:5px;
