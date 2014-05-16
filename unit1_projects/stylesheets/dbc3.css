@@ -1,0 +1,32 @@
+body{background-color:#c0caff;}
+#header{text-align:center;}
+
+#body #center{position:relative;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+width:700px;
+}
+
+#body #center p{font-size:20px;
+font-family:Garamond;}
+
+#body #left{
+position:absolute;
+top:140px;
+left:1px;
+width:200px;
+}
+
+
+#body #right{position:absolute;
+top:140px;
+right:1px;
+width:200px
+}
+
+a:link{color:green;
+text-decoration:none;}
+a:visited{color:red;}
+a:hover{color:yellow;}
+a:active{color:white;}

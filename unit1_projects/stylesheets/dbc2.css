@@ -7,10 +7,10 @@ a.active{color:#0000FF;}
 
 #footer {position:relative;}
 #footer #caption{position:absolute;
-top:40px;
+bottom:5px;
 background-color: yellow;}
-#sidebar{float:left;}
-#contentarea{float:right;}
+#sidebar{float:top;}
+#contentarea{float:bottom;}
 #border{padding:15px;
  border:1px solid red;
- margin:5px;
+ margin:5px;}
