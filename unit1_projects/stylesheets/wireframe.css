@@ -7,12 +7,12 @@ color:black;
 padding:2px;
 }
 
-.header {background-color:black;
+.Header {background-color:black;
 color:white;
 padding-bottom:120px;
 }
 
-.header #title{position:relative;
+.Header #title{position:relative;
 font-size:26px;
 font-family:arial;
 text-align:center;
@@ -21,7 +21,7 @@ margin:auto;
 
 }
 
-.header #links {position:absolute;
+.Header #links {position:absolute;
 top:110px;
 left:50px;
 font-family:arial;
