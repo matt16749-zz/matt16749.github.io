@@ -1,14 +1,17 @@
           /*Standard screen resolution*/
-      body{font-family:arial;}
+      body{font-family:arial;
+  background-image:url(http://hdwalldownloads.com/wp-content/uploads/2014/02/White-Background-1920x1080p-Free.jpeg);}
       header {width:auto;
-      margin-bottom:1em;}
+      margin-bottom:1em;
+    border-bottom: 5px solid black;}
       header h1{text-align:right;}
       nav{display:inline;}
       nav a{background-color:black; color:white;}
       nav a:link{text-decoration:none;}
       
-      section div{display:inline-block;
-      border:1px solid black;
+      section div{float:left;
+    display:inline-block;
+      border:5px solid black;
       width:25em;
       height:25em;
       margin:2em 4em;
