@@ -1,0 +1,70 @@
+body{background-color:#965629;}
+header{text-align:center;
+color:#F0D564;
+border-bottom:0.5em solid #F0D564;
+border-radius:20%;
+margin-bottom:1em;}
+
+div p{color:#F0CFE8;
+text-align:center;}
+
+#overview{width:50%;
+border-radius:1em;
+background-color:#F0D564;
+color:#965629;
+float:left;
+margin-left:3%;
+}
+  
+  #normalized{float:right;
+  border-radius:1em;
+  width:38%;
+  background-color:#4C2423;
+  height:30%;
+  clear:right}
+
+#relative{border-radius:1em;
+background-color:#F0D564;
+color:#965629;
+width:60%;
+margin-bottom:1em;
+float:left;
+clear:right;
+}
+
+  #ex1{width:38%;
+  background-color:#4C2423;
+  height:24%;
+  float:left;
+  border-radius:1em;
+  clear:both;}
+
+#absolute{float:right;
+border-radius:1em;
+background-color:#F0D564;
+color:#965629;
+width:60%;
+clear:right;
+}
+    
+  #ex2{width:38%;
+  background-color:#4C2423;
+  height:24%;
+  float:right;
+  border-radius:1em;
+  margin-top:1em;}
+
+#fixed{
+float:left;
+border-radius:1em;
+background-color:#F0D564;
+color:#965629;
+width:60%;
+margin-top:1em;}
+  
+  #ex3{width:60%%;
+  background-color:#4C2423;
+  height:24%;
+  float:left;
+  border-radius:1em;
+  margin-top:1em;}
