@@ -23,7 +23,7 @@
       #cultural:hover{background-color:violet;}
       #technical:hover{background-color:yellow;}
       #dbc1:hover{background-color:green;}
-      
+      #tech2:hover{background-color:orange;}
       /*For tablet*/
       @media screen and (max-width:768px){
       nav{display:block;}

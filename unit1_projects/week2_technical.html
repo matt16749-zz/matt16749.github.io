@@ -8,30 +8,26 @@
     <header>
       <h1>What are the differences between relative, absolute, and fixed positioning?<h1>
     </header>
-    
-
-      <section id="overview">
-        <h3>Positioning is a special property in CSS that gives special abilities to HTML elements in context to each other. There are three main property values that you should be mindful of.
-      </section>
-  
-    
-    <div id="normalized"><p>Standard CSS layout.</p></div>
+    <section id="overview">
+      <h3>Positioning is a special property in CSS that gives special abilities to HTML elements in context to each other. There are three main property values that you should be mindful of.
+    </section>
+    <div id="normalized"><p>Standard CSS layout.</p><div id="normalized1"><div id="normalized2"></div></div></div>
     <section id="relative">
       <h3>Position:Relative</h3>
       <p>Relative positioning allows the HTML element to move in context to where it was originally placed in the HTML flow. It does not remove the selected element from the flow.
     </section>
-    <div id="ex1"><p>Position: Relative</p></div>
+    <div id="relativea"><p>Position: Relative</p><div id="relative1"><div id="relative2"></div></div></div>
     <section id="absolute">
       <h3>Position:Absolute</h3>
       <p>Absolute positioning can be used in two distinct ways, either by itsef or nested within another HTML element.</p>
       <p>If you use absolute positioning by itself, the selected element will be removed from the HTML flow and placed exactly where you position it.</p>
       <p>If you use absolute positioning within another HTML element, the nesting element needs to have a relative positioning and the nested HTML element with absolute positioning will then be removed from the HTML flow of the nesting element and placed accordingly. However this will not change the selected elements' positioning within the overall HTML flow.
     </section>
-    <div id="ex2"><p>Position: Absolute</p></div>
+    <div id="absolutea"><p>Position: Absolute</p><div id="absolute1"></div><div id="absolute2"></div></div>
     <section id="fixed">
       <h3>Position:Fixed</h3>
       <p>Fixed postioning does not change the selected element's positioning within the HTML flow, but allows the selected element to remain in place on your site layout as you scroll up and down.</p>
     </section>
-    <div id="ex3"><p>Postion: Fixed</p></div>
+    <div id="fixeda"><p>Postion: Fixed</p><div id="fixed1"><div id="fixed2"></div></div></div>
   </body>
 </html>
