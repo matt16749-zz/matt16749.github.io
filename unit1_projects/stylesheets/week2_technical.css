@@ -16,12 +16,26 @@ float:left;
 margin-left:3%;
 }
   
-  #normalized{float:right;
+  #normalized{position:relative;
+  float:right;
   border-radius:1em;
   width:38%;
   background-color:#4C2423;
   height:30%;
   clear:right}
+  #normalized1{position:absolute;
+  width:80%;
+  height:80%;
+  margin-left:10%;
+  background-color:black;
+  border-radius:1em;}
+  #normalized2{position:absolute;
+  width:80%;
+  height:80%;
+  margin-left:10%;
+  margin-top:7%;
+  background-color:#BC0600;
+  border-radius:1em;}
 
 #relative{border-radius:1em;
 background-color:#F0D564;
@@ -32,12 +46,26 @@ float:left;
 clear:right;
 }
 
-  #ex1{width:38%;
+  #relativea{position:relative;
+    width:38%;
   background-color:#4C2423;
-  height:24%;
+  height:26%;
   float:left;
   border-radius:1em;
   clear:both;}
+  #relative1{position:absolute;
+  width:80%;
+  height:70%;
+  margin-left:20%;
+  background-color:black;
+  border-radius:1em;}
+  #relative2{position:absolute;
+  width:80%;
+  height:70%;
+  margin-left:10%;
+  margin-top:7%;
+  background-color:#BC0600;
+  border-radius:1em;}
 
 #absolute{float:right;
 border-radius:1em;
@@ -47,12 +75,26 @@ width:60%;
 clear:right;
 }
     
-  #ex2{width:38%;
+  #absolutea{position:relative;
+  width:38%;
   background-color:#4C2423;
   height:24%;
   float:right;
   border-radius:1em;
   margin-top:1em;}
+  #absolute1{position:absolute;
+  width:80%;
+  height:70%;
+  margin-left:20%;
+  background-color:black;
+  border-radius:1em;}
+  #absolute2{position:absolute;
+  width:80%;
+  height:50%;
+  margin-left:0;
+  margin-top:1em;
+  background-color:#BC0600;
+  border-radius:1em;}
 
 #fixed{
 float:left;
@@ -62,9 +104,23 @@ color:#965629;
 width:60%;
 margin-top:1em;}
   
-  #ex3{width:60%%;
+  #fixeda{position:relative;
+  width:60%%;
   background-color:#4C2423;
   height:24%;
   float:left;
   border-radius:1em;
   margin-top:1em;}
+  #fixed1{position:absolute;
+  width:80%;
+  height:80%;
+  margin-left:10%;
+  background-color:black;
+  border-radius:1em;}
+  #fixed2{position:absolute;
+  width:80%;
+  height:80%;
+  margin-left:10%;
+  margin-top:7%;
+  background-color:#BC0600;
+  border-radius:1em;}
