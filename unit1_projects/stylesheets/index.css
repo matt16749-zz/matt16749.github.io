@@ -18,6 +18,10 @@
       margin:2em 4em;
       text-align:center;
       }
+
+      .bit-3{display:none;}
+
+
       section a:link{text-decoration:none;color:black;}
       #html:hover{background-color:blue;}
       #wireframe:hover{background-color:red;}
