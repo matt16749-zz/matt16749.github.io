@@ -25,15 +25,4 @@
       #technical:hover{background-color:yellow;}
       #dbc1:hover{background-color:green;}
       #tech2:hover{background-color:orange;}
-      /*For tablet*/
-      @media screen and (max-width:768px){
-      nav{display:block;}
-      section div{display:block;
-      margin-left:auto;
-      margin-right:auto;
-      }
-      }
-      /*For phone*/
-      @media screen and (max-width:320px){
-      nav{display:none;}
-      }
+     
