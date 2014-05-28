@@ -20,16 +20,16 @@ body{background-image:url('http://www.bestwallpaperdesign.com/wp-content/uploads
 #aboutme{color:#F2DEC4;}
 #aboutme #caption{font-size:70px;
 text-align:center;
-margin-bottom:-15px;
 }
-#aboutme #body{font-size:30px;}
-}
+#aboutme #body{font-size:30px;
+width:50%;
+margin-left:25%}
 
 #projects{background-color:#645A4E}
 #projects{color:#F2DEC4;}
 #projects #caption{font-size:70px;
 text-align:center;
-margin-bottom:-15px;
+margin-bottom:-10px;
 }
 #projects #body{font-size:30px;
 text-align:center;}
