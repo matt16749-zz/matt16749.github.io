@@ -1,32 +1,46 @@
-          /*Standard screen resolution*/
-      body{font-family:arial;
-  background-image:url(http://hdwalldownloads.com/wp-content/uploads/2014/02/White-Background-1920x1080p-Free.jpeg);}
-      header {width:auto;
-      margin-bottom:1em;
-    border-bottom: 5px solid black;}
-      header h1{text-align:right;}
-      nav{display:inline;}
-      nav a{background-color:black; color:white;}
-      nav a:link{text-decoration:none;}
-      
-      section div{float:left;
-    display:inline-block;
-      border:5px solid black;
-      border-radius:1.5em;
-      width:25em;
-      height:25em;
-      margin:2em 4em;
-      text-align:center;
-      }
+/*Smartphones*/
+@media (min-width:320px) { 
+header{background-color:#F2DEC4;
+text-align:center;
+height:300px;}
+header #catchphrase{margin-bottom:30px;}
+#catchphrase p{font-family: 'Pinyon Script', cursive;
+font-size:50px;
+margin-bottom:-70px;}
+header #catchphrase #name{font-family: 'Oswald', sans-serif;
+font-size:100px;}
+nav{font-size:50px;
+margin-top:100px;}
+nav a:link{text-decoration:none;
+color:black;
+padding:10px;}
+nav a:hover{color:#55153D;}
 
-      .bit-3{display:none;}
+body{background-image:url('http://www.bestwallpaperdesign.com/wp-content/uploads/2014/02/dark-wood-wallpaper-8.jpg');}
+#aboutme{color:#F2DEC4;}
+#aboutme #caption{font-size:70px;
+text-align:center;
+margin-bottom:-15px;
+}
+#aboutme #body{font-size:30px;}
+}
+
+#projects{background-color:#645A4E}
+#projects{color:#F2DEC4;}
+#projects #caption{font-size:70px;
+text-align:center;
+margin-bottom:-15px;
+}
+#projects #body{font-size:30px;
+text-align:center}
+}
 
 
-      section a:link{text-decoration:none;color:black;}
-      #html:hover{background-color:blue;}
-      #wireframe:hover{background-color:red;}
-      #cultural:hover{background-color:violet;}
-      #technical:hover{background-color:yellow;}
-      #dbc1:hover{background-color:green;}
-      #tech2:hover{background-color:orange;}
-     
+/*Tablets*/
+@media (min-width:600px) { 
+}
+
+/*Desktop*/
+@media (min-width:1025px) { 
+}
+
