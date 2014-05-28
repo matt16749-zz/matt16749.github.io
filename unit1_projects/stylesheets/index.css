@@ -2,7 +2,8 @@
 @media (min-width:320px) { 
 header{background-color:#F2DEC4;
 text-align:center;
-height:300px;}
+height:300px;
+bottom:0;}
 header #catchphrase{margin-bottom:30px;}
 #catchphrase p{font-family: 'Pinyon Script', cursive;
 font-size:50px;
@@ -16,7 +17,7 @@ color:black;
 padding:10px;}
 nav a:hover{color:#55153D;}
 
-body{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
+#wrapper{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
 #aboutme{color:#F2DEC4;}
 #aboutme #caption{font-size:70px;
 text-align:center;
@@ -25,7 +26,8 @@ text-align:center;
 width:50%;
 margin-left:25%}
 
-#projects{background-color:#645A4E}
+#projects{background-color:#645A4E;
+opacity:0.8;}
 #projects{color:#F2DEC4;}
 #projects #caption{font-size:70px;
 text-align:center;
@@ -47,6 +49,10 @@ text-align:center;}
 
 /*Desktop*/
 @media (min-width:1025px) { 
+ #wrapper{position:fixed;
+ z-index:2;}
+ #projects{position:absolute;
+ z-index:3;} 
 }
 
 
