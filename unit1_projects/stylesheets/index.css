@@ -1,16 +1,16 @@
 /*Smartphones*/
-@media (min-width:320px) { 
-header{background-color:#F2DEC4;
+@media (min-width:1px) { 
+header{position:relative;
+background-color:#F2DEC4;
 text-align:center;
 height:300px;}
-header #catchphrase{margin-bottom:30px;}
 #catchphrase p{font-family: 'Pinyon Script', cursive;
 font-size:50px;
-margin-bottom:-70px;}
+margin-bottom:-30px;}
 header #catchphrase #name{font-family: 'Oswald', sans-serif;
 font-size:100px;}
 nav{font-size:50px;
-margin-top:100px;}
+margin-top:60px;}
 nav a:link{text-decoration:none;
 color:black;
 padding:10px;}
@@ -25,14 +25,18 @@ margin-bottom:-15px;
 #aboutme #body{font-size:30px;}
 }
 
-#projects{background-color:#645A4E}
+#projects{background-color:#645A4E;}
 #projects{color:#F2DEC4;}
 #projects #caption{font-size:70px;
 text-align:center;
 margin-bottom:-15px;
 }
 #projects #body{font-size:30px;
-text-align:center}
+text-align:center;}
+
+#projects a{text-decoration:none;
+margin:30px;}
+
 }
 
 
@@ -43,4 +47,5 @@ text-align:center}
 /*Desktop*/
 @media (min-width:1025px) { 
 }
+
 
