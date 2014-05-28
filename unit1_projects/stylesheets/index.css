@@ -17,7 +17,7 @@ color:black;
 padding:10px;}
 nav a:hover{color:#55153D;}
 
-#wrapper{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
+body{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
 #aboutme{color:#F2DEC4;}
 #aboutme #caption{font-size:70px;
 text-align:center;
@@ -48,6 +48,7 @@ text-align:center;}
 
 /*Desktop*/
 @media (min-width:1025px) { 
+#projects{opacity:0.8;}
 }
 
 
