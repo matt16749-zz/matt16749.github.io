@@ -29,8 +29,10 @@ margin-left:auto;
 margin-right:auto;}
 #aboutme #caption{font-size:70px;
 text-align:center;}
-#aboutme .body{font-size:30px;
-text-align:center;}
+#aboutme .body{font-family: 'Merriweather', serif;
+font-size:30px;
+text-align:center;
+padding:20px;}
 
 #projects{background-color:#645A4E;}
 #projects{color:#F2DEC4;}
