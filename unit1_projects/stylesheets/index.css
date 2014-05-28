@@ -39,9 +39,13 @@ text-align:center;}
 #projects a:link{text-decoration:none;}
 #projects .caption{font-size:50px;}
 #projects .body{margin-bottom: 30px;}
+
+.bit-3{width:100%;}
 }
 
 /*Tablets*/
+@media (min-width:600px) { 
+.bit-3{width:50%;}
 }
 
 /*Desktop*/
