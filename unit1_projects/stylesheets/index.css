@@ -26,8 +26,7 @@ text-align:center;
 width:50%;
 margin-left:25%}
 
-#projects{background-color:#645A4E;
-opacity:0.8;}
+#projects{background-color:#645A4E;}
 #projects{color:#F2DEC4;}
 #projects #caption{font-size:70px;
 text-align:center;
@@ -49,10 +48,6 @@ text-align:center;}
 
 /*Desktop*/
 @media (min-width:1025px) { 
- #wrapper{position:fixed;
- z-index:2;}
- #projects{position:absolute;
- z-index:3;} 
 }
 
 
