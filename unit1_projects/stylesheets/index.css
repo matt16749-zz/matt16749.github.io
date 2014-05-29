@@ -12,14 +12,7 @@ margin-bottom: -.3em;}
 #catchphrase #addon{font-family: 'Pinyon Script', cursive;
 font-size:50px;
 margin-bottom: -.1em;}
-nav{position:absolute;
-width:100%;
-font-size:50px;
-}
-nav a:link{text-decoration:none;
-color:black;
-}
-nav a:hover{color:#55153D;}
+nav{display:none;}
 
 body{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
 #aboutme{
@@ -52,6 +45,14 @@ text-align:center;}
 
 /*Tablets*/
 @media (min-width:600px) { 
+nav{position:absolute;
+width:100%;
+font-size:50px;
+}
+nav a:link{text-decoration:none;
+color:black;
+}
+nav a:hover{color:#55153D;}
 }
 
 /*Desktop*/
