@@ -3,7 +3,7 @@
 header{position:relative;
 background-color:#F2DEC4;
 text-align:center;
-height:500px;
+height:300px;
 bottom:0;}
 header #catchphrase{margin-bottom:30px;}
 header #catchphrase #name{font-family: 'Oswald', sans-serif;
@@ -53,11 +53,7 @@ text-align:center;}
 
 /*Tablets*/
 @media (min-width:600px) { 
-header{position:relative;
-background-color:#F2DEC4;
-text-align:center;
-height:300px;
-bottom:0;}
+
 }
 
 
