@@ -3,7 +3,7 @@
 header{position:relative;
 background-color:#F2DEC4;
 text-align:center;
-height:300px;
+height:500px;
 bottom:0;}
 header #catchphrase{margin-bottom:30px;}
 header #catchphrase #name{font-family: 'Oswald', sans-serif;
@@ -12,7 +12,15 @@ margin-bottom: -.3em;}
 #catchphrase #addon{font-family: 'Pinyon Script', cursive;
 font-size:50px;
 margin-bottom: -.1em;}
-nav{display:none;}
+nav{position:absolute;
+width:100%;
+font-size:50px;
+}
+nav a:link{text-decoration:none;
+color:black;
+}
+nav a:hover{color:#55153D;}
+}
 
 body{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
 #aboutme{
@@ -45,15 +53,13 @@ text-align:center;}
 
 /*Tablets*/
 @media (min-width:600px) { 
-nav{position:absolute;
-width:100%;
-font-size:50px;
+header{position:relative;
+background-color:#F2DEC4;
+text-align:center;
+height:300px;
+bottom:0;}
 }
-nav a:link{text-decoration:none;
-color:black;
-}
-nav a:hover{color:#55153D;}
-}
+
 
 /*Desktop*/
 @media (min-width:1025px) { 
