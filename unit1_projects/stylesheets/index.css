@@ -41,15 +41,24 @@ padding:20px;}
 text-align:center;
 margin-bottom:-10px;
 }
+
 #projects #body{font-size:30px;
 text-align:center;}
-#projects p{margin-bottom:30px;}
 
+#phase0{text-align:center;
+font-size:2em;
+margin:1em;}
+
+.bit-3 .body{font-size:20px;
+  text-align:center;
+}
 
 #projects a:link{text-decoration:none;}
-#projects .caption{font-size:50px;}
-#projects .body{margin-bottom: 30px;}
+#projects .caption{font-size:50px;
+text-align:center;}
+#projects .body{margin-bottom: 50px;}
 }
+
 
 /*Tablets*/
 @media (min-width:600px) { 
@@ -61,6 +70,9 @@ text-align:center;}
 @media (min-width:1025px) { 
 #projects{opacity:0.8;}
 }
+
+
+
 
 
 
