@@ -1,3 +1,4 @@
+
 /*Smartphones*/
 @media (min-width:320px) { 
 header{position:relative;
@@ -22,17 +23,9 @@ margin-right:auto;
 font-family: 'Droid Serif', serif;
 }
 
-p{font-size:1.1em;
-  margin-bottom:1.3em;}
-h4{font-size:2.3em;
-}
-a{font-size:1.3em;}
-a:link{text-decoration:none;
-color:white;}
-a:visited{color:yellow;}
 
-.bit-1{text-align:center;}
-ul{list-style-type: none;}
+
+
 /*Tablets*/
 @media (min-width:600px) { 
 
