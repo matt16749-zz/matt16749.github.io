@@ -1,32 +1,37 @@
-body{background-color:#c0caff;}
-#header{text-align:center;}
-
-#body #center{position:relative;
+/*Smartphones*/
+@media (min-width:320px) { 
+header{position:relative;
+background-color:#F2DEC4;
 text-align:center;
+height:200px;
+bottom:0;}
+header #catchphrase{margin-bottom:30px;}
+header #catchphrase #name{font-family: 'Oswald', sans-serif;
+font-size:100px;
+margin-bottom: -.2em;}
+#catchphrase #extra{font-family: 'Pinyon Script', cursive;
+font-size:50px;}
+
+
+body{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
+#main{
+color:#F2DEC4;
+width:70%;
 margin-left:auto;
 margin-right:auto;
-width:700px;
-}
-
-#body #center p{font-size:20px;
-font-family:Garamond;}
-
-#body #left{
-position:absolute;
-top:140px;
-left:1px;
-width:200px;
+font-family: 'Droid Serif', serif;
 }
 
 
-#body #right{position:absolute;
-top:140px;
-right:1px;
-width:200px
+
+
+/*Tablets*/
+@media (min-width:600px) { 
+
 }
 
-a:link{color:green;
-text-decoration:none;}
-a:visited{color:red;}
-a:hover{color:yellow;}
-a:active{color:white;}
+
+/*Desktop*/
+@media (min-width:1025px) { 
+
+}
