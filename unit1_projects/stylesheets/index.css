@@ -1,60 +1,87 @@
 /*Smartphones*/
 @media (min-width:320px) { 
-header{position:relative;
-background-color:#F2DEC4;
-text-align:center;
-height:300px;
-bottom:0;}
-header #catchphrase{margin-bottom:30px;}
-header #catchphrase #name{font-family: 'Oswald', sans-serif;
-font-size:100px;
-margin-bottom: -.3em;}
-#catchphrase #addon{font-family: 'Pinyon Script', cursive;
-font-size:50px;
-margin-bottom: -.1em;}
-nav{position:absolute;
-width:100%;
-font-size:50px;
-}
-nav a:link{text-decoration:none;
-color:black;
-}
-nav a:hover{color:#55153D;}
-}
 
-body{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
-#aboutme{
-color:#F2DEC4;
-width:70%;
-margin-left:auto;
-margin-right:auto;}
-#aboutme #caption{font-size:70px;
-text-align:center;}
-#aboutme .body{
-font-size:30px;
-text-align:center;
-padding:20px;}
+header{
+        position:relative;
+        background-color:#F2DEC4;
+        text-align:center;
+        height:300px;
+        bottom:0;}
 
-#projects{background-color:#645A4E;}
-#projects{color:#F2DEC4;}
-#projects #caption{font-size:70px;
-text-align:center;
-margin-bottom:-10px;
-}
+    header #catchphrase{
+        margin-bottom:30px;}
 
-#projects #body{font-size:30px;
-text-align:center;}
+    header #catchphrase #name{font-family: 'Oswald', sans-serif;
+        font-size:100px;
+        margin-bottom: -.3em;}
 
-#phase0{text-align:center;
-font-size:2em;
-margin:1em;}
+    #catchphrase #addon{
+        font-family: 'Pinyon Script', cursive;
+        font-size:50px;
+        margin-bottom: -.1em;}
 
-.frame p {text-align:center;}
+nav{
+        position:absolute;
+        width:100%;
+        font-size:50px;}
 
-#projects a:link{text-decoration:none;}
-#projects .caption{font-size:50px;}
-#projects .body{font-size:30px;
-margin-bottom:3em;}
+    nav a:link{text-decoration:none;
+        color:black;}
+
+    nav a:hover{
+        color:#55153D;}
+
+
+body{
+        background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
+
+    #aboutme{
+        color:#F2DEC4;
+        width:70%;
+        margin-left:auto;
+        margin-right:auto;}
+
+    #aboutme #caption{
+        font-size:70px;
+        text-align:center;}
+
+    #aboutme .body{
+        font-size:30px;
+        text-align:center;
+        padding:20px;}
+
+    #projects{
+        background-color:#645A4E;}
+
+    #projects{
+      color:#F2DEC4;}
+    
+    #projects #caption{
+        font-size:70px;
+        text-align:center;
+        margin-bottom:-10px;}
+
+    #projects #body{
+        font-size:30px;
+        text-align:center;}
+
+    #phase0{
+        text-align:center;
+        font-size:2em;
+        margin:1em;}
+
+    .frame p {
+        text-align:center;}
+
+    #projects a:link{
+        text-decoration:none;}
+    
+    #projects .caption{
+        font-size:50px;}
+   
+    #projects .body{
+        font-size:30px;
+        margin-bottom:3em;}
 }
 
 
