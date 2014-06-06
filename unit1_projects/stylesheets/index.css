@@ -160,8 +160,23 @@ footer{
 
 /*Tablets*/
 @media (min-width:600px) { 
-
-
+    #myself{
+            position:relative;
+            top:10em;
+            display:block;
+            border-radius:500px;
+            height:25em;
+            float:left;}
+    #comment{
+            position:relative;
+            top:5em;
+            display:block;
+            margin:0 auto;
+            width:600px;
+            position:relative;
+            right:-50px;
+            color:#4D2027;
+            clear:all;}
 
 }
 
