@@ -118,7 +118,7 @@ body{
       text-decoration:none;
       color:block;}
 
-footer{
+#footer{
       display:block;
       height:20%;
       border-top:.4em solid black;
