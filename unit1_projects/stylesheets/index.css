@@ -99,7 +99,8 @@ body{
       width:65%;
       margin:0 auto;
       font-family: 'Playfair Display', serif;
-      font-size:1.3em;}  
+      font-size:1.3em;
+      color:white;  }  
       
 #projects{
       display:block;
