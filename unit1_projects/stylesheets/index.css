@@ -113,19 +113,26 @@ body{
       background-color:#0A4AE1;}
 
 .body{  
-    position:relative;
-    top:3em;  
-    display:block;
-        width:65%;
+      position:relative;
+      top:3em;  
+      display:block;
+      width:65%;
       margin:0 auto;
-        font-family: 'Playfair Display', serif;
-        font-size:1.3em;
-        }  
+      font-family: 'Playfair Display', serif;
+      font-size:1.3em;}  
       
 #projects{
       display:block;
       border-top: .4em solid black;
       background-color:#E13C0A;}
+
+.bodyprojects{    
+      display:block;
+      width:65%;
+      margin:0 auto;
+      font-family: 'Playfair Display', serif;
+      font-size:1.3em;}
+
 
 .bit-3 a:link{
       text-decoration:none;
