@@ -175,12 +175,11 @@ footer{
             height:25em;}
 #comment{
             position:relative;
-            top:7em;
+            top:5em;
             left:15%;
+            right:-50px;
             display:inline-block;
             width:600px;
-            position:relative;
-            right:-50px;
             color:#4D2027;}
       
       
