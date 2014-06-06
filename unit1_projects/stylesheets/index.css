@@ -106,15 +106,18 @@ body{
         text-align:center}
 
 #aboutme{
+    
       display:block;
-      height:120%;
+      height:50em;
       border-top: .4em solid black;
       background-color:#0A4AE1;}
 
-.body{
-        display:block;
-        width:75%;
-        margin:0 auto;
+.body{  
+    position:relative;
+    top:3em;  
+    display:block;
+        width:65%;
+      margin:0 auto;
         font-family: 'Playfair Display', serif;
         font-size:1.3em;
         }  
