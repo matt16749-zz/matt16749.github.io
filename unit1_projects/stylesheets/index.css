@@ -1,88 +1,10 @@
 /*Smartphones*/
 @media (min-width:320px) { 
-
-header{
-        position:relative;
-        background-color:#F2DEC4;
-        text-align:center;
-        height:300px;
-        bottom:0;}
-
-    header #catchphrase{
-        margin-bottom:30px;}
-
-    header #catchphrase #name{font-family: 'Oswald', sans-serif;
-        font-size:100px;
-        margin-bottom: -.3em;}
-
-    #catchphrase #addon{
-        font-family: 'Pinyon Script', cursive;
-        font-size:50px;
-        margin-bottom: -.1em;}
-
-nav{
-        position:absolute;
-        width:100%;
-        font-size:50px;}
-
-    nav a:link{text-decoration:none;
-        color:black;}
-
-    nav a:hover{
-        color:#55153D;}
-
-
-body{
-        background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
-
-    #aboutme{
-        color:#F2DEC4;
-        width:70%;
-        margin-left:auto;
-        margin-right:auto;}
-
-    #aboutme #caption{
-        font-size:70px;
-        text-align:center;}
-
-    #aboutme .body{
-        font-size:30px;
-        text-align:center;
-        padding:20px;}
-
-    #projects{
-        background-color:#645A4E;}
-
-    #projects{
-      color:#F2DEC4;}
-    
-    #projects #caption{
-        font-size:70px;
-        text-align:center;
-        margin-bottom:-10px;}
-
-    #projects #body{
-        font-size:30px;
-        text-align:center;}
-
-    #phase0{
-        text-align:center;
-        font-size:2em;
-        margin:1em;}
-
-    .frame p {
-        text-align:center;}
-
-    #projects a:link{
-        text-decoration:none;}
-    
-    #projects .caption{
-        font-size:50px;}
-   
-    #projects .body{
-        font-size:30px;
-        margin-bottom:3em;}
 }
+
+
+
+      
 
 
 /*Tablets*/
@@ -93,7 +15,157 @@ body{
 
 /*Desktop*/
 @media (min-width:1025px) { 
-#projects{opacity:0.8;}
+body{
+            background-color:#F1CBB2;}               
+    
+      #headername{
+            position:relative;
+            left:3em;
+            top:2em;
+            font-family: 'Vollkorn', serif;
+            font-size:1.6em;
+            color:#4D2027;}
+
+      #name{
+            font-size:3em;
+            margin-bottom:-.6em;}
+      
+
+#landingpage{
+            display:block;
+            height:68%;
+            position:relative;}
+
+    #myself{
+            position:relative;
+            top:10%;
+            left:15%;
+            display:inline-block;
+            border-radius:500px;
+            height:25em;}
+#comment{
+            position:relative;
+            top:5%;
+            left:15%;
+            display:inline-block;
+            width:600px;
+            position:relative;
+            right:-50px;
+            color:#4D2027;}
+            
+    #question{
+            font-size:4em;
+            margin-bottom:-.5em;}
+    
+    #answer{
+            font-size:2em;
+            position:relative;
+            right: -40px;}
+
+.nav{
+      position:relative;
+      left:7em;}
+      
+.nav a:link{
+      text-decoration:none;
+      color:white;}
+  
+.nav a:hover{
+      color:yellow;}
+
+.nav a p{
+      font-size:20px;
+      position:relative;
+      top:1.2em;
+      text-align:center;}
+
+    .nav #aboutbutton{
+            display:inline-block;
+            height: 7em;
+            width: 7em;
+            border-radius:500px;
+            background-color:#0A4AE1;
+            margin-right:1em;}
+
+    
+    .nav #projectsbutton{      
+            display:inline-block;
+            height: 7em;
+            width: 7em;
+            border-radius:500px;
+            background-color:#E13C0A;
+            margin-right:1em;}
+      
+    .nav #contactbutton{
+            display:inline-block;
+            height: 7em;
+            width: 7em;
+            border-radius:500px;
+            background-color:#AF099E;}
+
+.caption{ 
+        font-family: 'Playfair Display', serif;
+        font-size:3em;
+        text-align:center}
+
+#aboutme{
+      display:block;
+      height:120%;
+      border-top: .4em solid black;
+      background-color:#0A4AE1;}
+
+.body{
+        display:block;
+        width:75%;
+        margin:0 auto;
+        font-family: 'Playfair Display', serif;
+        font-size:1.3em;
+        }  
+      
+#projects{
+      display:block;
+      border-top: .4em solid black;
+      background-color:#E13C0A;}
+
+.bit-3 a:link{
+      text-decoration:none;
+      color:block;}
+
+footer{
+      display:block;
+      height:20%;
+      border-top:.4em solid black;
+      position:relative;
+      background-color:#AF099E;
+      font-family: 'Vollkorn', serif;
+      text-align:center;}
+
+      i {size:5em;}
+      
+      #mail{
+            position:absolute;
+            left:20%;
+            top:10%;}
+      #mail p{
+            font-size:1.5em;
+            margin-bottom:.1em;}      
+      #connect{
+            position:absolute;
+            left:50%;
+            top:10%;}
+      #connect p{
+            font-size:1.5em;
+            margin-bottom:.1em;}
+      #github p{
+            font-size:1.5em;
+            margin-bottom:.1em;}
+      #github{
+        position:absolute;
+        left:80%;
+        top:10%;}
+
+      
+      
 }
 
 
