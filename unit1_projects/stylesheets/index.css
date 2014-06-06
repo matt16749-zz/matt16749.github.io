@@ -27,25 +27,23 @@ body{
             color:#4D2027;}
 
       #name{
-            font-size:3em;
-            margin-bottom:-.6em;}
-      
+            font-size:3em;}      
 
 #landingpage{
             display:block;
-            height:68%;
+            height:48em;
             position:relative;}
 
     #myself{
             position:relative;
-            top:10%;
+            top:10em;
             left:15%;
             display:inline-block;
             border-radius:500px;
             height:25em;}
 #comment{
             position:relative;
-            top:5%;
+            top:5em;
             left:15%;
             display:inline-block;
             width:600px;
@@ -54,8 +52,7 @@ body{
             color:#4D2027;}
             
     #question{
-            font-size:4em;
-            margin-bottom:-.5em;}
+            font-size:4em;}
     
     #answer{
             font-size:2em;
