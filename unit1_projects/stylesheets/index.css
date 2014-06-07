@@ -39,6 +39,9 @@ body{       width:100%;
 .nav a:link{
       text-decoration:none;
       color:white;}
+
+a:visited{
+      color:#BFC8E5}
   
 .nav a:hover{
       color:yellow;}
