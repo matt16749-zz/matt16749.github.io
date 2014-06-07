@@ -93,8 +93,7 @@ body{       width:100%;
       width:65%;
       margin:0 auto;
       font-family: 'Playfair Display', serif;
-      font-size:1.3em;
-      color:white;  }  
+      font-size:1.3em;}  
       
 #projects{
       display:block;
@@ -102,9 +101,12 @@ body{       width:100%;
       background-color:#E13C0A;}
 
 .captionbody{
-      font-family: 'Playfair Display', serif;
-      font-size:1.3em;
-      width:55%;
+    font-family: 'Playfair Display', serif;
+    font-size:1.3em;
+    width:55%;
+    text-align:center;
+    display:block;
+    margin:0 auto 1em auto;
 }
 
 .bodyprojects{    
