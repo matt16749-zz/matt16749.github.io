@@ -101,6 +101,12 @@ body{       width:100%;
       border-top: .4em solid black;
       background-color:#E13C0A;}
 
+.captionbody{
+      font-family: 'Playfair Display', serif;
+      font-size:1.3em;
+      width:55%;
+}
+
 .bodyprojects{    
       display:block;
       margin-top:1em;
