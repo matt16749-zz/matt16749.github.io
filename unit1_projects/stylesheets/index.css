@@ -1,6 +1,6 @@
 /*Smartphones*/
 @media (min-width:320px) {
-body{
+body{       width:100%;
             background-color:#F1CBB2;}               
     
       #headername{
