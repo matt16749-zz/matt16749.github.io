@@ -83,6 +83,7 @@ body{
 .caption{ 
         font-family: 'Playfair Display', serif;
         font-size:3em;
+        font-weight: bold;
         text-align:center}
 
 #aboutme{
@@ -109,6 +110,7 @@ body{
 
 .bodyprojects{    
       display:block;
+      margin-top:1em;
       width:65%;
       margin:0 auto;
       font-family: 'Playfair Display', serif;
@@ -144,14 +146,15 @@ body{
       #connect p{
             font-size:1.5em;
             margin-bottom:.1em;}
-      #github p{
-            font-size:1.5em;
-            margin-bottom:.1em;}
+
       #github{
         position:absolute;
         left:80%;
         top:10%;}
 
+      #github p{
+            font-size:1.5em;
+            margin-bottom:.1em;}
 }
 
 
