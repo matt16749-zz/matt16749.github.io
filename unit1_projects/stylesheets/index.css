@@ -31,9 +31,7 @@ body{       width:100%;
             font-size:4em;}
     
     #answer{
-            font-size:2em;
-            position:relative;
-            right: -40px;}
+            font-size:2em;}
 
 .nav{
       position:relative;}
