@@ -36,8 +36,7 @@ body{       width:100%;
             right: -40px;}
 
 .nav{
-      position:relative;
-      left:7em;}
+      position:relative;}
       
 .nav a:link{
       text-decoration:none;
