@@ -117,7 +117,7 @@ body{       width:100%;
 /*600 screen resolution*/
 @media (min-width:600px) { 
 #aboutme{display:none;}
-#.nav{display:none;}
+.nav{display:none;}
 }
 
 @media (min-width:700px) { 
@@ -125,7 +125,7 @@ body{       width:100%;
         display:block;
         border-top: .4em solid black;
         background-color:#BFD5E5;
-        height:90em;}
+        height:80em;}
 .body{  
       position:relative;
       top:3em;  
@@ -182,12 +182,7 @@ body{       width:100%;
 
 @media (min-width:900px) { 
 #aboutme{
-        height:70em;}
-}
-
-@media (min-width:600px) { 
-#aboutme{
-        height:58em;}
+        height:90em;}
 }
 
 
