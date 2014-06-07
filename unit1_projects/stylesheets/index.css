@@ -150,7 +150,8 @@ body{       width:100%;
 .nav a:hover{
       color:yellow;}
 
-.nav a p{
+.nav p{
+    display:block;
       font-size:20px;
       position:relative;
       top:2.1em;
