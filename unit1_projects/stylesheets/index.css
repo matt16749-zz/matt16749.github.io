@@ -139,24 +139,29 @@ body{       width:100%;
       font-family: 'Vollkorn', serif;}
 
       i {size:5em;}
-      
-      #mail{
-            display:inline-block;
-            margin:0 8em 0 10em;}
+    
+#footerwrapper{
+    width:80%;
+    margin:0 auto;}      
+    
+    #mail{
+           display:inline-block;
+           padding-right:40%;
+}
       #mail p{
             font-size:1.5em;
             margin-bottom:.1em;}  
 
       #connect{
             display:inline-block;
-            margin:0 8em 0 10em;} 
+            padding-right:40%;
+} 
       #connect p{
             font-size:1.5em;
             margin-bottom:.1em;}
 
       #github{
-            display:inline-block;
-            margin:0 8em 0 10em;}
+            display:inline-block;}
       #github p{
             font-size:1.5em;
             margin-bottom:.1em;}
