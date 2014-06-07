@@ -191,7 +191,8 @@ body{       width:100%;
 
 /*1025 screen resolution*/
 @media (min-width:1025px) { 
-
+#aboutme{
+        height:65em;}
 #myself{
             position:relative;
             top:8.5em;
@@ -212,6 +213,10 @@ body{       width:100%;
 }
 
 
+@media (min-width:1200px) { 
+#aboutme{
+        height:58em;}
+}
 
 
 
