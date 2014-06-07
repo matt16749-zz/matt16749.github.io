@@ -32,49 +32,6 @@ body{       width:100%;
     #answer{
             font-size:2em;}
 
-.nav{
-      display:block; 
-      margin-left:5em}
-      
-.nav a:link{
-      text-decoration:none;
-      color:white;}
-
-.nav a:visited{
-      color:#D9DFD1}
-  
-.nav a:hover{
-      color:yellow;}
-
-.nav a p{
-      font-size:20px;
-      position:relative;
-      top:2.1em;
-      text-align:center;}
-
-    .nav #aboutbutton{
-            display:inline-block;
-            height: 7em;
-            width: 7em;
-            border-radius:500px;
-            background-color:#0A4AE1;
-            margin-right:1em;}
-
-    
-    .nav #projectsbutton{      
-            display:inline-block;
-            height: 7em;
-            width: 7em;
-            border-radius:500px;
-            background-color:#E13C0A;
-            margin-right:1em;}
-      
-    .nav #contactbutton{
-            display:inline-block;
-            height: 7em;
-            width: 7em;
-            border-radius:500px;
-            background-color:#AF099E;}
 
 .caption{ 
         font-family: 'Playfair Display', serif;
@@ -82,21 +39,6 @@ body{       width:100%;
         font-weight: bold;
         text-align:center}
 
-#aboutme{
-    
-      display:block;
-      height:58em;
-      border-top: .4em solid black;
-      background-color:#BFD5E5;}
-
-.body{  
-      position:relative;
-      top:3em;  
-      display:block;
-      width:65%;
-      margin:0 auto;
-      font-family: 'Playfair Display', serif;
-      font-size:1.3em;}  
       
 #projects{
       display:block;
@@ -172,12 +114,85 @@ body{       width:100%;
       
 
 
-/*Tablets*/
+/*600 screen resolution*/
 @media (min-width:600px) { 
-
+#aboutme{display:none;}
+#.nav{display:none;}
 }
 
-/*Desktop*/
+@media (min-width:700px) { 
+#aboutme{
+        display:block;
+        border-top: .4em solid black;
+        background-color:#BFD5E5;
+        height:90em;}
+.body{  
+      position:relative;
+      top:3em;  
+      display:block;
+      width:65%;
+      margin:0 auto;
+      font-family: 'Playfair Display', serif;
+      font-size:1.3em;}  
+
+.nav{
+      display:block; 
+      margin-left:5em}
+      
+.nav a:link{
+      text-decoration:none;
+      color:white;}
+
+.nav a:visited{
+      color:#D9DFD1}
+  
+.nav a:hover{
+      color:yellow;}
+
+.nav a p{
+      font-size:20px;
+      position:relative;
+      top:2.1em;
+      text-align:center;}
+
+    .nav #aboutbutton{
+            display:inline-block;
+            height: 7em;
+            width: 7em;
+            border-radius:500px;
+            background-color:#0A4AE1;
+            margin-right:1em;}
+
+    
+    .nav #projectsbutton{      
+            display:inline-block;
+            height: 7em;
+            width: 7em;
+            border-radius:500px;
+            background-color:#E13C0A;
+            margin-right:1em;}
+      
+    .nav #contactbutton{
+            display:inline-block;
+            height: 7em;
+            width: 7em;
+            border-radius:500px;
+            background-color:#AF099E;}      
+}
+
+@media (min-width:900px) { 
+#aboutme{
+        height:70em;}
+}
+
+@media (min-width:600px) { 
+#aboutme{
+        height:58em;}
+}
+
+
+
+/*1025 screen resolution*/
 @media (min-width:1025px) { 
 
 #myself{
