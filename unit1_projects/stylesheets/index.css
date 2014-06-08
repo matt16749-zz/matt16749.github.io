@@ -47,7 +47,8 @@ body{       width:100%;
 #projects{
       display:block;
       border-top: .4em solid black;
-      background-color:#EEB6A2;}
+      background-color:#EEB6A2;
+      color:white;}
 
 .captionbody{
     font-family: 'Playfair Display', serif;
@@ -56,6 +57,7 @@ body{       width:100%;
     text-align:center;
     display:block;
     margin:0 auto 1em auto;
+    color:white;
 }
 
 .bodyprojects{    
