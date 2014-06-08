@@ -54,7 +54,7 @@ body{
       display:block;
       border-top: .4em solid black;
       background-color:#EEB6A2;
-      color:white;}
+      color:#1B372E;}
 
 .captionbody{
     font-family: 'Playfair Display', serif;
@@ -63,7 +63,7 @@ body{
     text-align:center;
     display:block;
     margin:0 auto 1em auto;
-    color:white;
+    color:#1B372E;
 }
 
 .bodyprojects{    
