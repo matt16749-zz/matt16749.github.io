@@ -2,9 +2,9 @@ body{
       width:100%;
       background-color:#F1CBB2;}        
 
-#landingpage{display:none;}
-#aboutme{display:none;}
-#projects{display:none}
+
+#blue{display:none;}
+#orange{display:none}
 
 /*Smartphones*/
 @media (min-width:320px) {
