@@ -89,23 +89,25 @@ body{       width:100%;
       i {size:5em;}
     
 #footerframe{
-  width:80%;
-}   
+          width:80%;
+          margin:0 auto;}   
     
-    #mail{
-           display:inline-block;}
+      #mail{
+            display:inline-block;}
       #mail p{
             font-size:1.5em;
             margin-bottom:.1em;}  
 
       #connect{
-            display:inline-block;} 
+            display:inline-block;
+            margin-left:50%;} 
       #connect p{
             font-size:1.5em;
             margin-bottom:.1em;}
 
       #github{
-            display:inline-block;}
+            display:inline-block;
+            float:right;}
       #github p{
             font-size:1.5em;
             margin-bottom:.1em;}
