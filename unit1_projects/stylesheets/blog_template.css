@@ -8,18 +8,9 @@ body{
 
 /*Smartphones*/
 @media (min-width:320px) {
+
 header{}
-
-      #headername{
-            position:relative;
-            top:2em;
-            font-family: 'Vollkorn', serif;
-            font-size:1.6em;
-            color:#4D2027;}
-
-      #name{
-            font-size:3em;}      
-
+ 
 
 #blue{
         display:block;
