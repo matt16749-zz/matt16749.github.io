@@ -2,6 +2,17 @@ body{
       width:100%;
       background-color:#F1CBB2;}        
 
+header a:link{
+border:1px solid black;
+text-decoration: none;
+background-color: #D1E7D4;
+color:#371B2F;}
+ 
+header a:visited{
+border:1px solid black;
+text-decoration: none;
+background-color: #D1E7D4;
+color:#371B2F;}
 
 #blue{display:none;}
 #orange{display:none}
@@ -9,15 +20,6 @@ body{
 /*Smartphones*/
 @media (min-width:320px) {
 
-header a:link{
-text-decoration: none;
-background-color: #D1E7D4;
-color:#371B2F;}
- 
-header a:visited{
-text-decoration: none;
-background-color: #D1E7D4;
-color:#371B2F;}
 
 #blue{
         display:block;
