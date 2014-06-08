@@ -11,13 +11,13 @@ body{
 
 header a:link{
 text-decoration: none;
-background-color: #371B2F;
-color:#D1E7D4;}
+background-color: #D1E7D4;
+color:#371B2F;}
  
 header a:visited{
 text-decoration: none;
-background-color: #371B2F;
-color:#D1E7D4;}
+background-color: #D1E7D4;
+color:#371B2F;}
 
 #blue{
         display:block;
