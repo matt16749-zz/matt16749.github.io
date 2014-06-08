@@ -9,7 +9,10 @@ body{
 /*Smartphones*/
 @media (min-width:320px) {
 
-header{}
+header a:link{
+text-decoration: none;
+background-color: black;
+color:white;}
  
 
 #blue{
