@@ -3,16 +3,16 @@ body{
       background-color:#F1CBB2;}        
 
 header a:link{
-border:1px solid black;
-text-decoration: none;
-background-color: #D1E7D4;
-color:#371B2F;}
+      border:1px solid black;
+      text-decoration: none;
+      background-color: #D1E7D4;
+      color:#371B2F;}
  
 header a:visited{
-border:1px solid black;
-text-decoration: none;
-background-color: #D1E7D4;
-color:#371B2F;}
+      border:1px solid black;
+      text-decoration: none;
+      background-color: #D1E7D4;
+      color:#371B2F;}
 
 #blue{display:none;}
 #orange{display:none}
@@ -21,32 +21,41 @@ color:#371B2F;}
 @media (min-width:320px) {
 
 .caption{
-  font-size:5em;
-  text-align: center;
-  font-family: 'Playfair Display', serif;}
+      font-size:5em;
+      text-align: center;
+      font-family: 'Playfair Display', serif;}
 
 #blue{
         display:block;
         background-color:#BFD5E5;
-        color:#510811;}
+        color:#510811;
+        width:80%;
+        margin:0 auto 2em auto;
+        border:.4em solid black;}
 
 #blue .body{  
       font-family: 'Playfair Display', serif;
       font-size:1.3em;
       text-align: center;
-      width:50%;}  
+      width:50%;
+      margin:0 auto;
+}  
 
       
 
 #orange{
       display:block;
       background-color:#EEB6A2;
-      color:#1B372E;}
+      color:#1B372E;
+      width:80%;
+      margin:0 auto;
+      border:.4em solid black;}
      
 
 #orange .body{
     font-family: 'Playfair Display', serif;
     font-size:1.3em;
-   text-align: center;
-   width:50%;
+    text-align: center;
+    width:50%;
+    margin:0 auto;
  }
