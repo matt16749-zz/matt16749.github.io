@@ -88,20 +88,18 @@ body{       width:100%;
 
       i {size:5em;}
     
-   
+#footerframe{
+  width:80%;
+}   
     
     #mail{
-           display:inline-block;
-           padding-right:40%;
-}
+           display:inline-block;}
       #mail p{
             font-size:1.5em;
             margin-bottom:.1em;}  
 
       #connect{
-            display:inline-block;
-            padding-right:40%;
-} 
+            display:inline-block;} 
       #connect p{
             font-size:1.5em;
             margin-bottom:.1em;}
