@@ -8,6 +8,7 @@ body{
 
 /*Smartphones*/
 @media (min-width:320px) {
+header{}
 
       #headername{
             position:relative;
@@ -18,10 +19,6 @@ body{
 
       #name{
             font-size:3em;}      
-
-#landingpage{
-            position:relative;
-            display:block;}
 
 
 #blue{
