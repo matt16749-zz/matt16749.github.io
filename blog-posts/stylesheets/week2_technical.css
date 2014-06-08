@@ -1,0 +1,56 @@
+body{background-color:#965629;}
+header{text-align:center;
+color:#F0D564;
+border-bottom:0.5em solid #F0D564;
+border-radius:20%;
+margin-bottom:1em;}
+
+div p{color:#F0CFE8;
+text-align:center;}
+
+#overview{width:50%;
+border-radius:1em;
+background-color:#F0D564;
+color:#965629;
+margin-left:3%;
+}
+  
+  #normalized{display:block;
+margin-left:15em;}
+  
+
+#relative{border-radius:1em;
+background-color:#F0D564;
+color:#965629;
+width:60%;
+margin-bottom:1em;
+float:right;
+clear:right;
+}
+
+  #relativea{clear:right;
+display:block;
+margin-left:60em;}
+
+#absolute{float:left;
+border-radius:1em;
+background-color:#F0D564;
+color:#965629;
+width:60%;
+clear:right;
+}
+    
+  #absolutea{clear:both;
+margin-left:15em;}
+
+#fixed{
+float:right;
+border-radius:1em;
+background-color:#F0D564;
+color:#965629;
+width:60%;
+margin-top:1em;}
+  
+  #fixeda{clear:both;
+margin-left:60em;}
+  

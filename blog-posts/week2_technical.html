@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 2 Technical</title>
+    <link rel="stylesheet" type ="text/css" href="./stylesheets/week2_technical.css">
+  </head>
+  <body>
+    <header>
+      <h1>What are the differences between relative, absolute, and fixed positioning?<h1>
+    </header>
+    <section id="overview">
+      <h3>Positioning is a special property in CSS that gives special abilities to HTML elements in context to each other. There are three main property values that you should be mindful of.
+    </section>
+    <div id="normalized"><a href="https://www.flickr.com/photos/94189955@N04/14084160970" title="Wireframe by Matt Chan, on Flickr"><img src="https://farm3.staticflickr.com/2921/14084160970_141a3b73ff.jpg" width="430" height="316" alt="Wireframe"></a></div>
+    <section id="relative">
+      <h3>Position:Relative</h3>
+      <p>Relative positioning allows the HTML element to move in context to where it was originally placed in the HTML flow. It does not remove the selected element from the flow.
+    </section>
+    <div id="relativea"><a href="https://www.flickr.com/photos/94189955@N04/14270763485" title="relative by Matt Chan, on Flickr"><img src="https://farm6.staticflickr.com/5273/14270763485_ab0c840886.jpg" width="430" height="316" alt="relative"></a></div>
+    <section id="absolute">
+      <h3>Position:Absolute</h3>
+      <p>Absolute positioning can be used in two distinct ways, either by itsef or nested within another HTML element.</p>
+      <p>If you use absolute positioning by itself, the selected element will be removed from the HTML flow and placed exactly where you position it.</p>
+      <p>If you use absolute positioning within another HTML element, the nesting element needs to have a relative positioning and the nested HTML element with absolute positioning will then be removed from the HTML flow of the nesting element and placed accordingly. However this will not change the selected elements' positioning within the overall HTML flow.
+    </section>
+    <div id="absolutea"><a href="https://www.flickr.com/photos/94189955@N04/14247649576" title="absolute by Matt Chan, on Flickr"><img src="https://farm3.staticflickr.com/2905/14247649576_a876cc90ed.jpg" width="430" height="316" alt="absolute"></a></div>
+    <section id="fixed">
+      <h3>Position:Fixed</h3>
+      <p>Fixed postioning does not change the selected element's positioning within the HTML flow, but allows the selected element to remain in place on your site layout as you scroll up and down.</p>
+    </section>
+    <div id="fixeda"><a href="https://www.flickr.com/photos/94189955@N04/14084110229" title="fixed by Matt Chan, on Flickr"><img src="https://farm4.staticflickr.com/3717/14084110229_8443e04453.jpg" width="430" height="316" alt="fixed"></a></div>
+  </body>
+</html>

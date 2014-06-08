@@ -1,0 +1,49 @@
+body{ 
+      width:100%;
+      background-color:#F1CBB2;}        
+
+header a:link{
+border:1px solid black;
+text-decoration: none;
+background-color: #D1E7D4;
+color:#371B2F;}
+ 
+header a:visited{
+border:1px solid black;
+text-decoration: none;
+background-color: #D1E7D4;
+color:#371B2F;}
+
+#blue{display:none;}
+#orange{display:none}
+
+/*Smartphones*/
+@media (min-width:320px) {
+
+
+#blue{
+        display:block;
+        background-color:#BFD5E5;
+        color:#510811;}
+
+#blue .body{  
+      font-family: 'Playfair Display', serif;
+      font-size:1.3em;}  
+
+      
+
+#orange{
+      display:block;
+      background-color:#EEB6A2;
+      color:#1B372E;}
+     
+
+#orange .body{
+    font-family: 'Playfair Display', serif;
+    font-size:1.3em;}
+
+
+
+
+      
+

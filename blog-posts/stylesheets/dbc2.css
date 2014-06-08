@@ -1,0 +1,16 @@
+
+.blue {color:blue;}
+a.link{color:#FF0000;}
+a.visited{color:#00FF00;}
+a.hover{color:#FF00FF;}
+a.active{color:#0000FF;}
+
+#footer {position:relative;}
+#footer #caption{position:absolute;
+bottom:5px;
+background-color: yellow;}
+#sidebar{float:top;}
+#contentarea{float:bottom;}
+#border{padding:15px;
+ border:1px solid red;
+ margin:5px;}

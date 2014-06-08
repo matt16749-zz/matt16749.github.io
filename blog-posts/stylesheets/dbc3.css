@@ -1,0 +1,47 @@
+/*Smartphones*/
+@media (min-width:320px) { 
+header{position:relative;
+background-color:#F2DEC4;
+text-align:center;
+height:200px;
+bottom:0;}
+header #catchphrase{margin-bottom:30px;}
+header #catchphrase #name{font-family: 'Oswald', sans-serif;
+font-size:100px;
+margin-bottom: -.2em;}
+#catchphrase #extra{font-family: 'Pinyon Script', cursive;
+font-size:50px;}
+
+
+body{background-image:url('https://farm6.staticflickr.com/5233/14308447883_417ef0d5cf_o.jpg');}
+#main{
+color:#F2DEC4;
+width:70%;
+margin-left:auto;
+margin-right:auto;
+font-family: 'Droid Serif', serif;
+}
+
+p{font-size:1.1em;
+  margin-bottom:1.3em;}
+h4{font-size:2.3em;
+}
+a{font-size:1.3em;}
+a:link{text-decoration:none;
+color:white;}
+a:visited{color:yellow;}
+
+.bit-1{text-align:center;}
+ul{list-style-type: none;}
+/*Tablets*/
+@media (min-width:600px) { 
+
+}
+
+
+/*Desktop*/
+@media (min-width:1025px) { 
+
+}
+
+

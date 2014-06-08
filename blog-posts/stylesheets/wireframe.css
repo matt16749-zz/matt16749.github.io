@@ -1,0 +1,58 @@
+
+a:link{text-decoration:none;
+}
+
+.buttons{background-color:orange;
+color:black;
+padding:2px;
+}
+
+.Header {background-color:black;
+color:white;
+padding-bottom:120px;
+}
+
+.Header #title{position:relative;
+font-size:26px;
+font-family:arial;
+text-align:center;
+width:300px;
+margin:auto;
+
+}
+
+.Header #links {position:absolute;
+top:110px;
+left:50px;
+font-family:arial;
+}
+
+.Body{background-color:black;
+color:white;
+font-family:arial;
+}
+
+.Body #Fiverr{
+text-align:center;
+width:300px;
+}
+
+.Body #Kickstarter{
+width:300px;
+margin:auto;
+text-align:center;
+}
+
+.Body #Youtube{
+text-align:center;
+margin-left:auto;
+width:300px;
+}
+
+
+.Footer{background-color:black;
+color:white;
+font-size:5px;
+text-align:center;
+;
+}
