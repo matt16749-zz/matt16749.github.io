@@ -14,6 +14,10 @@ text-decoration: none;
 background-color: black;
 color:white;}
  
+header a:visited{
+text-decoration: none;
+background-color: black;
+color:white;} 
 
 #blue{
         display:block;
