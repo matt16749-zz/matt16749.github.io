@@ -20,6 +20,10 @@ color:#371B2F;}
 /*Smartphones*/
 @media (min-width:320px) {
 
+.caption{
+  font-size:5em;
+  text-align: center;
+  font-family: 'Playfair Display', serif;}
 
 #blue{
         display:block;
@@ -28,7 +32,9 @@ color:#371B2F;}
 
 #blue .body{  
       font-family: 'Playfair Display', serif;
-      font-size:1.3em;}  
+      font-size:1.3em;
+      text-align: center;
+      width:50%;}  
 
       
 
@@ -40,4 +46,7 @@ color:#371B2F;}
 
 #orange .body{
     font-family: 'Playfair Display', serif;
-    font-size:1.3em;}
+    font-size:1.3em;
+   text-align: center;
+   width:50%;
+ }
