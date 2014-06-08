@@ -1,8 +1,14 @@
+body{ 
+      width:100%;
+      background-color:#F1CBB2;}        
+
+#landingpage{display:none;}
+#aboutme{display:none;}
+#projects{display:none}
+
 /*Smartphones*/
 @media (min-width:320px) {
-body{       width:100%;
-            background-color:#F1CBB2;}               
-    
+
       #headername{
             position:relative;
             top:2em;
