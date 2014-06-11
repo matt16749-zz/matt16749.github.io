@@ -20,30 +20,44 @@ color:#371B2F;}
 /*Smartphones*/
 @media (min-width:320px) {
 
+.caption{
+      font-size:5em;
+      text-align: center;
+      font-family: 'Playfair Display', serif;}
 
 #blue{
         display:block;
         background-color:#BFD5E5;
-        color:#510811;}
+        color:#510811;
+        width:80%;
+        margin:0 auto 2em auto;
+        border:.4em solid black;}
 
-#blue .body{  
+      #blue .body{  
       font-family: 'Playfair Display', serif;
-      font-size:1.3em;}  
+      font-size:1.3em;
+      text-align: center;
+      width:50%;
+      margin:0 auto;}  
 
-      
 
 #orange{
       display:block;
       background-color:#EEB6A2;
-      color:#1B372E;}
+      color:#1B372E;
+      width:80%;
+      margin:0 auto;
+      border:.4em solid black;}
      
 
-#orange .body{
-    font-family: 'Playfair Display', serif;
-    font-size:1.3em;}
+    #orange .body{
+     font-family: 'Playfair Display', serif;
+     font-size:1.3em;
+     text-align: center;
+     width:50%;
+     margin:0 auto;}
 
-
-
-
-      
-
+img{ 
+  display:block;
+  margin:0 auto;}
+}
