@@ -83,6 +83,21 @@ body{
 .bit-3 a:hover{
       color:#0D8077;}
 
+.bit-2 a:link{
+      text-decoration:none;
+      color:#0D1580}
+.bit-2 a:visited{
+      color:#0D1580;}
+.bit-2 a:hover{
+      color:#0D8077;}
+
+.bit-1 a:link{
+      text-decoration:none;
+      color:#0D1580}
+.bit-1 a:visited{
+      color:#0D1580;}
+.bit-1 a:hover{
+      color:#0D8077;}
 
 #footer{
       display:block;
