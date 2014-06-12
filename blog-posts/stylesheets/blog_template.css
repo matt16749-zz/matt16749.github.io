@@ -14,6 +14,10 @@ text-decoration: none;
 background-color: #D1E7D4;
 color:#371B2F;}
 
+header a:hover{
+background-color: lightblue;
+}
+
 #blue{display:none;}
 #orange{display:none}
 
