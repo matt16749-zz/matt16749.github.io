@@ -1,11 +1,18 @@
 body{
       width:100%;
       box-sizing:border-box;
-      background-image: url(../images/rsz_sf.jpg);
-      background-size: 100% 248%;
+      background-image:   url(../images/rsz_sf.jpg);
+      background-size: cover;
       background-repeat:no-repeat;
       background-position:fixed;
     }
 
+header img{
+  display:inline-block;
+  width:10em;
 
+}
+
+header p{
+  display:inline-block;
 }
