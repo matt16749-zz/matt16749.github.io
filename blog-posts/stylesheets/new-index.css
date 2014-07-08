@@ -1,9 +1,5 @@
 body{
-  box-sizing:border-box;
-  background-image: url(../images/rsz_sf.jpg);
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position:fixed;
+  background: linear-gradient(#FFFFFF,#A1E3FF);
 }
 
 header{
@@ -58,4 +54,14 @@ font-size:2em;
   width:17%;
   font-size:1.3em;
   font-family: 'Lora', serif;
+}
+
+@media (min-width:1221px) {
+body{
+  box-sizing:border-box;
+  background-image: url(../images/rsz_sf.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:fixed;
+}
 }
