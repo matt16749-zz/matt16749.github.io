@@ -10,9 +10,24 @@ body{
 header img{
   display:inline-block;
   width:10em;
-
 }
 
-header p{
-  display:inline-block;
+nav p{
+  position:relative;
+  left: 9.3em;
+  top: -11em;
+  margin:1em}
+
+nav i{
+  position:relative;
+  margin:0.5em; 
+  top:-6.3em;
+  left:-0.4em;
+}
+
+.welcome p{
+  position:relative;
+  right:3em;
+  top:1em;
+  margin-bottom: 1em;
 }
