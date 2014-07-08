@@ -41,8 +41,13 @@ nav a:hover{
 }
 
 .name{
-  display:none;
+position:absolute;
+font-family: 'Lora', serif;
+top:-5%;
+left:32%;
+font-size:2em;  
 }
+
 
 .welcome p{
   position:relative;
@@ -51,16 +56,6 @@ nav a:hover{
   width:20%;
   font-size:1.3em;
   font-family: 'Lora', serif;
-}
-
-@media(min-width: 1000px){
-.name{
-position:absolute;
-font-family: 'Lora', serif;
-top:-5%;
-left:32%;
-font-size:2em;  
-}
 }
 
 @media (min-width:1221px) {
