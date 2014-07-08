@@ -3,7 +3,7 @@ body{
      background-attachment:fixed;
 }
 
-header{
+header{s
   position:fixed;
   width:30%;
 }
@@ -38,6 +38,10 @@ nav a:visited{
 }
 nav a:hover{
   color:#C18034;
+}
+
+.name{
+  display:none;
 }
 
 .welcome p{
