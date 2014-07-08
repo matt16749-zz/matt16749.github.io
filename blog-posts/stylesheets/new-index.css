@@ -1,16 +1,16 @@
 body{
       width:100%;
       box-sizing:border-box;
-      background-image:     url(../images/rsz_sf.jpg);
-      background-size: 100% 245%;
+      background-image: url(../images/rsz_sf.jpg);
+      background-size: 100% 248%;
       background-repeat:no-repeat;
       background-position:fixed;
     }
 
-#myself{
+header #myself{
         display:inline-block;
         top:10%;
         left:10%;
-        max-width: 50%;
-        max-height: 50%;
+        width: 50%;
+        height: 50%;
 }
