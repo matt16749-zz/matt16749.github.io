@@ -27,7 +27,16 @@ nav a{
 
 nav a:link{
   text-decoration: none;
+  color:#3E65BD;
 }
+nav a:visited{
+  color:#3E65BD
+}
+nav a:hover{
+  color:#C18034;
+}
+
+
 
 nav i{
   position:relative;
