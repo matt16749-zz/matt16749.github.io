@@ -6,7 +6,6 @@ body{
   background-position:fixed;
 }
 
-
 header{
   width:30%;
 }
@@ -25,6 +24,13 @@ nav a.font{
   font-family: 'Lato', sans-serif;
 }
 
+nav a.icon{
+  position:relative;
+  margin:0.8em; 
+  top:-12em;
+  left:-0.4em;
+}
+
 nav a:link{
   text-decoration: none;
   color:#3E65BD;
@@ -34,13 +40,6 @@ nav a:visited{
 }
 nav a:hover{
   color:#C18034;
-}
-
-nav a.icon{
-  position:relative;
-  margin:0.5em; 
-  top:-6.5em;
-  left:-0.4em;
 }
 
 .name{
