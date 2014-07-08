@@ -24,6 +24,10 @@ nav a{
   font-family: 'Lato', sans-serif;
 }
 
+nav a:link{
+  text-decoration: none;
+}
+
 nav i{
   position:relative;
   margin:0.5em; 
@@ -31,3 +35,20 @@ nav i{
   left:-0.4em;
 }
 
+.name{
+position:absolute;
+font-family: 'Lora', serif;
+top:-5%;
+left:32%;
+font-size:2em;  
+}
+
+.welcome p{
+  position:relative;
+  right:-55em;
+  top:-20em;
+  margin-bottom: 1em;
+  width:17%;
+  font-size:1.3em;
+  font-family: 'Lora', serif;
+}

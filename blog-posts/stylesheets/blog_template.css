@@ -1,69 +1,36 @@
-body{ 
-      width:100%;
-      background-color:#F1CBB2;}        
-
-header a:link{
-border:1px solid black;
-text-decoration: none;
-background-color: #D1E7D4;
-color:#371B2F;}
- 
-header a:visited{
-border:1px solid black;
-text-decoration: none;
-background-color: #D1E7D4;
-color:#371B2F;}
-
-header a:hover{
-background-color: lightblue;
+body{
+  box-sizing:border-box;
+  background-image: url(../images/rsz_sf.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:fixed;
 }
 
-#blue{display:none;}
-#orange{display:none}
 
-/*Smartphones*/
-@media (min-width:320px) {
+header{
+  width:30%;
+}
 
-.caption{
-      font-size:5em;
-      text-align: center;
-      font-family: 'Playfair Display', serif;}
+header img{
+  display:inline-block;
+  width:10em;
+}
 
-#blue{
-        display:block;
-        background-color:#BFD5E5;
-        color:#510811;
-        width:80%;
-        margin:0 auto 2em auto;
-        border:.4em solid black;}
+nav a{
+  position:relative;
+  left: 9.3em;    
+  top: -11em;
+  margin:1em;
+  font-family: 'Lato', sans-serif;
+}
 
-      #blue .body{  
-      font-family: 'Playfair Display', serif;
-      font-size:1.3em;
-      text-align: center;
-      width:50%;
-      margin:0 auto;}  
+nav a:link{
+  text-decoration: none;
+}
 
-
-#orange{
-      display:block;
-      background-color:#EEB6A2;
-      color:#1B372E;
-      width:80%;
-      margin:0 auto 2em auto;
-      border:.4em solid black;}
-     
-
-    #orange .body{
-     font-family: 'Playfair Display', serif;
-     font-size:1.3em;
-     text-align: center;
-     width:50%;
-     margin:0 auto;}
-
-img{ 
-  display:block;
-  margin:0 auto;
-  width:60%;
-  border:0.4em solid black;}
+nav i{
+  position:relative;
+  margin:0.5em; 
+  top:-6.3em;
+  left:-0.4em;
 }
