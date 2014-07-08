@@ -1,11 +1,6 @@
 body{
       box-sizing:border-box;
-      -webkit-box-sizing:border-box;
-      -moz-box-sizing:border-box;
-
-      background-image: url(../images/sf.jpg) no-repeat center center fixed;
-      -webkit-background-size:cover;
-      -moz-background-size:cover;
+      background-image: url(../images/rsz_sf.jpg);
       background-size: cover;
     }
 
