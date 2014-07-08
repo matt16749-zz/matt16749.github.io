@@ -7,10 +7,5 @@ body{
       background-position:fixed;
     }
 
-header #myself{
-        display:inline-block;
-        top:10%;
-        left:10%;
-        width: 50%;
-        height: 50%;
+
 }
