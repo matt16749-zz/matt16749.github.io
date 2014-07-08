@@ -1,10 +1,6 @@
-
 body{
-  box-sizing:border-box;
-  background-image: url(../images/rsz_sf.jpg);
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position:fixed;
+  background:linear-gradient(#A1E3FF, white); 
+     background-attachment:fixed;
 }
 
 header{
@@ -42,4 +38,14 @@ nav a:visited{
 }
 nav a:hover{
   color:#C18034;
+}
+
+@media (min-width:1221px) {
+body{
+  box-sizing:border-box;
+  background-image: url(../images/rsz_sf.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:fixed;
+}
 }

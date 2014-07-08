@@ -1,5 +1,6 @@
 body{
-  background: linear-gradient(#FFFFFF,#A1E3FF);
+  background:linear-gradient(#A1E3FF, white); 
+     background-attachment:fixed;
 }
 
 header{
@@ -51,7 +52,7 @@ font-size:2em;
   position:relative;
   left:80%;
   margin-bottom: 1em;
-  width:17%;
+  width:20%;
   font-size:1.3em;
   font-family: 'Lora', serif;
 }
