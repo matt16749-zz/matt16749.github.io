@@ -3,7 +3,7 @@ body{
      background-attachment:fixed;
 }
 
-header{s
+header{
   position:fixed;
   width:30%;
 }
@@ -47,7 +47,6 @@ top:-5%;
 left:32%;
 font-size:2em;  
 }
-
 
 .welcome p{
   position:relative;
