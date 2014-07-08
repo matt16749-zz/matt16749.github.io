@@ -16,7 +16,7 @@ header img{
   width:10em;
 }
 
-nav a{
+nav a.font{
   position:relative;
   display:block;
   left: 9.3em;    
@@ -36,9 +36,7 @@ nav a:hover{
   color:#C18034;
 }
 
-
-
-nav i{
+nav a.icon{
   position:relative;
   margin:0.5em; 
   top:-6.5em;
