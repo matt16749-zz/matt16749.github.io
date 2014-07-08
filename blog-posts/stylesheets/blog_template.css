@@ -44,4 +44,21 @@ nav a:hover{
   color:#C18034;
 }
 
+section{
+background-color:#DBDsCDE;
+left:30%;
+top:5em;  
+position:relative;
+width:68%;
+border-radius:1em;
+border:0.3em solid;
+opacity:0.9;
+}
+
+article{
+  margin:0 auto;
+  width:90%;
+  font-family: 'Lora', sans-serif;
+  word-wrap: break-word;
+}
 
