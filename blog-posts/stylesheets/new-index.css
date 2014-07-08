@@ -1,11 +1,11 @@
 body{
-  width:100%;
   box-sizing:border-box;
-  background-image:   url(../images/rsz_sf.jpg);
+  background-image: url(../images/rsz_sf.jpg);
   background-size: cover;
   background-repeat:no-repeat;
   background-position:fixed;
 }
+
 
 header{
   width:30%;
@@ -16,11 +16,13 @@ header img{
   width:10em;
 }
 
-nav p{
+nav a{
   position:relative;
-  /*left: 9.3em;    this is causing trouble.*/
+  left: 9.3em;    
   top: -11em;
-  margin:1em}
+  margin:1em;
+  font-family: 'Lato', sans-serif;
+}
 
 nav i{
   position:relative;
@@ -29,11 +31,3 @@ nav i{
   left:-0.4em;
 }
 
-.welcome p{
-  position:relative;
-  right:-55em;
-  top:-20em;
-  margin-bottom: 1em;
-  width:17%;
-  font-size:1.3em;
-}
