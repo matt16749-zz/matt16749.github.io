@@ -28,9 +28,9 @@ nav a.font{
 
 nav a.icon{
   position:relative;
-  margin:0.8em; 
+  margin:0.2em; 
   top:-12em;
-  left:-0.4em;
+  left:1.5em;
 }
 
 nav a:link{
@@ -60,6 +60,13 @@ font-size:2em;
   width:30%;
   font-size:1.3em;
   font-family: 'Lora', serif;
+}
+
+@media(min-width:563px){
+nav a.icon{
+  margin:0.8em;
+  left:-0.4em;
+}
 }
 
 @media(min-width:797px){
