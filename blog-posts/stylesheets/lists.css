@@ -12,22 +12,14 @@ body{
   font-family: 'Lato', sans-serif;  
 }
  a:visited{
-  color:#3E65BD
+  color:#3E65BD;
 }
  a:hover{
   color:#C18034;
 }
 
-ul{
-  position:relative;
-  left:5em;
-  display:inline-block;
-  width:40%;
-  margin-bottom:2em;
-}
-
 header{
-  position:fixed;
+  position:absolute;
   width:30%;
 }
 
@@ -50,20 +42,29 @@ nav a.icon{
   display:none;
 }
 
+ul{
+  position:relative;
+  left:5em;
+  display:inline-block;
+  width:40%;
+  margin-bottom:2em;
+}
+
 .titlename{
   position:absolute;
   right:5%; 
-  top:6em;
+  top:5.2em;
   font-weight:bold;
   font-family:'Lora', sans-serif;
   font-size:2.5em;  
 }
 
 section{
+position:relative;
+  display:block;
+  top:16em; 
   background-color:#DBDCDE;
-  left:5%;
-  top:-4.5em;  
-  position:relative;
+  left:5%; 
   width:90%;
   border-radius:1em;
   border:0.3em solid;
@@ -77,7 +78,7 @@ section img{
   max-width: 40%;
   max-height: 30%;
   border:0.3em solid;
-  left:30%;
+  left:35%;
   margin:1em 0em;
 }
 
@@ -96,10 +97,6 @@ nav a.icon{
   top:-12.2em;
   left:1.5em;
 }
-
-section{
-  top:-6.9em;
-}
 }
 
 @media(min-width:563px){
@@ -110,7 +107,7 @@ nav a.icon{
 }
 
 section{
-  top:-8em;
+  top:16em;
 }
 }
 
