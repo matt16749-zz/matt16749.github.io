@@ -8,14 +8,14 @@ body{
 
  a:link{
   text-decoration: none;
-  color:#3E65BD;
+  color:#BD2040;
   font-family: 'Lato', sans-serif;  
 }
  a:visited{
-  color:#3E65BD;
+  color:#BD2040;
 }
  a:hover{
-  color:#C18034;
+  color:#119C1C;
 }
 
 header{
