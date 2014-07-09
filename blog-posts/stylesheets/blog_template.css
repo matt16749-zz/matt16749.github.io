@@ -54,7 +54,7 @@ nav a.icon{
 section{
   background-color:#DBDCDE;
   left:5%;
-  top:-6.5em;  
+  top:-4.5em;  
   position:relative;
   width:90%;
   border-radius:1em;
@@ -79,13 +79,17 @@ article{
   word-wrap: break-word;
 }
 
-@media(min-width:372px){
+@media(min-width:385px){
 nav a.icon{
   display:inline-block; 
   position:relative;
   margin:0.2em; 
   top:-12.2em;
   left:1.5em;
+}
+
+section{
+  top:-6.9em;
 }
 }
 
@@ -94,6 +98,10 @@ nav a.icon{
   margin:0.8em;
   top:-12.8em;  
   left:-0.4em;
+}
+
+section{
+  top:-8em;
 }
 }
 

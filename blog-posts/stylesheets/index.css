@@ -58,7 +58,7 @@ font-size:2em;
   font-family: 'Lora', serif;
 }
 
-@media(min-width:372px){
+@media(min-width:385px){
 nav a.icon{
   display:inline-block; 
   position:relative;
