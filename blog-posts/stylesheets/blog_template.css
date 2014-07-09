@@ -39,10 +39,7 @@ nav a.font{
 }
 
 nav a.icon{
-  position:relative;
-  margin:0.2em; 
-  top:-12em;
-  left:1.5em;
+  display:none;
 }
 
 .titlename{
@@ -82,9 +79,20 @@ article{
   word-wrap: break-word;
 }
 
+@media(min-width:372px){
+nav a.icon{
+  display:inline-block; 
+  position:relative;
+  margin:0.2em; 
+  top:-12.2em;
+  left:1.5em;
+}
+}
+
 @media(min-width:563px){
 nav a.icon{
   margin:0.8em;
+  top:-12.8em;  
   left:-0.4em;
 }
 }
