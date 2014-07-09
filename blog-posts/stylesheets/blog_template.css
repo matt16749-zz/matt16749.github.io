@@ -67,6 +67,7 @@ section img{
   position:relative;
   display:inline-block;
   max-width: 40%;
+  max-height: 40%;
   border:0.3em solid;
   left:30%;
   margin:1em 0em;
