@@ -7,6 +7,18 @@ body{
   background-attachment:fixed; 
 }
 
+ a:link{
+  text-decoration: none;
+  color:#3E65BD;
+  font-family: 'Lato', sans-serif;  
+}
+ a:visited{
+  color:#3E65BD
+}
+ a:hover{
+  color:#C18034;
+}
+
 header{
   position:fixed;
   width:30%;
@@ -23,7 +35,6 @@ nav a.font{
   left: 9.3em;    
   top: -11em;
   margin:1em;
-  font-family: 'Lato', sans-serif;
 }
 
 nav a.icon{
@@ -31,17 +42,6 @@ nav a.icon{
   margin:0.2em; 
   top:-12em;
   left:1.5em;
-}
-
-nav a:link{
-  text-decoration: none;
-  color:#3E65BD;
-}
-nav a:visited{
-  color:#3E65BD
-}
-nav a:hover{
-  color:#C18034;
 }
 
 .name{opacity:0;
