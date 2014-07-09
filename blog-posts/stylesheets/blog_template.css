@@ -39,7 +39,11 @@ nav a.font{
 }
 
 nav a.icon{
-  display:none;
+  display:inline-block; 
+  position:relative;
+  margin:0.2em; 
+  top:-12.2em;
+  left:1.5em;
 }
 
 .titlename{
@@ -79,16 +83,6 @@ article{
   width:90%;
   font-family: 'Lora', sans-serif;
   word-wrap: break-word;
-}
-
-@media(min-width:385px){
-nav a.icon{
-  display:inline-block; 
-  position:relative;
-  margin:0.2em; 
-  top:-12.2em;
-  left:1.5em;
-}
 }
 
 @media(min-width:563px){
