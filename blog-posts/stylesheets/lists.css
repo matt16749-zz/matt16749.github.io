@@ -1,0 +1,130 @@
+body{
+  box-sizing:border-box;
+  background-image: url(../images/rsz_sf.jpg);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-attachment: fixed; 
+}
+
+a:link{
+  text-decoration: none;
+  color:#3E65BD;
+  font-family: 'Lato', sans-serif;  
+}
+
+a:visited{
+  color:#3E65BD
+}
+
+a:hover{
+  color:#C18034;
+}
+
+ul{
+  display:inline-block;
+  margin:3em;
+}
+
+header{
+  position:relative;
+  width:30%;
+}
+
+header img{
+  display:inline-block;
+  width:10em;
+}
+
+nav a.font{
+  position:relative;
+  display:block;
+  left: 9.3em;    
+  top: -11em;
+  margin:1em;
+}
+
+nav a.icon{
+  display:none;
+}
+
+.titlename{
+  position:absolute;
+  right:5%; 
+  top:6em;
+  font-weight:bold;
+  font-family:'Lora', sans-serif;
+  font-size:2.5em;  
+}
+
+section{
+  background-color:#DBDCDE;
+  left:5%;
+  top:-4.5em;  
+  position:relative;
+  width:90%;
+  border-radius:1em;
+  border:0.3em solid;
+  opacity:0.98;
+  margin-bottom:1em;
+}
+
+section img{
+  position:relative;
+  display:inline-block;
+  max-width: 40%;
+  max-height: 30%;
+  border:0.3em solid;
+  left:30%;
+  margin:1em 0em;
+}
+
+article{
+  margin:0 auto;
+  width:90%;
+  font-family: 'Lora', sans-serif;
+  word-wrap: break-word;
+}
+
+@media(min-width:385px){
+nav a.icon{
+  display:inline-block; 
+  position:relative;
+  margin:0.2em; 
+  top:-12.2em;
+  left:1.5em;
+}
+
+section{
+  top:-6.9em;
+}
+}
+
+@media(min-width:563px){
+nav a.icon{
+  margin:0.8em;
+  top:-12.8em;  
+  left:-0.4em;
+}
+
+section{
+  top:-8em;
+}
+}
+
+@media(min-width: 816px){
+header{
+  position:fixed;
+}
+
+.titlename{
+  top:1em;
+  right:3%;
+}
+
+section{
+  top:5em;
+  left:30%;
+  width:68%;
+}
+}
+
