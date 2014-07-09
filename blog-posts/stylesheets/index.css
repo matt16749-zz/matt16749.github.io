@@ -26,13 +26,15 @@ header{
 header img{
   display:inline-block;
   width:10em;
+  border-radius: 0.7em;
+  border:0.063em solid;
 }
 
 nav a.font{
   position:relative;
   display:block;
   left: 9.3em;    
-  top: -11em;
+  top: -11.4em;
   margin:1em;
 }
 

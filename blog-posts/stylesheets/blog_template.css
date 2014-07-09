@@ -3,38 +3,38 @@ body{
   background-image: url(../images/rsz_sf.jpg);
   background-size: 100% 100%;
   background-repeat:no-repeat;
-  background-attachment: fixed; 
+  background-attachment:fixed; 
 }
 
-a:link{
+ a:link{
   text-decoration: none;
   color:#3E65BD;
   font-family: 'Lato', sans-serif;  
 }
-
-a:visited{
+ a:visited{
   color:#3E65BD
 }
-
-a:hover{
+ a:hover{
   color:#C18034;
 }
 
 header{
-  position:relative;
+  position:fixed;
   width:30%;
 }
 
 header img{
   display:inline-block;
   width:10em;
+  border-radius: 0.7em;
+  border:0.063em solid;
 }
 
 nav a.font{
   position:relative;
   display:block;
   left: 9.3em;    
-  top: -11em;
+  top: -11.4em;
   margin:1em;
 }
 
