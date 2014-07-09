@@ -21,8 +21,11 @@ a:hover{
 }
 
 ul{
+  position:relative;
+  left:5em;
   display:inline-block;
-  margin:3em;
+  width:30%;
+  margin-bottom:2em;
 }
 
 header{
