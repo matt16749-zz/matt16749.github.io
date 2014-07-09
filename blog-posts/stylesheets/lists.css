@@ -18,6 +18,14 @@ body{
   color:#C18034;
 }
 
+ul{
+  position:relative;
+  left:5em;
+  display:inline-block;
+  width:40%;
+  margin-bottom:2em;
+}
+
 header{
   position:fixed;
   width:30%;
