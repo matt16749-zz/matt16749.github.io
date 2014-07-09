@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>Welcome to my photo page!</title>
-      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-      <link rel="stylesheet" type ="text/css" href="./stylesheets/dbc2.css">
-  </head>
-  <body>
-    <div id= "header" style="width:1000px;height:100px"> <h1>This is my header</h1></div>
+<head>
+  <title>Welcome to my photo page!</title>
+  <link rel="stylesheet" type ="text/css" href="./blog-posts/stylesheets/blog_template.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
 
-    <div id= "contentarea" style="text-align:center;width:1000px;height:100px">
-      <p><span class = "blue">Paragraphs</span> go here.</p>
-    </div>
-    
-    <div id= "sidebar" style="width:50px:height:50px">
-      <p>This is my <span class = "blue">sidebar.</span></p>
-      <a href="www.linkedin.com/matthewchan2000"><img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_65_65/p/8/005/060/04a/35bb239.jpg"/></a>
-      <a href="www.facebook.com/matt16749"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1.0-1/c53.0.320.320/p320x320/10320519_1392218377729040_1872235510966982611_n.jpg"/></a>
-    </div>
-    
-    <div id= "footer">
+<body> 
+  <header>
+    <img src="./blog-posts/images/myself.jpg">
+    <nav>      
+      <a class="font" href="./index.html">home</a>      
+      <a class="font"href="./about.html">about</a>
+      <a class="font"href="./blog_posts.html">blog</a>
+      <a class="font" href="./projects.html">projects</a>
+      <a class="font" href="./resources.html">resources</a>
+      <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+      <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    </nav>   
+  </header>
+
+<div class="titlename">This is my header</div>
+
+<section>
+  <article>
+    <p><span class = "blue">Paragraphs</span> go here.</p>
+     <p>This is my <span class = "blue">sidebar.</span></p>
+      <a href="http://www.linkedin.com/matthewchan2000"><img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_65_65/p/8/005/060/04a/35bb239.jpg"/></a>
+      <a href="http://www.facebook.com/matt16749"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1.0-1/c53.0.320.320/p320x320/10320519_1392218377729040_1872235510966982611_n.jpg"/></a>
       <h4>This is my footer</h4>
-      <a href="www.devbootcamp.com">Link to DevBootcamp with pseudoclass selectors</a>
-      <p id="border">This is another paragraph where I will change the padding, borders, and margins.</p>
-      <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdFWW6rPnayDw0tJtqEQVRrUwsNIBY9FgIftDS4-QHWZIpuQDCZwZTIvb5"/>
-      <p id="caption">These are dogs!</p>
+      <a href="http://www.devbootcamp.com">Link to DevBootcamp with pseudoclass selectors</a>
+      <p >This is another paragraph where I will change the padding, borders, and margins.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdFWW6rPnayDw0tJtqEQVRrUwsNIBY9FgIftDS4-QHWZIpuQDCZwZTIvb5"/>
+      <p >These are dogs!</p>
       <i class="fa fa-spinner">This is a spinner</i>
-    </div>
-  </body>
+
+  </article>
+</section>
+
+</body>
 </html>
