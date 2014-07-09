@@ -39,7 +39,7 @@ nav a.font{
 }
 
 nav a.icon{
-  display:inline-block; 
+  display:none; 
   position:relative;
   margin:0.2em; 
   top:-12.2em;
@@ -48,8 +48,8 @@ nav a.icon{
 
 ul{
   position:relative;
-  left:5em;
-  display:inline-block;
+  left:3em;
+  display:block;
   width:40%;
   margin-bottom:2em;
 }
@@ -93,12 +93,25 @@ article{
   word-wrap: break-word;
 }
 
+@media(min-width:371px){
+nav a.icon{
+display:inline-block;
+}
+}
+
 @media(min-width:563px){
 nav a.icon{
   margin:0.8em;
   top:-12.8em;  
   left:-0.4em;
 }
+}
+
+@media(min-width: 632px){
+  ul{
+    display:inline-block;
+    left:5em;
+  }
 }
 
 @media(min-width: 816px){
