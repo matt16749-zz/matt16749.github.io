@@ -12,14 +12,14 @@ body{
   font-family: 'Lato', sans-serif;  
 }
  a:visited{
-  color:#3E65BD
+  color:#3E65BD;
 }
  a:hover{
   color:#C18034;
 }
 
 header{
-  position:fixed;
+  position:absolute;
   width:30%;
 }
 
@@ -52,10 +52,11 @@ nav a.icon{
 }
 
 section{
+position:relative;
+  display:block;
+  top:20em; 
   background-color:#DBDCDE;
-  left:5%;
-  top:-4.5em;  
-  position:relative;
+  left:5%; 
   width:90%;
   border-radius:1em;
   border:0.3em solid;
@@ -101,8 +102,12 @@ nav a.icon{
   left:-0.4em;
 }
 
+.titlename{
+top:5.2em;
+}
+
 section{
-  top:-8em;
+  top:16em;
 }
 }
 
