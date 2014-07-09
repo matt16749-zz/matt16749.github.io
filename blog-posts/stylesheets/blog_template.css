@@ -3,7 +3,6 @@ body{
   background-image: url(../images/rsz_sf.jpg);
   background-size: 100% 100%;
   background-repeat:no-repeat;
-  background-position:fixed;
   background-attachment: fixed; 
 }
 
@@ -68,9 +67,9 @@ section{
 section img{
   position:relative;
   display:inline-block;
-  max-width: 30%;
+  max-width: 40%;
   border:0.3em solid;
-  left:35%;
+  left:30%;
   margin:1em 0em;
 }
 
