@@ -50,7 +50,7 @@ ul{
   position:relative;
   left:3em;
   display:block;
-  width:40%;
+  width:38%;
   margin-bottom:2em;
 }
 
@@ -114,7 +114,7 @@ nav a.icon{
   }
 }
 
-@media(min-width: 902px){
+@media(min-width: 816px){
 header{
   position:fixed;
 }
