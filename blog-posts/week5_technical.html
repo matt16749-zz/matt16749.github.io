@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Matthew Chan| Web Developer</title>
-      <link rel="stylesheet" type ="text/css" href="./stylesheets/blog_template.css">
-      <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-    </head>
+<head>
+  <title>Matthew Chan| Web Developer</title>
+  <link rel="stylesheet" type ="text/css" href="./stylesheets/blog_template.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
 
-    <body>    
-        <header>
-          <a href="http://matt16749.github.io/">Main</a>
-          <p>References</p>
-          <a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope">Techotopia</a>
-          <a href="http://www.tutorialspoint.com/ruby/ruby_variables.htm">Tutorials Point</a>
-          <a href="https://thenewcircle.com/static/bookshelf/ruby_tutorial/scope.html">New Circle</a>
-        </header>
-      <div class="caption">Variable Scope</div>
-      <img style="width:40%; margin-bottom:2em; border:none;" src="./images/scope.png">
-             
-      <div id="blue">
-        <div class = "caption">Object Oriented Programming</div>
-        <div class="body">
-          <p>To understand variable scope, one must understand object orientation. Ruby is an object oriented language, that means that everything is based upon objects that have attributes and can be used for various tasks through methods. You can think of an object as a human and a method as a verb such as run. Just as how you tell a human to run, you can also tell an object to do something via methods.</p>
-          <p>These Ruby objects are not the same. They can be Integer objects, String objects, Array objects etc. We call these individual objects <em>instances</em> of a particular class.</p> 
-        </div>
-      </div>
-      
-      <div id="orange">
-        <div class = "caption">What Is Variable Scope?</div>
-        <div class="body">
-          <p>Variable scope is determining how deep (aka the scope) a variable can be used in context of OOP.</p>
-          <p>When we devise a method for a particular class, we need to create in context of the class, as seen by the example below.</p>
-          <img style="float:left;" src="./images/oop.png">
-          <p>Here we can see a method being defined within a class string.
+<body> 
+  <header>
+    <img src="./images/myself.jpg">
+    <nav>      
+      <a class="font" href="../index.html">home</a>      
+      <a class="font"href="../about.html">about</a>
+      <a class="font"href="../blog_posts.html">blog</a>
+      <a class="font" href="../projects.html">projects</a>
+      <a class="font" href="../resources.html">resources</a>
+      <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+      <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    </nav>   
+  </header>
 
-          </p>
-          
-          <h4 style="clear:left; margin-top:2em;">Local Variables</h4>
-          <p>First up in variable scope is the local variable. They can only be used within their parent object. In the case below, the local variable <em>var</em> can only be used within <em>method.</em></p>
-          <img src="./images/localvar.png">
-          
-          <h4>Instance Variables</h4>
-          <p>Instance variables are defined with a @ sign before the variable name. They are specific to each indvidual instance of a class. In the case below, we see that the instance variable <em>@var</em> is different for <em>example1</em> and <em>example2</em>.</p>
-          <img src="./images/instancevar.png">
+<div class="titlename">Variable Scope</div>
 
-          <h4>Class Variables</h4>
-          <p>Class variables are defined with an @@ sign before the variable name. They are specific to the class itself, so if you change the class variable, it affects all instances of that class. They must be initialized at time of instance creation. Take a look at the example below. Class variable <em>@@var</em> was defined as <em>'hello'</em> for <em>example1</em>. However, after we changed the class variable in <em>example2</em> to <em>'world'</em>, the class variable also changed for <em>example1</em>.</p>
-          <img src="./images/classvar.png">
+<section>
+  <article>
+    <h1>Object Oriented Programming</h1>
+    <img src="./images/scope.png">
+    <p>To understand variable scope, one must understand object orientation. Ruby is an object oriented language, that means that everything is based upon objects that have attributes and can be used for various tasks through methods. You can think of an object as a human and a method as a verb such as run. Just as how you tell a human to run, you can also tell an object to do something via methods.</p>
+    <p>These Ruby objects are not the same. They can be Integer objects, String objects, Array objects etc. We call these individual objects <em>instances</em> of a particular class.</p> 
+  </article>
+</section>
 
-          <h4>Global Variables</h4>
-          <p>Global variables have the most freedom of all. They are defined with a $ sign before the class name. Since they have the most freedom, they can be created anywhere and changed anywhere in the program. If you take a look at the example below, you can see that global variable <em>$var</em> is defined outside of the class, yet when we call method, it returns the value of the global variable. This can make for troublesome debugging, since you can't narrow down your potential problem within your code.</p>
-          <img src="./images/globalvar.png">
+<section>
+  <article>
+    <h1>What Is Variable Scope?</h1>
+    <p>Variable scope is determining how deep (aka the scope) a variable can be used in context of OOP.</p>
+    <p>When we devise a method for a particular class, we need to create in context of the class, as seen by the example below.</p>
+    <img src="./images/oop.png">
+    <p>Here we can see a method being defined within a class string.</p>
+  </article>
+</section>
 
-        </div>       
-      </div>
-    </body>
+<section>
+  <article>
+    <h1>Local Variables</h1>
+    <p>First up in variable scope is the local variable. They can only be used within their parent object. In the case below, the local variable <em>var</em> can only be used within <em>method.</em></p>
+    <img src="./images/localvar.png">
+  </article>
+</section>
+
+<section>
+  <article>
+    <h1>Instance Variables</h1>
+    <p>Instance variables are defined with a @ sign before the variable name. They are specific to each indvidual instance of a class. In the case below, we see that the instance variable <em>@var</em> is different for <em>example1</em> and <em>example2</em>.</p>
+    <img src="./images/instancevar.png">
+  </article>
+</section>
+
+<section>
+  <article>
+    <h1>Class Variables</h1>
+    <p>Class variables are defined with an @@ sign before the variable name. They are specific to the class itself, so if you change the class variable, it affects all instances of that class. They must be initialized at time of instance creation. Take a look at the example below.</p>
+    <img src="./images/classvar.png">
+    <p> Class variable <em>@@var</em> was defined as <em>'hello'</em> for <em>example1</em>. However, after we changed the class variable in <em>example2</em> to <em>'world'</em>, the class variable also changed for <em>example1</em>.</p>
+  </article>
+</section>
+
+<section>
+  <article>
+    <h1>Global Variables</h1>
+    <p>Global variables have the most freedom of all. They are defined with a $ sign before the class name. Since they have the most freedom, they can be created anywhere and changed anywhere in the program. If you take a look at the example below, you can see that global variable <em>$var</em> is defined outside of the class, yet when we call method, it returns the value of the global variable. This can make for troublesome debugging, since you can't narrow down your potential problem within your code.</p>
+    <img src="./images/globalvar.png">
+  </article>
+</section>
+
+<section>
+  <article>
+    <h1>References</h1>
+    <a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope">Techotopia</a>
+    <a href="http://www.tutorialspoint.com/ruby/ruby_variables.htm">Tutorials Point</a>
+    <a href="https://thenewcircle.com/static/bookshelf/ruby_tutorial/scope.html">New Circle</a>
+  </article>
+</section>
+
+</body>
 </html>
