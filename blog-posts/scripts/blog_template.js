@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 //local links are loaded on same window, foreign links are 
-//loaded in new window
+//loaded in new window/tab
 $("a").attr("target", function() {
 if (this.host == location.host) return "_self"
 else return "_blank"; });﻿
