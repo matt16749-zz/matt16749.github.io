@@ -1,4 +1,5 @@
 $(document).ready(function(){
+$(window).load(function(){
 
 
 
@@ -24,4 +25,5 @@ animateCloud($("#cloud0"));
 animateCloud($("#cloud1"));
 animateCloud($("#cloud2"));
 
+});
 });
