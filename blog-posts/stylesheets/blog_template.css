@@ -6,6 +6,23 @@ body{
   background-attachment:fixed; 
 }
 
+#cloud0{
+  position:fixed;
+  z-index: -1;
+}
+
+#cloud1{
+  position:fixed;
+  z-index: -1;
+  left:90%;
+}
+
+#cloud2{
+  position:fixed;
+  z-index: -1;
+  left:50%;
+}
+
  a:link{
   text-decoration: none;
   color:#BD2040;
