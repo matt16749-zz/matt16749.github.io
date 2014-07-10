@@ -7,7 +7,7 @@ function newPos() {
    var w = $(window).width();
    var nw = Math.floor(Math.random() * w);
     
-   var nh = Math.floor(Math.random() * 30)+'%';
+   var nh = Math.floor(Math.random() * 28)+'%';
     
    return [nw, nh];
 }
