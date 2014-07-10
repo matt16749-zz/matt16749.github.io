@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-});
+
 function newPos() {
    var w = $(window).width();
    var nw = Math.floor(Math.random() * w);
