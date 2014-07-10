@@ -18,6 +18,8 @@ function animateCloud(image){
    });
 }   
 
-animateCloud($(".cloud"));
+animateCloud($("#cloud0"));
+animateCloud($("#cloud1"));
+animateCloud($("#cloud2"));
 
 });
