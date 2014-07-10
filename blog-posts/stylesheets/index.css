@@ -64,11 +64,11 @@ nav a.icon{
 nav a.icon{
   margin:0.8em;
   top:-12.8em;  
-  left:-0.4em;
+  left:-0.1em;
 }
 }
 
-@media(min-width:1200px){
+@media(min-width:900px){
 .name{
   opacity:1;
 }
