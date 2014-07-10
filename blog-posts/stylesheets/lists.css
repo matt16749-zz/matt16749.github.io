@@ -9,22 +9,22 @@ body{
 #cloud0{
   position:fixed;
   z-index: -1;
-  left:10%;
+  left:5%;
   top:5%;
 }
 
 #cloud1{
   position:fixed;
   z-index: -1;
-  left:10%;
-  top:5%;
+  left:80%;
+  top:20%;
 }
 
 #cloud2{
   position:fixed;
   z-index: -1;
-  left:10%;
-  top:5%;
+  left:80%;
+  top:15%;
 }
 
  a:link{
