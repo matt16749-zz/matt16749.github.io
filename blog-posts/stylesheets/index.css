@@ -6,7 +6,17 @@ body{
   background-attachment:fixed; 
 }
 
-.cloud{
+#cloud0{
+  position:fixed;
+  z-index: -1;
+}
+
+#cloud1{
+  position:fixed;
+  z-index: -1;
+}
+
+#cloud2{
   position:fixed;
   z-index: -1;
 }
