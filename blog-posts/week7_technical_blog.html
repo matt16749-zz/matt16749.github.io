@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Matthew Chan| Web Developer</title>
-  <link rel="stylesheet" type ="text/css" href="./stylesheets/blog_template.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./scripts/blog_template.js"></script>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
 </head>
 
-<body> 
-  <header>
-    <img src="./images/myself.jpg">
-    <nav>      
-      <a class="font" href="../index.html">home</a>      
-      <a class="font"href="../about.html">about</a>
-      <a class="font"href="../blog_posts.html">blog</a>
-      <a class="font" href="../projects.html">projects</a>
-      <a class="font" href="../resources.html">resources</a>
-      <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
-      <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
-      <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
-    </nav>   
-  </header>
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
 
-<div class="titlename">Databases</div>
+    <div class="titlename">Databases</div>
 
-<section>
-  <article>
-    <h1>MySQL</h1>
-    <p>MySQL is one of the most well known traditional <strong>relational database management system (RDBMS).</strong> This type of database presents data to users as a relationship between tables and has a set of commands that allow users to manipulate the relationships between tables. Critics of MySQL say that it's very hard to alter these type of databases and that the schemas(fields) of the databases need to be fixed in advance.</p>
-          
-    <p>Here's are a couple of MySQL databases:</p>
-    <ul>
-      <li><a href="http://www.mysql.com">MySQL</a></li>
-      <li><a href="http://www.postgresql.org">PostgreSQL</a></li>
-      <li><a href="http://www.oracle.com/index.html">Oracle</a></li>
-    </ul>
-  </article>
-</section>
+    <section>
+        <article>
+            <h1>MySQL</h1>
+            <p>MySQL is one of the most well known traditional
+                <strong>relational database management system (RDBMS).</strong>This type of database presents data to users as a relationship between tables and has a set of commands that allow users to manipulate the relationships between tables. Critics of MySQL say that it's very hard to alter these type of databases and that the schemas(fields) of the databases need to be fixed in advance.</p>
 
-<section>
-  <article>
-    <h1>NoSQL</h1>
-    <p>NoSQL is meant to fix the shortcomings of MySQL. There are a many variations of NoSQL databases including key-value storage, document databases, and wide-column storage. Key-value stores operate similarly to SQL databases but only have two fields (key and value). Document databases do not uses a table to store data, but rather store all relevant data in a single document. NoSQL databases are typically more dynamic than MySQL databases, allowing users to add new information and fields more quickly. And while MySQL databases must be scaled vertically (powering up a single server), NoSQL databases are scaled horizontally(can add more servers or cloud services). NoSQL databases are often unstructured in nature so that they can be spread across multiple servers. An enabler of this type of parallel computing is <a href="http://hadoop.apache.org">hadoop.</a></p>
+            <p>Here's are a couple of MySQL databases:</p>
+            <ul>
+                <li><a href="http://www.mysql.com">MySQL</a>
+                </li>
+                <li><a href="http://www.postgresql.org">PostgreSQL</a>
+                </li>
+                <li><a href="http://www.oracle.com/index.html">Oracle</a>
+                </li>
+            </ul>
+        </article>
+    </section>
 
-    <p>Here's are a couple of NoSQL databases:</p>
-    <ul>
-      <li><a href="http://www.mongodb.com">mongoDB</a></li>
-      <li><a href="http://cassandra.apache.org">Cassandra</a></li>
-      <li><a href="http://hbase.apache.org">HBASE</a></li>
-    </ul>
-  </article>
-</section>
+    <section>
+        <article>
+            <h1>NoSQL</h1>
+            <p>NoSQL is meant to fix the shortcomings of MySQL. There are a many variations of NoSQL databases including key-value storage, document databases, and wide-column storage. Key-value stores operate similarly to SQL databases but only have two fields (key and value). Document databases do not uses a table to store data, but rather store all relevant data in a single document. NoSQL databases are typically more dynamic than MySQL databases, allowing users to add new information and fields more quickly. And while MySQL databases must be scaled vertically (powering up a single server), NoSQL databases are scaled horizontally(can add more servers or cloud services). NoSQL databases are often unstructured in nature so that they can be spread across multiple servers. An enabler of this type of parallel computing is <a href="http://hadoop.apache.org">hadoop.</a>
+            </p>
 
-<section>
-  <article>
-    <h1>My Thoughts</h1>
-    <p>Having researched the traditional DBMS and the recent database model, I am more interested in learning NoSQL even though it isn't as structured as MySQL. The unstructured data model of NoSQL allows for quick scalability and users can quickly modify, add, and remove fields in their databases as necessary.</p>
-  </article>
-</section>
+            <p>Here's are a couple of NoSQL databases:</p>
+            <ul>
+                <li><a href="http://www.mongodb.com">mongoDB</a>
+                </li>
+                <li><a href="http://cassandra.apache.org">Cassandra</a>
+                </li>
+                <li><a href="http://hbase.apache.org">HBASE</a>
+                </li>
+            </ul>
+        </article>
+    </section>
 
-<section>
-  <article>
-    <h1>References</h1>
-    <a href="http://www.mongodb.com/nosql-explained#nosql-vs-sql">MongoDB</a>
-    <a href="http://martinfowler.com/nosql.html">Martin Fowler</a>
-    <a href="http://www.zdnet.com/what-is-nosql-and-why-do-you-need-it-7000004989/">ZDnet</a>
-  </article>
-</section>
+    <section>
+        <article>
+            <h1>My Thoughts</h1>
+            <p>Having researched the traditional DBMS and the recent database model, I am more interested in learning NoSQL even though it isn't as structured as MySQL. The unstructured data model of NoSQL allows for quick scalability and users can quickly modify, add, and remove fields in their databases as necessary.</p>
+        </article>
+    </section>
 
-  <img id="cloud0" src="./images/cloud0.png">
-  <img id="cloud1" src="./images/cloud1.png">
-  <img id="cloud2" src="./images/cloud2.png">
+    <section>
+        <article>
+            <h1>References</h1>
+            <a href="http://www.mongodb.com/nosql-explained#nosql-vs-sql">MongoDB</a>
+            <a href="http://martinfowler.com/nosql.html">Martin Fowler</a>
+            <a href="http://www.zdnet.com/what-is-nosql-and-why-do-you-need-it-7000004989/">ZDnet</a>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
 </body>
+
 </html>

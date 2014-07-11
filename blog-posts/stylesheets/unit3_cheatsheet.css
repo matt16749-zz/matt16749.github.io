@@ -1,75 +1,77 @@
-body{ 
-      width:100%;
-      background-color:#F1CBB2;}        
-
-header a:link{
-border:1px solid black;
-text-decoration: none;
-background-color: #D1E7D4;
-color:#371B2F;}
- 
-header a:visited{
-border:1px solid black;
-text-decoration: none;
-background-color: #D1E7D4;
-color:#371B2F;}
-
-header a:hover{
-background-color: lightblue;
+body {
+    width: 100%;
+    background-color: #F1CBB2;
 }
-
-#blue{display:none;}
-#orange{display:none}
-
+header a:link {
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: #D1E7D4;
+    color: #371B2F;
+}
+header a:visited {
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: #D1E7D4;
+    color: #371B2F;
+}
+header a:hover {
+    background-color: lightblue;
+}
+#blue {
+    display: none;
+}
+#orange {
+    display: none
+}
 /*Smartphones*/
-@media (min-width:320px) {
 
-.caption{
-      font-size:5em;
-      text-align: center;
-      font-family: 'Playfair Display', serif;}
-
-#blue{  position:fixed;
-        background-color:#BFD5E5;
-        color:#510811;
-        width:20%;
-        float:left;
-        border:.4em solid black;}
-
-      #blue .body{  
-      font-family: 'Playfair Display', serif;
-      font-size:1.3em;
-      width:50%;
-      margin:0 auto;}  
-
-
-#orange{
-      display:block;
-      background-color:#EEB6A2;
-      color:#1B372E;
-      width:80%;
-      margin:0 auto 2em auto;
-      border:.4em solid black;}
-     
-
-    #orange .body{
-     font-family: 'Playfair Display', serif;
-     font-size:1.3em;
-     text-align: center;
-     width:50%;
-     margin:0 auto;}
-
-#purple{
-      display:block;
-      height:20%;
-      border-top:.4em solid black;
-      position:relative;
-      background-color:#E2A2EE;
-      font-family: 'Playfair Display', serif;}
-
-img{ 
-  display:block;
-  margin:0 auto;
-  width:60%;
-  border:0.4em solid black;}
+@media (min-width: 320px) {
+    .caption {
+        font-size: 5em;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+    }
+    #blue {
+        position: fixed;
+        background-color: #BFD5E5;
+        color: #510811;
+        width: 20%;
+        float: left;
+        border: .4em solid black;
+    }
+    #blue .body {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3em;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #orange {
+        display: block;
+        background-color: #EEB6A2;
+        color: #1B372E;
+        width: 80%;
+        margin: 0 auto 2em auto;
+        border: .4em solid black;
+    }
+    #orange .body {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3em;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #purple {
+        display: block;
+        height: 20%;
+        border-top: .4em solid black;
+        position: relative;
+        background-color: #E2A2EE;
+        font-family: 'Playfair Display', serif;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        border: 0.4em solid black;
+    }
 }

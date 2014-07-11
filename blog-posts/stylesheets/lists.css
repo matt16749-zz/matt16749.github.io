@@ -1,154 +1,136 @@
-body{
-  box-sizing:border-box;
-  background-image: url(../images/rsz_sf.jpg);
-  background-size: 100% 100%;
-  background-repeat:no-repeat;
-  background-attachment:fixed; 
+body {
+    box-sizing: border-box;
+    background-image: url(../images/rsz_sf.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
-#cloud0{
-  position:fixed;
-  z-index: -1;
-  left:5%;
-  top:5%;
+#cloud0 {
+    position: fixed;
+    z-index: -1;
+    left: 5%;
+    top: 5%;
 }
-
-#cloud1{
-  position:fixed;
-  z-index: -1;
-  left:80%;
-  top:20%;
+#cloud1 {
+    position: fixed;
+    z-index: -1;
+    left: 80%;
+    top: 20%;
 }
-
-#cloud2{
-  position:fixed;
-  z-index: -1;
-  left:80%;
-  top:15%;
+#cloud2 {
+    position: fixed;
+    z-index: -1;
+    left: 80%;
+    top: 15%;
 }
-
- a:link{
-  text-decoration: none;
-  color:#BD2040;
-  font-family: 'Lato', sans-serif;  
+a:link {
+    text-decoration: none;
+    color: #BD2040;
+    font-family: 'Lato', sans-serif;
 }
- a:visited{
-  color:#BD2040;
+a:visited {
+    color: #BD2040;
 }
- a:hover{
-  color:#119C1C;
+a:hover {
+    color: #119C1C;
 }
-
-header{
-  position:absolute;
-  width:30%;
+header {
+    position: absolute;
+    width: 30%;
 }
-
-header img{
-  display:inline-block;
-  width:10em;
-  border-radius: 0.7em;
-  border:0.063em solid;
+header img {
+    display: inline-block;
+    width: 10em;
+    border-radius: 0.7em;
+    border: 0.063em solid;
 }
-
-nav a.font{
-  position:relative;
-  display:block;
-  left: 9.3em;    
-  top: -11.4em;
-  margin:1em;
+nav a.font {
+    position: relative;
+    display: block;
+    left: 9.3em;
+    top: -11.4em;
+    margin: 1em;
 }
-
-nav a.icon{
-  display:none; 
-  position:relative;
-  margin:0.2em; 
-  top:-12.2em;
-  left:1.5em;
+nav a.icon {
+    display: none;
+    position: relative;
+    margin: 0.2em;
+    top: -12.2em;
+    left: 1.5em;
 }
-
-ul{
-  position:relative;
-  left:3em;
-  display:block;
-  width:38%;
-  margin-bottom:2em;
+ul {
+    position: relative;
+    left: 3em;
+    display: block;
+    width: 38%;
+    margin-bottom: 2em;
 }
-
-.titlename{
-  position:absolute;
-  right:5%; 
-  top:5.2em;
-  font-weight:bold;
-  font-family:'Lora', sans-serif;
-  font-size:2.5em;  
+.titlename {
+    position: absolute;
+    right: 5%;
+    top: 5.2em;
+    font-weight: bold;
+    font-family: 'Lora', sans-serif;
+    font-size: 2.5em;
 }
-
-section{
-position:relative;
-  display:block;
-  top:16em; 
-  background-color:#DBDCDE;
-  left:5%; 
-  width:90%;
-  border-radius:1em;
-  border:0.3em solid;
-  opacity:0.97;
-  margin-bottom:1em;
+section {
+    position: relative;
+    display: block;
+    top: 16em;
+    background-color: #DBDCDE;
+    left: 5%;
+    width: 90%;
+    border-radius: 1em;
+    border: 0.3em solid;
+    opacity: 0.97;
+    margin-bottom: 1em;
 }
-
-section img{
-  position:relative;
-  display:inline-block;
-  max-width: 40%;
-  max-height: 30%;
-  border:0.3em solid;
-  left:35%;
-  margin:1em 0em;
+section img {
+    position: relative;
+    display: inline-block;
+    max-width: 40%;
+    max-height: 30%;
+    border: 0.3em solid;
+    left: 35%;
+    margin: 1em 0em;
 }
-
-article{
-  margin:0 auto;
-  width:90%;
-  font-family: 'Lora', sans-serif;
-  word-wrap: break-word;
+article {
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Lora', sans-serif;
+    word-wrap: break-word;
 }
-
 @media(min-width:371px){
-nav a.icon{
-display:inline-block;
-}
-}
 
+nav a.icon {
+    display: inline-block;
+}
+}
 @media(min-width:563px){
-nav a.icon{
-  margin:0.8em;
-  top:-12.8em;  
-  left:-0.1em;
-}
-}
 
-@media(min-width: 632px){
-  ul{
-    display:inline-block;
-    left:5em;
-  }
-}
-
-@media(min-width: 816px){
-header{
-  position:fixed;
-}
-
-.titlename{
-  top:0.9em;
-  right:3%;
-}
-
-section{
-  top:5em;
-  left:30%;
-  width:68%;
+nav a.icon {
+    margin: 0.8em;
+    top: -12.8em;
+    left: -0.1em;
 }
 }
-
+@media(min-width: 632px) {
+    ul {
+        display: inline-block;
+        left: 5em;
+    }
+}
+@media(min-width: 816px) {
+    header {
+        position: fixed;
+    }
+    .titlename {
+        top: 0.9em;
+        right: 3%;
+    }
+    section {
+        top: 5em;
+        left: 30%;
+        width: 68%;
+    }
+}
