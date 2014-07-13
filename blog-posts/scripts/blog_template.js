@@ -6,10 +6,6 @@ $("a").attr("target", function() {
 if (this.host == location.host) return "_self"
 else return "_blank"; });﻿
 
-
-//delay script until window loads.
-  $(window).load(function(){
-
   //for cloud animation
     function newPos() {
        var w = $(window).width();
@@ -19,9 +15,9 @@ else return "_blank"; });﻿
         
        return [nw, nh];
     }
-
+  //stop required to prevent memory leak
     function animateCloud(image){
-       $(image).animate({        
+       $(image).stop(true).animate({        
             top: newPos()[1],
             left: newPos()[0]
        }, 20000, function(){
@@ -33,5 +29,5 @@ else return "_blank"; });﻿
     animateCloud($("#cloud1"));
     animateCloud($("#cloud2"));
 
-  });
+
 });
