@@ -20,7 +20,7 @@ else return "_blank"; });﻿
        $(image).stop(true).animate({        
             top: newPos()[1],
             left: newPos()[0]
-       }, 40000, function(){
+       }, 20000, function(){
            animateCloud(image);
        });
     }   
