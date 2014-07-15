@@ -49,6 +49,10 @@
             <h1>Nested Array Solution</h1>
             <p>The first type of solution for this problem is to create a nested array. We would go about our solution like so.</p>
             <img src="./images/roman_numeral_array.png">
+            <p>Line 3 creates an array with nested_arrays as elements. Each nested_array within array has two elements; nested_array[0] is the arabic numeral and nested_array[1] refers to its corresponding roman numeral.</p>
+            <p>Line 8 sets up a .each loop for each nested_array element in array</p>
+            <p>Lines 9-10 creates an if conditional within the each loop where if the input arabic_numeral is greater than or equal to the arabic numeral in each nested_array, the corresponding roman numeral would be pushed to the result string. (arabic_numeral/nested_array[0]) on line 10 tells us how many times we should display the corresponding roman numeral, as the arabic numeral 4 => IIII, not just one I.</p>
+            <p>Line 11 removes the unneccessary roman numerals from the result string. Because of our conditional on line 9 and multiplier (arabic_numeral/nested_array[0]) on line 10, we will get extra roman numerals in our string. Ex: 10 will return XIXVVIVIVIIIIIIIIII whereas it should return X. the -= operator will cause our arabic_numeral to be set to 0 as it loops, and in this way we remove all the roman numerals after X. This only works if the nested_array elements in array are arranged in descending order, since each will loop through elements from beginning to end.</p>
         </article>
     </section>
 
@@ -57,16 +61,18 @@
             <h1>Hash Solution</h1>
             <p>The second type of solution for this problem is to create a nested array. We would go about our solution like so.</p>
             <img src="./images/roman_numeral_hash.png">
+            <p>We set up a hash on lines 3-17 where the keys are arabic numbers and values are roman numerals. Line 18 will loop through the hash using an each method, and line 19 evaluates our arabic_numeral parameter against all our arabic_keys.If true, we will add the corresponding roman_value to our result string multiplied by the number of times it needs to be displayed. The modulo equals operator on line 21 sets new arabic_numeral to the remainder of being divided by our arabic key. This will limit the unneccessary roman numerals that would have attached after our correct numeral.</p>
             <h1>Special Case: method .divmod()</h1>
             <p>We can also use a special hash method called .divmod() to simplify our solution like so. (Credits to Tommy Dugger for showing me this solution</p>
             <img src="./images/roman_numerals_divmod.png">
+            <p>The num.divmod(integer) method will take whatever number its called upon and divide by argument integer. It returns an array of two elements, element[0] will be the result of division(quotient) and element[1] will be the remainder(modulo). It's a very fast way of doing the exact same thing as our hash solution.</p>
         </article>
     </section> 
 
     <section>
         <article>
             <h1>Which Is Better?</h1>
-            <p></p>
+            <p>After reviewing both possible solutions, I believe using a hash is the best solution for converting Integer to Strings. Though a nested array does the exact same thing in a same amount of time (.each will force a hash to loop through all key value pairs), the soution for the hash is more intuitive, especially using the .divmod() method.</p>
         </article>
     </section>       
 
