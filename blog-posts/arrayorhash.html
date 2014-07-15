@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Ruby: Nested Arrays vs. Hash</div>
+
+    <section>
+        <article>
+            <h1>Background</h1>
+            <p>So if you have been following my blog or paying attention to when these blogs are updated, you would have known that today was my very first day at DevBootCamp. To see a snapshot of what we did today, please check out <a href="./day1.html">this post</a>, whereas this particular post will deal with the types of challenges we faced today.</p>
+            
+            <h1>Problem</h1>
+            <p>Today we were given a set of challenges that all had one common factor, using Ruby to convert from one thing into something else. As there are no actual 'primitive' types in Ruby, we dealt with converting different types of objects.</p>
+            <p>One of the problems we were given was the Roman Numerals challenge, where we would create a method that would take an integer and convert it to a roman numeral. Since roman numerals are instances of Strings in ruby, we were basically asked to convert Integers into Strings.</p>
+            <p>The actual problem is as follows:</p>
+            <h1 style="border:0.3em solid; text-align:center">Create a method to_roman that takes an integer parameter and outputs its equivalent as a Roman Numeral.</h1>
+            <p>A test that you can use to determine if your solution worked is as follows:</p>
+            <img src="./images/romannumeraltest.png">
+            <p>Since the integers that we are used to seeing in the western world are known as arabic numerals, we will call integers as arabic_numeral for our solutions. </p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1>Nested Array Solution</h1>
+            <p>The first type of solution for this problem is to create a nested array. We would go about our solution like so.</p>
+            <img src="./images/roman_numeral_array.png">
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1>Hash Solution</h1>
+            <p>The second type of solution for this problem is to create a nested array. We would go about our solution like so.</p>
+            <img src="./images/roman_numeral_hash.png">
+            <h1>Special Case: method .divmod()</h1>
+            <p>We can also use a special hash method called .divmod() to simplify our solution like so. (Credits to Tommy Dugger for showing me this solution</p>
+            <img src="./roman_numerals_divmod.png">
+        </article>
+    </section> 
+
+    <section>
+        <article>
+            <h1>Which Is Better?</h1>
+            <p></p>
+        </article>
+    </section>       
+
+    <section>
+        <article>
+            <h1>Extension: Numbers to Words</h1>
+            <p>If you are comfortable with converting arabic numerals to roman numerals, you can try a different challenge of converting arabic numerals to its correlated word. i.e. 5 would be converted to "five" and 103 would be converted to "one hundred three". This is a very similar problem to Roman Numerals, but you would need more hashes for each digits place in your arabic numeral and use conditionals to select the correct translation. Try it for yourself!</p>
+        </article>
+    </section>       
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
