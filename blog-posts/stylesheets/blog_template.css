@@ -81,8 +81,6 @@ section {
 section img {
     position: relative;
     display: block;
-    max-width: 45%;
-    max-height: 45%;
     border: 0.3em solid;
     margin: 1em auto;
 }
