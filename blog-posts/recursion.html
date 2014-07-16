@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Recursion</div>
+
+    <section>
+        <article>
+            <h1>Recursion and the callstack.</h1>
+            <p>The best way I can explain recursion is by using an example. Recursion is the ability to have a method call itself repeatedly. You could say that recursion would cause the method to behave similarly to a loop. Take the following for example.</p>
+            <p>def sumDown(num)</p>
+            <p>return num if num.zero?</p>
+            <p>print num += sumDown(num-1)</p>
+            <p>end</p>
+            <p>By calling the sumDown method with a parameter of 10, I would cause the sumDown method to create a "callstack" starting with passing a parameter of 10, then a parameter of 9, of 8, of 7, to 0 where return num if num.zero? will stop the callstack. During the time the callstack is created there are no returns, so my function will not do anything aside from building the callstack <strong>until</strong> my recursive method parameter reaches 0. Then the method will execute from the most recently created back up to 10.</p>
+
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
