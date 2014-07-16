@@ -83,6 +83,8 @@ section img {
     display: block;
     border: 0.3em solid;
     margin: 1em auto;
+    max-width: 80%;
+    max-height: 80%;
 }
 article {
     margin: 0 auto;
