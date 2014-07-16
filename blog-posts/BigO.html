@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Big O</div>
+
+    <section>
+        <article>
+            <h1>What is it?</h1>
+            <p>One of the lectures that I attended today at DBC had to do with Big O analysis. The main idea of Big O is based upon measuring different algorithm performances. Algorithm performances depend upon a range from the "worst-case"(which is Big O) to the "best-case"(Big-Omega). This range exists because algorithms are simplified to limit the time it takes to run.</p>
+            <p>There are two main dimensions to consider when we talk about the performance of an algorithm, <strong>time</strong> and <strong>space</strong>. For example, an algorithm can perform quickly may take more memory, while an algorithm that performs more slowly may take less memory.</p>
+            <p>There are three types of growth rates that algorithms mimic: linear, log(n) and exponential. In terms of big data size, exponential is quickest, then log(n), then linear.</p>
+            <h1>Search functions</h1>
+            <p>To model two growth rates, let's study two functions that search a sorted array for an object.</p>
+            <p>Function A is a basic linear search, going through an array systematically checking each element in the array against the prized object. As we expand the number of elements in the array, we would see a linear graph going diagonally across the graph.</p>
+            <p>Function B is a binary search that finds the element in the middle of the array and compares it to the object. If the element is smaller, then a new middle is created with the previous element being the ceiling of the new array. If the element is larger, then the previous element becomes the floor of the new array. In any case, we would see a log function in this growth model. If we were to compare the two, Function B would be much quicker than A.</p>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
