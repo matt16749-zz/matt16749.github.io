@@ -36,7 +36,7 @@
             <p>return num if num.zero?</p>
             <p>print num += sumDown(num-1)</p>
             <p>end</p>
-            <p>By calling the sumDown method with a parameter of 10, I would cause the sumDown method to create a "callstack" starting with passing a parameter of 10, then a parameter of 9, of 8, of 7, to 0 where return num if num.zero? will stop the callstack. During the time the callstack is created there are no returns, so my function will not do anything aside from building the callstack <strong>until</strong> my recursive method parameter reaches 0. Then the method will execute from the most recently created back up to 10.</p>
+            <p>By calling the sumDown method with a parameter of 10, I would cause the sumDown method to create a "callstack" starting with passing a parameter of 10, then a parameter of 9, of 8, of 7, to 0 where return num if num.zero? will stop the callstack. During the time the callstack is created there are no returns, so my function will not do anything aside from building the callstack <strong>until</strong> my recursive method parameter reaches 0. Then the method will execute from the most recently created back up to 10. This is known as LIFO (Last in First out)</p>
 
         </article>
     </section>
