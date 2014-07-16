@@ -80,13 +80,11 @@ section {
 }
 section img {
     position: relative;
-    display: inline-block;
-    max-width: 40%;
-    max-height: 30%;
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
     border: 0.3em solid;
-    left: 35%;
-    margin: 1em 0em;
-}
+    margin: 1em auto;
 article {
     margin: 0 auto;
     width: 90%;
