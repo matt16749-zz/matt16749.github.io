@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a>
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Using Regular Expressions</div>
+
+    <section>
+        <article>
+            <h1>Background</h1>
+            <p>Today I was given a coding challenge by DBC to convert a sentence into pig latin. The rules for pig latin are that any words that start with a vowel are left alone, but words that start with a constant are changed. The change is removing all the constants ahead of the first vowel in the word and placing them at the end of the word, with an -ay attached at the very end.</p>
+            <p>Ex: hello world => ello-hay orld-way</p>
+             When I first attempted to solve this problem, I had around 8-10 lines of code. But once I learned RegExp, I was able to solve it in one line. Below is the code with RegExp.</p>
+            <p>def pig_latin</p>
+                <p>puts gets.chomp.split(" ").map {|word| word.gsub(/(\A[^aeiou]+)(.+)/,'\2-\1ay')}.join(" ")</p>
+            <p>end</p>
+            <h1>Breakdown</h1>
+            <p>So what is happening? lets start with the method gsub. gsub is a String method that takes a parameter to match and potentially replace characters in a string. The basic syntax of gsub is as follows: gsub(thing to match,thing to replace)</p>
+            <p>RegExp defines patterns, so by combining Regexp with gsub, I can manipulate characters to follow pig-latin's rules.The syntax for RegExp within the parameter is as follows:</p>
+            <p>/RegExp/,'to display'</p>
+            <p>RegExp also has something called capture groups which allow you to manipulate groups of characters by encapsulating the corresponding RegExp within parens, (). You can use multiple parens to manipulate multiple groups, and these groups are assigned autoincrementally. So for our previous example of how I solved pig-latin, we have two distinct capture groups: (\A[^aeiou]+) and (.+). After the , within '' the capture groups are assigned as \1 and \2 respectively. So you can manuver the order of these characters and whether or not a group of characters is displayed.</p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1>Resources</h1>
+            <a href="http://rubular.com/">Rubular</a>
+            <a href="http://www.youtube.com/watch?v=EkluES9Rvak">Youtube:RegExp Demystified</a>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
