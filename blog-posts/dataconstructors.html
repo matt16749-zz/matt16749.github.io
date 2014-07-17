@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Data Constructors</div>
+
+    <section>
+        <article>
+            <h1>What Are They?</h1>
+            <p>Constructors are a quick way to create an instance of a class. Today we will check out constructors for Ruby's composite data structures(Hash and Array).</p>
+            <h1>Hash</h1>
+            <p>Hash constructors are created by calling Hash[] and passing in either:
+            <ol> 
+                <li>a set of keys and values in pairs seperated by commas</li>
+                <li>an array with nested arrays that contain key-value pairs</li>
+                <li>key-value pairs</li>
+            </ol> 
+            Take a look at the example pulled from <a href="http://www.ruby-doc.org/core-2.1.2/Hash.html#method-c-5B-5D">RubyDocs</a></p>
+            <img src="./images/hashconst">
+            <p>Note that the 2nd option required the nested array. We can use the Array methods .transpose or .zip in conjunction with .map to modify our data structure so that we could create a data structure that would fit our Hash constructor. Once you think you've figured that out, then try to imagine what would be created from this! Note the map will create another array. Hint: if I use [0]["name"] on the new hash, I should return "Joe Schmo". If I use [1]["name], then I get "Ms. Buckets"</p>
+            <img src="./images/hashconstex">
+            <h1>Array</h1>
+            <p>Array Constructors are much more simpler than their hash counterparts. You can create Arrays by: 
+            <ol>
+                <li>explicitly create an array with Array.new</li> 
+                <li>passing in a number argument to Array.new() for number of elements in new array</li>
+                <li>passing in a second argument to Array.new() for default object in each element of array.</li>
+            </ol>
+              <img src="./images/arrayconst">
+          </p>    
+            <p>Therefore if we used a constructor Array.new(3,true) we would get</p>
+            <p>[true,true,true]</p>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
