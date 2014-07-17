@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Zip vs. Transpose</div>
+
+    <section>
+        <article>
+            <h1>What Are They?(In context of Array)</h1>
+            <p>Zip and Transpose are Array methods that modify the elements in the array. This post will deal the the differences of each.</p>
+            <p>Transpose:</p>
+            <p>Functionally, .transpose() requires nested arrays within an array. By calling transpose upon the parent array, all nested arrays columns and rows will be switched. It's best if you view the nested arrays as a table format to get a better picture. See the image below.</p>
+            <img src="./images/transpose.png">
+            <p>Zip:</p>
+            <p>.zip() takes a normal array and will merge its elements with corresponding elements of each argument array based off the index of each element. Take a look below.</p>
+            <img src="./images/zip.png">
+            <p>While there are definitely similarities betwen the two methods zip and transpose, we can see that the methods differ by the data structure they are called upon and the data structure they return.</p>
+        </article>
+    </section>
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
