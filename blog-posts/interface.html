@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Public vs Private Interface</div>
+
+    <section>
+        <article>
+            <h1>On Interface.</h1>
+            <p>Today I was exposed to the idea of interface, or how much of a object should you expose to your users. A central component of good object-oriented design is understanding how much of your object to expose. Let's take a look at an example I created today.</p>
+            <img src="./images/Interface.png">
+            <p>In this challenge, I was asked to design a program that would allow users to create a new bank account. After thinking about what changes a user might want in creating a bank account, I set about creating the interface of my BankAccount class.</p>
+            <p>Notice the words in red; Public and Private. These words specify which methods are part of my BankAccount class's public interface or private interface. The private interface is an area that is never accessible to the user, therefore it should be a place to store information. The public interface is an area that is accessible to the user. Users can call methods in located here. For example, if a user accidentally entered in an extra letter in his name when he created a new bank account, he will need to be able to change it. However, I don't want anyone to be able to change the name of who the account is registered to, so I prompt the user to type in his account number.</p>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
