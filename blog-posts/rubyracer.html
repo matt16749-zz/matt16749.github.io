@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Method Calling Between Classes</div>
+
+    <section>
+        <article>
+            <h1>Background</h1>
+            <p>We were given an assignment today that required us to build a very basic racing game. The idea was that a user would set a number of racers which would then race against each other. The entire process after a user inputs the number of racers would be automated. We were given a skeleton of code to work around, and the very first thing I noticed was that I had two classes, the game itself and a Die class which would randomly generate the distance each racer would take per turn. And here was my problem. How do I get methods from one class to talk to another class?(Aka sending messages between classes?)</p>
+            
+            <h1>A Traditional Call</h1>
+            <p>Up to this point in my developer life, I've dealt with method calls in one class by creating an instance of the class and then calling the method as so.</p>
+            <img src="./images/basicmethodcall.png">
+
+            <h1>Sending Messages</h1>
+            <p>What I didn't realize was that not only can you create an instance of a class within a different class, but also you can method chain onto these class instances like so.</p>
+            <img src="intermediatemethodcall.png">
+            <p>After coming to this realization the problem became much more manageable.</p>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
