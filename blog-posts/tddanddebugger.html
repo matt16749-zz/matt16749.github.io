@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">TDD</div>
+
+    <section>
+        <article>
+            <h1>TDD</h1>
+                <p>Today we had the opportunity to listen to special guest lecturer (Myles Byrne) talk about TDD(If you haven't seen a pattern about development yet from skimming my posts, developers love acronyms). TDD stands for Test Driven Development, which is a workflow in solving the problem with your code.</p>
+                <p>Now sit back and let that last sentence digest in your brain.</p>
+                <p><strong>This</strong> was a novel approach for many of us in DevBootCamp. You see, in the days prior to learning about TDD many of us didn't have a proper workflow as we solved challenges given to us by DBC. Sure, we were able to distill the basics of user stories(what you want your application to be able to do from the user POV) and write bad pseudocode, but how the heck were you supposed to translate that stuff into the actual code? Let's take a look at how Myles broke it down. (This is starting from the point after you have identified the problem and constraints)</p>
+                <img src="./images/TDD1.png">
+                 <p>The very first test is found on line 17. This is our overall test. As we write this, we can identify that there must be a method called make_change that takes a parameter(69) and should return a hash of symbols and integers. After writing this, we can start TDD.</p>
+            <h1>Steps 1-2: Write a failing test and see it fail.</h1>
+                <p>You need to fail. By writing a simple failing test, you can identify subsets within your big problem. It also forces you to take things slowly as you write failing tests that are easy to fix. You need to go through step 2 of actually seeing your test fail because if your test passes, you need to immediately start troubleshooting. The core concept that TDD distills is knowing everything that happens in your code, so if your code behaves in a way that is contrary to how you think it will behave it shows that you don't have a clear grasp of your code.</p>
+            <h1>Step 3: Write the code to make your failing test pass.</h1>
+                <p>Take a look at the image below.</p>
+                <img src="./images/TDD2.png">
+                <p>We create a very simple test. If we have 0 cents, make_change should return an empty hash. This particular screenshot jumped the gun a little bit, as you can see the solution on lines 18-19. But the proper workflow is building the test first, then fixing it.</p>
+            <h2>Step 4: Refactor</h2>
+            <p>Do you see any patterns in the code? If so, try to break it down so that your code is D.R.Y.</p>
+            <h2>Repeat from Step 1.</h2>
+            <p>Start at the top. Create another failing test. Take a look at line 40 below and pretend that lines 21-23 haven't existed yet. We would have failed our test since the :nickels key wouldn't have been created yet. As we watch our test fail, our next steps would be to create the code that would pass our test i.e. lines 21-23.</p>
+            <img src="./images/TDD4.png">
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1>Extras:</h1>
+            <p>Here is a snapshot of code before refactoring.</p>
+            <img src="./images/TDD5.png">
+            <p>...and an image after refactoring.</p>
+            <img src="./images/TDD6.png">
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1></h1>
+        </article>
+    </section>
+
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
