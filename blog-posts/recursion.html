@@ -35,7 +35,7 @@
             <img src="./images/recursion.png">
             <p>By calling the sumDown method with a parameter of 10, I would cause the sumDown method to create a "callstack" starting with passing a parameter of 10, then a parameter of 9, of 8, of 7, to 0 where return num if num.zero? will stop the callstack. During the time the callstack is created there are no returns, so my function will not do anything aside from building the callstack <strong>until</strong> my recursive method parameter reaches 0. Then the method will execute from the most recently created back up to 10. This is known as LIFO (Last in First out)</p>
             <p>Let's study another example of Recursion.</p>
-            <p>This time I will have a method recurse_this like so:</p>
+            <p>This time I will have a method recurse_me like so:</p>
             <img src="./images/recursethis.png">
             <p>The very first thing that our recursion method must include is a way to break out of our loop, or else we will cause an error as our callstack adds one too many method calls(Known as a Stack Overflow). This line of code that breaks our loop is called the <strong>Guard Clause</strong>. In our case, that would be the line:</p>
             <img src="./images/guardclause.png">
