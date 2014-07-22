@@ -37,6 +37,12 @@
             <p>In this example, we have a parent Animal class on lines 1-5. It has a method breathe. Now on line 7, I have caused my Mammal class to inherit from the Animal class. Becuase of <strong>subclassing</strong>, any instance of my mammal class should be able to call the breathe method in my Animal class. Try running line 11 in your terminal.</p>
             <p>You should have returned **takes breath**.</p>
 
+            <p>Inheritance can be used to create templates from the parent class into the child class. Let's take a look at a particular template method.</p>
+            <img src="./images/template1.png">
+            <p>Here we create a generic parent class with a method parse. This method will raise an error when children instances try to call this method unless the child class includes a version of the same method.</p>
+            <img src="./images/template2.png">
+            <p>As you create your own version of the parse method in the child class, you are able to call parse in instances of the child. <strong>The parse method in the child class will overwrite the parse method in the parent class.</strong></p>
+
             <h1>Using Modules</h1>
             <p>Modules are similar to class but only contain behavior. You can think of it as a way to bundle similar methods that similar classes need. Let's take a look at the example below.</p>
             <img src="./images/inheritance2.png">
