@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Inheritance Basics</div>
+
+    <section>
+        <article>
+            <h1>It's all about the class</h1>
+            <p>Pulled from the <a href="http://pragprog.com/book/ruby/programming-ruby">Pickaxe</a>, Inheritance in context of a class is basically means that you can create classes that 'inherit' methods and properties from another class. In using inheritance you assign hierarchy to the classes. The class inheriting is known as the <strong>child</strong> class, whereas the class being inherited from is the <strong>parent</strong> class. And the idea of the child class inheriting from the parent class is known as <strong>subclassing</strong>. Let's take a look at an example.
+            </p>
+            <img src="./images/inheritance1.png">
+            <p>In this example, we have a parent Animal class on lines 1-5. It has a method breathe. Now on line 7, I have caused my Mammal class to inherit from the Animal class. Becuase of <strong>subclassing</strong>, any instance of my mammal class should be able to call the breathe method in my Animal class. Try running line 11 in your terminal.</p>
+            <p>You should have returned **takes breath**.</p>
+
+            <h1>Using Modules</h1>
+            <p>Modules are similar to class but only contain behavior. You can think of it as a way to bundle similar methods that similar classes need. Let's take a look at the example below.</p>
+            <img src="./images/inheritance2.png">
+            <p>On lines 1-5, I create a module Superpowers. Notice that I use the key word Module instead of class as I create the module. Now on line 14, I allow my Mammal class to use the module class, so on line 18, my mammal should now be able tho shoot lazers.</p>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
