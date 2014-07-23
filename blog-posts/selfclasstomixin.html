@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Self and Class to Mixin</div>
+
+    <section>
+        <article>
+            <h1>Self</h1>
+            <p>Wow. So there were alot of topics that were covered today so I'll try to go slowly with some very basic examples, but please forgive me if my post seems a bit jumbled. To be clear, self is a topic unto it'self'(haha, get it?) but I'm including it here because I think it's a great way to also think about scoping in context of Class.</p>
+            <p>So what is self? The quick and dirty definition is a keyword that gives you access to w/e self is encapsulated in. A more accurate definition is the object that's receiving the method. In any case, self is important because depending on where it's located, you could be referencing different objects. Let's take a look at some examples.</p>
+            <img src="./images/self1.png">
+            <p>In this context, self is encapsulated within an instance variable of class Cat. If we were to call .meow as on line 7, we would receive an id of an instance of the class Cat. </p>
+            <img src="./images/self2.png">
+            <p>However, if we were to look at this image, self is part of the method. If we were to try and call the method as on line 15, we would get an error. Now think about that for a bit.</p>
+            <p>The reason why we get an error on Dog but not Cat has to deal with the scope of our Dog or Cat. Since our self is found within a <strong>instance method</strong> meow, we are allowed to call meow as on line 7 in the first example with no problems. On the other hand, by putting self on the method for Dog, we change the method to a <strong>class method</strong>. Therefore we get an error on line 15 because in writing Dog.new, we are creating an <strong>instance</strong>of the Dog class.</p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1>Class</h1>
+            <p>So what the heck is a class? A thing that holds attributes and behavior. The easiest way is to think about it using a real-world example. I am an instance of the class Homo Sapiens. One attribute that I have is that I have 2 hands. If I want to change something about my hands(attributes), such as clenching them into a fist, that is a behavior. So we can model this in Ruby.</p>
+            <img src="./images/classexample.png">
+            <p>Line 14 should return "2 hands", line 15 changes line 14, and line 16 wil return "clench 2 hands". In this case, my hands is an attribute and my clench is a behavior. But see what I stored them as.(attr_accessor and a method clench respectively)</p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1>Module/Mixin</h1>
+            <p>Now that we know what is a class, what the heck is a Module? Easiest way to think of this is that Modules are a collection of behavior. There is no attributes. Now why in the world would anyone use this? Let's take a look at an example.</p>
+            <img src="./images/module.png">
+            <p>Here we created a module for behavior found in all types of fish. Now in each type of fish, we use the module by putting in the keyword include followed by the module name. And if you take a peek at the method calls on the bottom, we can see that each fish class can use particular behaviors defined by the module.(And by the way, when you do see a class use a module, that's known as a <strong>mixin</strong>)</p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1></h1>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
