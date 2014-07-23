@@ -48,6 +48,13 @@
             <p>Modules are similar to class but only contain behavior. You can think of it as a way to bundle similar methods that similar classes need. Let's take a look at the example below.</p>
             <img src="./images/inheritance2.png">
             <p>On lines 1-5, I create a module Superpowers. Notice that I use the key word Module instead of class as I create the module. Now on line 14, I allow my Mammal class to use the module class, so on line 18, my mammal should now be able tho shoot lazers.</p>
+
+            <h1>super</h1>
+            <p>One particular thing to note is the keyword super. super allows you to add parent instance variables in a method with your student instance variables depending on where super is placed. For example:</p>
+            <img src="./images/super.png">
+            <p>On line 15, we return nil for the breathe property because our initialize in our child class Mammal has completely overwritten our parent Animal's initialize method. @breathe doesn't exist in Mammal. To get around this we include super as so.</p>
+            <img src="./images/super1.png">
+            <p>Now we can call breathe attribute on the instance of Mammal and return "breathe"</p>
         </article>
     </section>
 
