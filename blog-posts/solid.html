@@ -30,7 +30,21 @@
 
     <section>
         <article>
-            <h1></h1>
+        <a href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">From Wikipedia</a>
+            <h1>S: Single Responsibility principle</h1>
+            <p>Every context(class, method, or variable) should only have one reponsibility. That responsibility should be entirely encapsulated by the context. (I always try to start with Single Responsibility in my code)</p>
+
+            <h1>O: Open/closed principle</h1>
+            <p>Context(class, method, or variable) should be open for extension (to be used by other context), but closed for modification(Don't change the value stored in the context). Very closely related to Interface</p>
+            
+            <h1>L: Liskov substitution principle</h1>
+            <p>If S is a subtype of T, then objects of type T may be replaced with objects of type S. Used to decouple context. Lookup Polymorphism in Ruby for more info.</p>
+            
+            <h1>I: Interface segregation principle</h1>
+            <p>No client should be forced to depend on methods it does not use. Public vs Private and where the methods should be placed(more abstract, resistant to change methods should be in private)</p>
+            
+            <h1>D: Dependency inversion(injection) principle</h1>
+            <p>Decoupling modules/classes. i.e. if there are instances of a object inside another object in the class, try to remove it since the class will be coupled/dependent upon an outside class</p>
         </article>
     </section>
 
