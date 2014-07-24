@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Block, Proc, and Lamda</div>
+
+    <section>
+        <article>
+            <h1>Snippets Of Code</h1>
+            <p>To explain the differences of Block, Proc, and Lamda, it's important to first look at their similarities. B's, P's, and L's are snippets of code saved as data that can be executed. Let's take a look at a standard method call.</p>
+            <img src="./images/methodcall.png">
+            <p>Here we have a standard method on lines 1-3. If we call the method on line 5, we should see an output of hi! If we wanted to include parameters in our method call, we would assign a parameter as we construct the method as seen below.</p>
+            <img src="./images/methodparameter.png">
+            <p>But what if I wanted to run a snippet of code like how all the cool methods do it on <a href="http://ruby-doc.org">Ruby-Docs</a>? Well that's when we would use <strong>yield</strong></p>
+            <img src="./images/yield.png">
+            <p>The formal definition of yield is something along the lines of giving control of the method over to the block, and the block is defined by being right next to the method call. So if we were to run this, we would get "yo" because of line 2, and then "hi from the block!" because of <strong>yield</strong> on line 3 and the block on line 6. What's important to note is that yield <strong>does not implicitly return</strong>, or in english, does not end running the rest of the code after yield. So if I had something like this:</p>
+            <img src="./images/yield2.png">
+            <p>I would see an output of "yo", then "hi from the block!", then "yo" again.</p>
+
+            <h1>Procs</h1>
+            <p>Now what if you want to name your block? You would put an ampersand in front of it! Procs are basically named blocks. Take a look at the example below. On line 1, we assign our block a name of &banana, and within the method itself, I am able to replace yield with banana.call.</p>
+            <img src="./images/proc.png">
+            <p>What is the problem here? I assigned a name to my block inside my method parameter, so the scope of &banana is only the method say. If I wanted to use the proc in other methods, I need to assign the name to the snippit of code itself like so.</p>
+            <img src="./images/proc2.png">
+            <p>I got rid of the & and named my proc as banana on line 1. Now I can use this proc in any method by passing in my keyword as an extra parameter</p>
+
+            <h1>Lamda</h1>
+            <p>Lamdas are identical to Procs, but are created differently. Lets take a look.</p>
+            <img src="./images/lambda.png">
+            
+            <h1>Proc vs. Lambda</h1>
+            <p>Lambda's care about arity/the number of arguments accepted.it also will return from the placement inside the method. So if you write a lambda that has a return, it won't throw an error.</p>
+            <p>Procs on the other hand will return from the place it's located at. Therefore if you create a proc that's not enclosed by a method and write in a return, it will throw an error since you are trying to return from <a href="http://stackoverflow.com/questions/917811/what-is-main-in-ruby">main.</a></p>
+
+            <h1>Other uses</h1>
+            <p>Procs and Lambdas can also be created with placeholders and called by assigning parameters in the proc/lambda call.</p>
+            <img src="./images/proclambdaextendeduse.png">
+
+            <h1>Guard Clauses</h1>
+            <p>To make sure that you don't throw an error when creating a method that takes a proc or lambda, make sure to write ____ if block_given? This will make the proc/lambda optional.</p>
+
+
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
