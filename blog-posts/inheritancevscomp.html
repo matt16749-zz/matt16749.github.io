@@ -2,50 +2,56 @@
 <html>
 
 <head>
-    <title>Matthew Chan| Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+  <title>Matthew Chan| Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./scripts/blog_template.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src="./images/myself.jpg">
-        <nav>
-            <a class="font" href="../index.html">home</a> 
-            <a class="font" href="../about.html">about</a>
-            <a class="font" href="../blog_posts.html">blog</a>
-            <a class="font" href="../projects.html">projects</a>
-            <a class="font" href="../resources.html">resources</a>
-            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
-            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
-        </nav>
-    </header>
+  <header>
+    <img src="./images/myself.jpg">
+    <nav>
+      <a class="font" href="../index.html">home</a> 
+      <a class="font" href="../about.html">about</a>
+      <a class="font" href="../blog_posts.html">blog</a>
+      <a class="font" href="../projects.html">projects</a>
+      <a class="font" href="../resources.html">resources</a>
+      <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+      <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    </nav>
+  </header>
 
-    <div class="titlename">Inheritance vs. Composition</div>
+  <div class="titlename">Inheritance vs. Composition</div>
 
-    <section>
-        <article>
-            <h1>Design Patterns</h1>
-            <p>There's a saying about how the great developers are lazy because they try to find the most efficient way of solving a problem. It's true. Many great developers are lazy because they don't like repetitive tasks and want to spend their time engaged in worthwhile problems. There's even a acronym for this: D.R.Y. aka Don't Repeat Yourself.</p>
-            <h1>On Composition</h1>
-            <p>Composition is different from inheritance in that Inheritance has a parent class that gives off attributes and behaviors to its children, whereas in composition you create ingredients/parts and a way that brings all those separate classes together as you call an instance of that class. Let's take a look at an example.</p>
-            <p><a href="http://www.sitepoint.com/composition-inheritance/">Reference from Sitepoint</a>.
-            <img src="./images/badinheritance.png">
-            Here we create a Person grandparent class and a Employee parent class. Each child of Employee inherits from Employee depending upon their job. If you have many employees with different jobs, this will quickly become unmanageable. So what to do? Let's take a look at composition.
-            <img src="./images/composition.png">
-            Composition is like a factory. You try to reduce the parts of code that is redundant and put it into the composition class. As you do so, you will quickly reduce the size of your children class.
-             </p>
-        </article>
-    </section>
+  <section>
+    <article>
+      <h1>Design Patterns</h1>
+      <p>There's a saying about how the great developers are lazy because they try to find the most efficient way of solving a problem. It's true. Many great developers are lazy because they don't like repetitive tasks and want to spend their time engaged in worthwhile problems. There's even a acronym for this: D.R.Y. aka Don't Repeat Yourself.</p>
+      <h1>On Composition</h1>
+      <p>Composition is different from inheritance in that Inheritance has a parent class that gives off attributes and behaviors to its children, whereas in composition you create ingredients/parts and a way that brings all those separate classes together as you call an instance of that class. Let's take a look at an example.</p>
+      <p><a href="http://www.sitepoint.com/composition-inheritance/">Reference from Sitepoint</a>.
+        <img src="./images/badinheritance.png">
+        Here we create a Person grandparent class and a Employee parent class. Each child of Employee inherits from Employee depending upon their job. If you have many employees with different jobs, this will quickly become unmanageable. So what to do? Let's take a look at composition.
+        <img src="./images/composition.png">
+        Composition is like a factory. You try to reduce the parts of code that is redundant and put it into the composition class. As you do so, you will quickly reduce the size of your children class.
+      </p>
+      <p>One of the teachers at DevBootCamp explains when to use Inheritance or Composition succinctly:
+        <ol>
+          <li>Use composition to package up code into modules that is used in many different unrelated places and situations.</li>
+          <li>Use inheritance only when there are clearly related reusable pieces of code that fit under a single common concept, or if you have to because of something you're using.</li>   
+        </ol>
+      </p>
+    </article>
+  </section>
 
-    <img id="cloud0" src="./images/cloud0.png">
-    <img id="cloud1" src="./images/cloud1.png">
-    <img id="cloud2" src="./images/cloud2.png">
+  <img id="cloud0" src="./images/cloud0.png">
+  <img id="cloud1" src="./images/cloud1.png">
+  <img id="cloud2" src="./images/cloud2.png">
 </body>
 
 </html>
