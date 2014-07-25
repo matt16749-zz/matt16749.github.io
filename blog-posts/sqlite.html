@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">SQLite</div>
+
+    <section>
+        <article>
+            <h1>Overview</h1>
+            <p>We spent today working on schemas and commands in SQLite. One thing that I've realized as I've been working with SQLite is the importance of workflow. People have different ways in which they plan out databases, but I like to first imagine the UI view of my application and then figure out the schema that way. All relationships between tables in databases can be summed up as three different types.</p> 
+                <ul>
+                    <li>One to One</li>
+                    <p>There is a correlation between one object and another. You would join the primary keys of each object together.</p>
+                    <li>One to Many</li>
+                    <p>There is a correlation between one object and many instances of another object. You would take the primary key of the one object and link it to a foreign key in a many object. Take a look at the example below.</p>
+                    <img src="./images/onetomany.png">
+                    <li>Many to Many</li>
+                    <p>Many to Many relationships are just two distinct one to many relationships with a controller in the middle. Take a look at the example below.</p>
+                    <img src="./images/manytomany.png">
+                </ul>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
