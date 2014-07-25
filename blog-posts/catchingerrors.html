@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Catching Errors</div>
+
+    <section>
+        <article>
+            <h1>Exceptions, Catch, and Throw</h1>
+            <p>In the last blog post, we were able to learn about blocks, procs, and lambdas in Ruby. So when would you use these things? You can create your own methods that now will be able to take a snippet(block) of code, but also you can now handle error messages gracefully.</p>
+            <p>I've made alot of mistakes in my programming career and every time that I've made a mistake, I received the dreadful error messages in my terminal that causes my program to come to a screeching halt. Catching errors by throwing exceptions allow you to package up information about an error into an object which allows you to manipulate it in your script. The syntax of a standard error message is as follows.</p>
+            <a href="http://phrogz.net/programmingruby/tut_exceptions.html">Reference here.</a>
+            <img src="./images/catchingerrors.png">
+            <p>Now let's take a look at a DBC example.</p>
+            <img src="asserterrorcatching.png">
+            <p>On line 26 you create a lamda that takes the method connect_to_db. Connect_to_db method is created on ine 21-24. As you try to raise your assertion on line 29, your lambda my_code is inserted into the assert_raise method.</p>
+            <p>The begin on line 12 will evaluate my lambda, the rescue Exception will take my Exception from the terminal and store it as an object(e) and then raise line 15 as a way to gracefully output your error. On line 15, the method message is an Exception instance method that allows you to gracefully output the error as a string. <a href="http://www.ruby-doc.org/core-2.1.2/Exception.html">More on Exception methods here.</a> Sidenote: it is bad form to try and catch the parent Exception as this example does on line 14. Rather, you should always try to catch the children Exceptions such as NoMemoryError, ScriptError, and ArgumentError. An example of this is featured below.</p>
+            <<img src="./images/childexceptions.png">
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
