@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">CSV</div>
+
+    <section>
+        <article>
+            <h1>Comma Separated Values</h1>
+            <p>CSV files are basically text files that have data arranged line by line separated by commas. That's where the C in CSV comes from. When you want to use a CSV file inside a Ruby script, you need to require 'CSV' and then read the particular CSV file. Two ways to do this: use CSV.read('filename.csv') to read complete file, or CSV.foreach('filename.csv'){|row_in_file| do_something_to row_in_file} CSV files passed in to Ruby scripts are processed as an array of strings. Take a look at this example of an <strong>output of CSV.foreach()</strong>. Note that it is different as you use CSV.read</p>
+            <img src="./images/csvforeach.png">
+            <p>Once you are comfortable with using CSV, you can potentially create instances of an object by passing in a CSV file as arguments to the instantiating of a class. For more information on how to use CSV, check out <a href="https://www.udemy.com/blog/ruby-csv/">this site</a>.</p>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
