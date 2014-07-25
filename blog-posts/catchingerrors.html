@@ -39,7 +39,7 @@
       <img src="./images/asserterrorcatching.png">
       <p>On line 26 you create a lamda that takes the method connect_to_db. Connect_to_db method is created on ine 21-24. As you try to raise your assertion on line 29, your lambda my_code is inserted into the assert_raise method.</p>
       <p>The begin on line 12 will evaluate my lambda, the rescue Exception will take my Exception from the terminal and store it as an object(e) and then raise line 15 as a way to gracefully output your error. On line 15, the method message is an Exception instance method that allows you to gracefully output the error as a string. <a href="http://www.ruby-doc.org/core-2.1.2/Exception.html">More on Exception methods here.</a> Sidenote: it is bad form to try and catch the parent Exception as this example does on line 14. Rather, you should always try to catch the children Exceptions such as NoMemoryError, ScriptError, and ArgumentError. An example of this is featured below.</p>
-      <<img src="./images/childexceptions.png">
+      <img src="./images/childexceptions.png">
     </article>
   </section>
 
