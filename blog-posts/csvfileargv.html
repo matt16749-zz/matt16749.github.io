@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Reading And Writing Outside Your Ruby Script</div>
+
+    <section>
+        <article>
+            <p>There are many ways to access things outside your script, so today we will review three classes(modules?) to access and bring in these foreign objects into your script. gets.chomp is/will be in another blog post.</p>
+            <h1>CSV</h1>
+            <p>CSV means comma seperated values.</p>
+            <p>When you insert a CSV file into a ruby script, you get an <strong>array of strings</strong> for each line from the csv file. String elements of your arrays are delineated by a comma from your original CSV file. In order to use these commands, you need to <strong>require 'csv'</strong>in your ruby script. Use these CSV methods only on a CSV file.</p>
+            <h1>Reading CSV Files Into Your Script</h1>
+            <p><strong>CSV.open("filename")</strong> returns a CSV object</p>
+            <!-- image here -->
+            <p><strong>CSV.open("filename").to_a</strong> changes your CSV object into a parent array. You can then view the nested arrays that were hidden from your view when your parent array was a CSV object.</p>
+            <!-- image here -->
+            <p><strong>CSV.read("filename")</strong> is the same thing as CSV.open("filename").to_a It will return nested arrays of string elements within one parent array.(strings in nested arrays are seperated by commas from original CSV file.)</p>
+            <p><strong>CSV.foreach("filename"){|row| #do w/e with row}</strong> reads CSV file line by line and returns an array of strings for each line. It does not return a parent array like CSV.read</p>
+            <h1>Writing to your CSV File</h1>
+            <p>Use an argument "wb" in conjunction with CSV.open to write to your CSV file.</p>
+            <!-- image here -->
+            <a href="https://www.udemy.com/blog/ruby-csv/">More on CSV commands here.</a>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h1>File</h1>
+            <p>File allows you to access any type of file to read or write into your script. <strong>The output of using File depends on what File method you use</strong>File is a child class of IO, so you can use IO methods with File.</p>
+            <p><strong>File.read("filename")</strong>opens your external file and inputs entire file as 1 string into your ruby script</p>
+            <p><strong>File.readlines("filename")</strong>opens your file and inputs entire file as one array of string elements. You can method-chain .each to access each string element to do w/e you wnat to the string elements. I believe string elemtns are set by each new line in the external file.</p>
+        </article>
+    </section>
+
+    <section>
+       <article>
+          <h1>ARGV</h1>
+          <p>ARGV takes input from the terminal <strong>concurrently</strong> as you run your script and inserts it as one array with strings into your ruby script. String elemetns in array are separated by spaces from user input in the terminal.</p>
+          <!-- example here -->
+          <p>Be careful when using ARGV with gets.chomp in the same ruby script! If you do so, you will get an error as ARGV is always listening for user input while gets.chomp will wait until script is run and then prompt for user input. ARGV and gets.chomp are listening from the same STDIN(Standard Input) array. One way to bypass this error is using:</p>
+          <!-- example here -->
+          <p>to create a new STDIN array that gets.chomp would pull from, or</p>
+          <!-- example here -->
+          <p>to save and remove the ARGV input from the original STDIN array.</p>
+          <<a href="https://www.ruby-forum.com/topic/185266
+">More info on ARGV and gets.chomp error</a>
+<a href=""></a>
+       </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
