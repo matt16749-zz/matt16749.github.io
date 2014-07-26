@@ -44,6 +44,11 @@
             <p><strong>CSV.read("filename")</strong> is the same thing as CSV.open("filename").to_a It will return nested arrays of string elements within one parent array.(strings in nested arrays are seperated by commas from original CSV file.)</p>
             <p><strong>CSV.foreach("filename"){|row| #do w/e with row}</strong> reads CSV file line by line and returns an array of strings for each line. It does not return a parent array like CSV.read</p>
             <img src="./images/csv4.png">
+            <p>You can include a parameter for headers(which will change your nested arrays to hashes with first line in your CSV file as your keys.) and then call information as so:</p>
+            <p>CSV File:</p>
+            <img src="./images/csvheader.png">
+            <p>Ruby File:</p>
+            <img src="./images/csvheaderruby.png">
             <h1>Writing to your CSV File</h1>
             <p>Use an argument "wb" in conjunction with CSV.open to write over your entire csv file..</p>
             <img src="./images/csv5.png">
