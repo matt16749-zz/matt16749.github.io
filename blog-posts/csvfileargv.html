@@ -35,16 +35,25 @@
             <p>CSV means comma seperated values.</p>
             <p>When you insert a CSV file into a ruby script, you get an <strong>array of strings</strong> for each line from the csv file. String elements of your arrays are delineated by a comma from your original CSV file. In order to use these commands, you need to <strong>require 'csv'</strong>in your ruby script. Use these CSV methods only on a CSV file.</p>
             <h1>Reading CSV Files Into Your Script</h1>
+            <p>All CSV commands are used upon this particular CSV file:</p>
+            <img src="./images/csv0.png">
             <p><strong>CSV.open("filename")</strong> returns a CSV object</p>
-            <!-- image here -->
+            <img src="./images/csv1.png">
             <p><strong>CSV.open("filename").to_a</strong> changes your CSV object into a parent array. You can then view the nested arrays that were hidden from your view when your parent array was a CSV object.</p>
-            <!-- image here -->
+            <img src="./images/csv2.png"> 
             <p><strong>CSV.read("filename")</strong> is the same thing as CSV.open("filename").to_a It will return nested arrays of string elements within one parent array.(strings in nested arrays are seperated by commas from original CSV file.)</p>
             <p><strong>CSV.foreach("filename"){|row| #do w/e with row}</strong> reads CSV file line by line and returns an array of strings for each line. It does not return a parent array like CSV.read</p>
+            <img src="./images/csv4.png">
             <h1>Writing to your CSV File</h1>
-            <p>Use an argument "wb" in conjunction with CSV.open to write to your CSV file.</p>
-            <!-- image here -->
-            <a href="https://www.udemy.com/blog/ruby-csv/">More on CSV commands here.</a>
+            <p>Use an argument "wb" in conjunction with CSV.open to write over your entire csv file..</p>
+            <img src="./images/csv5.png">
+            <p>Corresponding CSV file</p>
+            <img src="./images/csv6.png">
+            <p>Use argument "a+" in conjunction with CSV.open to write at the end of your csv file.</p>
+            <img src="./images/csv7.png">
+            <p>Corresponding CSV file</p>
+            <<img src="./images/csv8.png">
+            <a href="https://www.udemy.com/blog/ruby-csv/">More on CSV commands 
         </article>
     </section>
 
