@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">MVC in Ruby</div>
+
+    <section>
+        <article>
+            <h1>MVC</h1>
+            <p>Whenever you hear MVC, you should think Rails in the context of learning Ruby. So far at DBC, I haven't had the chance to play with Rails yet. So this will be a study of MVC design in the context of OOP in Ruby. I'll be using a DBC example that I finished to illustrate.</p>
+            <h1>Model</h1>
+            <p>The model is a class. Models in Ruby are things should communicate with each other. Take a look at this image below.</p>
+            <img src="./images/mvc1.png">
+            <h1>View</h1>
+            <p>I created the view as a module and used extend self to use its methods as class methods. <strong>You can think of the view as the puts in your driver code.</strong></p>
+            <img src="./images/mvc2.png">
+            <h1>Controller</h1>
+            <p>The controller is how your models talk to the view. <strong>It is basically your driver test code.</strong></p>
+            <img src="./images/mvc3.png">
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
