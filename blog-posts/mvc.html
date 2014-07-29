@@ -31,17 +31,17 @@
     <section>
         <article>
             <h1>MVC</h1>
-            <p>Whenever you hear MVC, you should think Rails in the context of learning Ruby. So far at DBC, I haven't had the ch
+            <p>Whenever you hear MVC you think Rails in the context of learning Ruby. So far I haven't had a chance to work with Rails at DBC, but I've been learning MVC. As I've experiemented with MVC, I've noticed that it's easier for me to start with the Model, then Controller, and then View. Let's walk through each below.
             <h1>Model</h1>
-            <p>The model is a class. Models in Ruby are things should communicate with each other. Take a look at this image below.</p>
+            <p>The model is a class. Models in Ruby are things should communicate with each other.<strong>Models should try to only contain objects.</strong> Take a look at this image below.</p>
             <img src="./images/mvc1.png">
-            <h1>View</h1>
-            <p>I created the view as a module and used extend self to use its methods as class methods. <strong>You can think of the view as the puts in your driver code.</strong></p>
-            <img src="./images/mvc2.png">
             <h1>Controller</h1>
-            <p>The controller is how your models talk to the view. <strong>It is basically your driver test code.</strong></p>
+            <p>The controller is how your models talk to the view. It is basically your driver test code.<strong>Controllers should have an instance of a model class and use the model methods to manipulate the stored objects within each model method.</strong></p>
             <img src="./images/mvc3.png">
             <p>Now if you want to do stuff, you should be able to use the controller!</p>
+            <h1>View</h1>
+            <p>I created the view as a module and used extend self to use its methods as class methods. You can think of the view as the puts in your driver code. In this example, I passed in an object into the controller by isolating the objects in the model class.</p>
+            <img src="./images/mvc2.png">
         </article>
     </section>
 
