@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Active Record: Validations</div>
+
+    <section>
+        <article>
+            <h1>Validations</h1>
+            <p>Validations are used to ensure that only valid data is saved into your database. There are a few types of validations.</p>
+            <ol>
+                <li><strong>Model-level</strong>cannot be bypassed by end users and are convenient to test and maintain.</li>
+                <li><strong>Database constraints</strong>make validations database dependent but will protect your db if your db is accessible to other apps.</li>
+                <li><strong>Client-side</strong>are implemented using validations using JS but may be bypassed if JS is turned off on the user's side. Can provide immediate feedback as they use their site.</li>
+                <li><strong>Controller-level</strong>should not be used often becuase they make your controllers fat. Your application will run faster if you make controllers skinny.</li>
+            </ol>
+            <p>In most cases, model-level validations are most appropriate.</p>
+
+            <h1>How Does Validation Work?</h1>
+            <p>There are two types of Active Record objects, those that are in your database and those that aren't. When you create a new object, the object doesn't belong in your database table yet. When you call <strong>.save</strong> on the new object, it will be saved into the corresponding database table. Active record uses the method <strong>new_record?</strong> to see if the object is in the database. If new_record? is true, then the save method will send a SQL INSERT operation to your database. If you are updating an existing object, then the save method will send a SQL UPDATE command instead.</p>
+            <p>Validations run before the SQL INSERT or UPDATE operations, and should any validations fail, Active Record will not perform the SQL operation. In your code, the Validations are found in your models of your app. Example of a validation:</p>
+            <img src="./images/validatesoverview.png">
+
+            <h1>Validation Helpers</h1>
+            <p>Provide Validation rules. Types of helpers are listed below.</p>
+            <ul>
+                <li><strong>acceptance</strong>validates if a checkbox on UI was checked when form was submitted. Need to set a boolean<img src="./images/validationacceptance.png"></li>
+                <li><strong>validates_associated</strong>validates the association of your model with other models.<img src="./images/validationassociated.png"></li>
+                <li><strong>format</strong>validates your objects attribute values by testing wheteher they match a given regexp.<img src="./images/validationformat.png"></li>
+                <li><strong>inlcusion</strong>validates whether an objects attribute values are included in a given set(array).<img src="./images/validationinclusion.png"></li>
+                <li><strong>uniqueness</strong>validates the objects attribute on whether or not the attribute value is unique before calling save. Is not constrained through databases. Can also use :scope to limite this uniqueness validation helper.<img src="./images/validationuniqueness.png"></li>
+                <p>For more info, check out <a href="http://guides.rubyonrails.org/active_record_validations.html">RailsGuides Validations</a></p>
+            </ul>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
