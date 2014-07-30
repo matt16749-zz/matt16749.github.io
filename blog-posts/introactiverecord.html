@@ -78,12 +78,32 @@
     <section>
         <article>
             <h1>Folders of Our Active Directory</h1>
-        </article>
-    </section>
-
-    <section>
-        <article>
-            <h1>Rake Commands</h1>
+            <img src="./images/arfolders.png">
+                <h2>app</h2>
+                <img src="./images/arapp.png">
+                    <p>Where your Models, Views, and Controllers go.</p>
+                <h2>db</h2>
+                <img src="./images/ardb.png">
+                    <p>Where your data and migrate files are located. Migrate allows you to update and change your database tables and schema with db:migrate while  data stores csv files that contain the actual user data.</p>
+                <h2>spec</h2>
+                <img src="./images/arspec.png">
+                    <p>Where your rspecs are found.</p>
+                <h2>Gemfile</h2>
+                <img src="./images/argemrake.png">
+                    <p>Where all the gems that are required for the application are stored. When you run bundle, the gems in this file are all installed locally so that you can use the application.</p>
+                <h2>Rakefile</h2>
+                    <p>A series of commands that you have created that work upon your entire application directory.</p>
+                    <h4>Rake Commands</h4>
+                    <ul>
+                        <li>rake db:create</li>
+                            <p>Makes the database file.</p>
+                        <li>rake db:migrate</li>
+                            <p>Makes the table and schema according to your migrate files.</p>
+                        <li>rake db:rollback</li>
+                            <p>Rolls back the database to the previous migrate file.</p>
+                        <li>rake db:drop</li>
+                            <p>Drops your tables.</p>
+                    </ul>
         </article>
     </section>
 
