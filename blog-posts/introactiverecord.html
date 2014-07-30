@@ -55,6 +55,23 @@
     <section>
         <article>
             <h1>Overview of Active Record Workflow</h1>
+            <p>Active Record is one example of ORM. In our context, it manages the back-end of our application and links the database tables to models.</p>
+            <img src="./images/activerecordworkflow.png">
+            <p>We were able to have a coach come in the afternoon to talk about an Active Record workflow as we design the back-end of an application. This is what she said.</p>
+            <p>
+              <ol>
+                <li>Create your database</li>
+                <ol>
+                    <li>Design your schema(On a whiteboard or SQL Designer...etc)</li>
+                    <li>Plan out a table via Rails migrations based on schema</li>
+                    <li>Create your database. In your rake file you should have commands(rake db:create makes the database file)</li>
+                    <li>Migrate your table schema into your actual database(rake db:migrate from step 2)</li>
+                </ol>
+                <li>Set up models to coincide with your database via Active Record Associations</li>
+                <li>Write your program</li>
+              </ol>
+            </p>
+
         </article>
     </section>
 
