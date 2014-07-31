@@ -27,10 +27,33 @@
     </header>
 
     <div class="titlename">Active Record: Associations</div>
-
     <section>
         <article>
             <h1>Associations</h1>
+              <p>Associations allow you to create links between models in Ruby and links between tables in your database. (Setting up the foreign keys and linking them to primary keys) By declaring a connection between the models to the database, you can quickly create objects and manipulate them. Below is one part of an association that has been set up in the models.</p>
+              <img src="./images/activerecordassociations.png">
+              <p>Associations need to be set up not only in your models but also in your migrations. In the model director of your project you will have to create two associations to set up the connection between the two models/classes. In the migrations directory you will need to create an association for the formation of a foreign key in your table. Use the convention as you create a new migration file: (You will need to wrap the command inside a class)</p>
+              <img src="./images/activerecassocforeignkey.png">
+            <h1>Types of Associations</h1>
+                <p>References pulled from <a href="http://guides.rubyonrails.org/association_basics.html">RailsGuides</a></p>
+                <h3>belongs_to</h3>
+                <p>A one to one connection with another model.</p>
+                <p>A model view of belongs_to.</p>
+                <img src="./images/belongstomodel.png">
+                <p>A migration view of belongs_to. Make sure to note that you should create separate migrations for each table, not like how this example has done.</p>
+                <img src="./images/belongstomigration.png">
+                <h3>has_many</h3>
+                <p>A one to many connection with another model</p>
+                <p>A model view of has_many</p>
+                <img src="./images/hasmanymodel.png">
+                <p>A migration of has_many</p>
+                <img src="./images/hasmanymigration.png">
+                <h2>Note that in the migration file, you usually use the belongs_to regardless the relationship. Remember that you are just creating the <strong>FOREIGN KEY</strong>here! Think about which table should have a foreign class id.</h2>
+                <h2>Polymorphic Associations</h2>
+                <p>Are when models can belong to more than one other model on a single association. Checkout Railsguides for more info.</p>
+            <h1>Tips and Tricks</h1>
+                <h3>Updating the Schema</h3>
+                <img src="./images/schemaupdate.png">
         </article>
     </section>
 
