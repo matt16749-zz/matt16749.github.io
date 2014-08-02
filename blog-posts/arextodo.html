@@ -37,8 +37,13 @@
             <h1>Workflow</h1>
             <p>In our file, we will need something that can link our ruby files to our database. This is <strong>Active Record</strong>. The actual connection itself for this project is stored in our config folder, under application.rb
             <img src="./images/todoconfig.png">
-            The most important line in this file is found on line 26. This establishes the connection between ActiveRecord and the database. (Active record is an ORM bundled into a gem)
-              </p>
+            The most important line in this file is found on line 26. This establishes the connection between ActiveRecord and the database. (Active record is an ORM bundled into a gem)</p>
+            <h3>Step 0: MVP and design schema</h3>
+            <p>So I cheated. This is actually 2 steps bundled into 1. You need to design your database table schema based upon what you think you will need. But don't make it too complex, you should follow the MVP(minimum viable product.) You can always make more migrations to add columns to a table and join tables together.</p>
+            <h3>Step 1: Create source file</h3>
+            <p>When I say source file, I mean the file that you will run to make your entire application run. This should be found within the source directory of your project. In our case, it is called todo.rb 
+            <img src="./images/arextodo.png">
+            </p>
 
         </article>
     </section>
