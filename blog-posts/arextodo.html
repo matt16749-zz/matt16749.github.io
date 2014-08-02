@@ -35,6 +35,7 @@
             <img src="./images/artodofolders.png">
             </p>
             <h1>Workflow</h1>
+            <p><strong>This workflow follows the standard set in my previous blog on workflows. We start with making the database, figuring out the tables and schemas, and then making the application.</strong></p>
             <p>In our file, we will need something that can link our ruby files to our database. This is <strong>Active Record</strong>. The actual connection itself for this project is stored in our config folder, under application.rb
             <img src="./images/todoconfig.png">
             The most important line in this file is found on line 26. This establishes the connection between ActiveRecord and the database. (Active record is an ORM bundled into a gem)</p>
@@ -46,8 +47,10 @@
             <h3>Step 1: MVP and design schema</h3>
             <p>So I cheated. This is actually 2 steps bundled into 1. You need to design your database table schema based upon what you think you will need. But don't make it too complex, you should follow the MVP(minimum viable product.) You can always make more migrations to add columns to a table and join tables together.</p>
             <h3>Step 2:Make the migration file.</h3>
-            <p>The migration file is how you will implement your table and schema into your database. It will require access to the database itself via Active Record.</p>
+            <p>The migration file is how you will implement your table and schema into your database. It will require access to the database itself via Active Record.(line 1)
             <img src="./images/arexmigration.png">
+            Naming convention of migration file should be snake_case lowercase while class should be CamelCase capitalized. The file here should be plural since we are creating a table full of tasks.
+            </p>
         </article>
     </section>
 
