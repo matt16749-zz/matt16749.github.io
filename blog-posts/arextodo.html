@@ -49,13 +49,14 @@
             <img src="./images/arexmigration.png">
             Naming convention of migration file should be snake_case lowercase while class should be CamelCase capitalized. The file here should be plural since we are creating a table full of tasks.</p>
             <p>Name of the class should reflect what you are doing to the database. In this case, we are creating a table Tasks.(line 3)</p>
+          <h3>Optional: Seed your database table</h3>
+            <p>Once you have a database with tables, you can seed your tables with initial data.</p>
           <h2>All steps after deal with the application itself.(Inside the app directory)</h2>
           <h3>Step 3: Create corresponding model</h3>
             <p>After creating your migration file, make the corresponding model. Your migration file only deals with the database. You need to make something that deals with the ruby side.
             <img src="./images/arexmodel.png">
             The model should be of the same name as the table you are assigning it to, and singular. It will act as one object that you can pull out of the database table. Therefore, it will also need access to Active Record.(line 1, line 3 in inheriting AR)</p>
-          <h3>Step 4: Seed your database table</h3>
-            <p>Once you have a database with tables, you can seed your tables with initial data. That's what the faker gem does.</p>
+         
 
         </article>
     </section>
