@@ -30,7 +30,22 @@
 
     <section>
         <article>
-            <h1></h1>
+            <h1>Create</h1>
+            <p>User.create(name: 'Matt', occupation:'Web Dev')</p>
+            <p>This will create a new User object as well as a new record in your database.</p>
+
+            <h1>Read</h1>
+            <p>User.all</p>
+            <p>User.find_by(name: 'Matt')</p>
+ 
+            <h1>Update</h1>
+            <p>user = User.find_by(name: 'Matt')</p>
+            <p>user[:name] = 'Mike'</p>
+            <p>user.save (This is important because the ruby object is not saved until you run this command)</p>
+
+            <h1>Delete</h1>
+            <p>user = User.find_by(name: 'Matt')</p>
+            <p>user.destroy</p>
         </article>
     </section>
 
