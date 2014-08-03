@@ -57,8 +57,9 @@
             <p>After creating your migration file, make the corresponding model. Your migration file only deals with the database. You need to make something that deals with the ruby side.
             <img src="./images/model.png">
             The model should be of the same name as the table you are assigning it to, and singular. It will act as one object that you can pull out of the database table. Therefore, it will also need access to Active Record.(line 1, line 3 in inheriting AR)</p>
-         
-
+          <h3>Step 4: Make controller</h3>
+            <p>Make your controller. This is the brains of your application. If you remember Step 0, this is what your are calling when you run your program. Make sure to require_relative your models since those are the things you are manipulating here. The example below isn't the best MVC example of a controller, because you should be creating a seperate View anytime you see a "puts" and require_relative the corresponding "puts".</p>
+            <img src="./images/controller.png">
         </article>
     </section>
 
