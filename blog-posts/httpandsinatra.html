@@ -32,7 +32,7 @@
         <article>
             <h1>HTTP Requests</h1>
             <p>So far in Phase 1 of DBC I've been living on my computer. Nearly everything that I've created has been isolated from the web (with the exception of accessing gems.) Phase 2 will be different. Now we are starting to get our feet wet with the net.</p>
-            <p>HTTP was originally designed as a way to enable communication between users and a server, and works as a <strong>request-response</strong> protocol between said user(URL request) and server(route). Two of the most often used HTTP methods are GET and POST.</p>
+            <p>HTTP was originally designed as a way to enable communication between users and a server, and works as a <strong>request-response</strong> protocol between said user(URL request) and server(route). Two of the most often used HTTP methods are GET and POST.<strong>User requests always come in form of a URL. Your job is setting up the server routes to direct those URL requests.</strong></p>
             <h1>GET</h1>
             <p>The GET method requests/retrieves data from the server.</p>
             <h1>POST</h1>
@@ -40,7 +40,7 @@
             <p>So how do we use these HTTP methods as a Rubyist? One way is by using a gem called 'Sinatra'</p>
             <h1>Sinatra</h1>
             <p>As Sinatra is a gem, you should first install it and then require the gem in your source file. (Require 'rubygems' to allow gems to work as well).</p>
-            <h3>GET Request and Route</h3>
+            <h3>GET Route</h3>
             <p>To start us off, write out this in your source ruby file.</p>
             <img src="./images/get.png">
             <p>This is a <strong>route</strong>. We are telling our server that if a user requests(via GET) the <strong>root URL ('/')</strong>, then post this message. We can also do this:</p>
@@ -50,7 +50,7 @@
             <p>We can also access the URL parameters in our message.</p>
             <img src="./images/getparams.png">
             <p>Our message will vary according to what our users put in as their URL (via GET). We can access these varying URL parameters(:name and :city) in our message by using string interpolation #{params[:URLparameter]} and method chain them.</p>
-            <h3>POST Request and Route</h3>
+            <h3>POST Route</h3>
             <p>Now let's do something more interesting. Write this in your file:</p>
             <img src="./images/post1.png">
             <p>This is saying if a user requests(via GET) the URL '/form', load the <strong>form.erb file located in your views directory.(as requested on line 21)</strong> So you should create a views directory and a form.erb inside your views directory.</p>
