@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Deaf Grandma HTTP</div>
+
+    <section>
+        <article>
+            <h1>Sinatra and HTTP</h1>
+            <p>Today we were given a challenge to solve deaf grandma via Sinatra and HTTP. I've come to see Sinatra as just a DSL gem, with HTTP routes as its specific language. Let's walk through the process of using HTTP routes considering the user side MVC accordingly.</p>
+            <h3>Step 1: Bundle</h3>
+            <p>The very first thing we start off with is bundle command to load all required gems for this application that are stored in the Gemfile. We aslo have a environment.rb in our config folder to set up links so that we don't have to require/require_relative the most often used gems.</p>
+            <h3>Step 2: Controllers.</h3>
+            <p>As there are no databases in this challenge, we don't have to deal with ORM and setting up migrations. By running the shotgun gem on a sinatra app, you continuously update your local web server.</p>
+            <p>The user inputs a request into the URL and you need to create the HTTP routes on the server side.(These routes are solely located inside the controller.)</p>
+            <img src="./images/httpcontroller.png">
+            <p>As a user calls the most basic <strong>root route '/'</strong>, he is redirected to a particular view(line 4 sets up an index.erb in the view folder). Line 2 sets up a <strong>query string</strong> where users can type ?grandma=(whatever) in the URL to use the params[:grandma] (params pass in objects from the URL)</p>
+            <h3>Step 3: Views</h3>
+            <p>The index.erb called on line 4 in controller will take you to a html file that allows ruby within certain symbols (<% %>).</p>
+            <img src="./images/httpview.png">
+            <p> Lines 3-5 in the view allow for Grandma to puts the result of @grandma (or specifically what ?grandma= returns in the URL for the query string.) Line 4 where (Grandma says:) is HTML, the string "" on line 4 is embedded ruby (@grandma)</p>
+            <p>Line 11 is setting a form to a post route "/grandma". Line 14 is setting a text box to a paraams[:user_input]. Because of line 11 you need to go back to the controller and create a post route '/grandma' to output the params[:user_input]. Back on the controllers file, line 9 where you put redirect to will run your query string.</p>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
