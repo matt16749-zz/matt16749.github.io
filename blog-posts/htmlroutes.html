@@ -34,7 +34,18 @@
             <p>Three weeks. I've been here at DevBootCamp, coding for 19 hours a day, 6 days a week(Sunday is catchup on sleep/laundry day). I've been learning Ruby, HTML, CSS, JavaScript, and recently HTTP Routes and URL requests. And today was the first day that I saw the beginings of my hard work pay off. I was able to build my first complete web app. It was a clone of Craigslist called Craigslist Jr.(I'll put the URL later). But today isn't about that. I'm here to talk HTTP Routes/URL requests and erb(embedded ruby)</p>
 
             <h1>HTTP Routes</h1>
+            <p>HTTP routes are set up in our controller. They look something like this.</p>  
+            <img src="./images/httproutes.png"> 
+            <p>Line 6 is saying if there is a user that logs a URL request on line 6, do these things.</p>
+            <p>Line 8 is the syntax for opening up a view file called "index.erb". View files are where we set up the URL requests. Checkout the example at the very bottom for more info.</p>         
+
             <h1>URL Requests</h1>
+            <p>URL Requests are set up in our view erb files. They are what our users request from our servers. Can be included with embedded ruby inside HTML tags(see example at the bottom of post) or within HTML forms(see below)</p>
+            <p>URL request in a "view".erb file</p>
+            <img src="./images/urlinview.png">
+            <p>Corresponding HTTP route in controller</p>
+            <img src="./images/correspondingrouteincont.png">
+
             <h1>.erb</h1>
             <p>.erb(embedded ruby) files are set up in the controller within HTTP routes(usually <strong>get</strong> routes) and are what your user views (Therefore a file within your view folder). At the very core, they are just HTML files that can use ruby. Usually the ruby objects are run in the background, but they can also be displayed. The syntax for embedding a  ruby object is: </p>
             <img src="./images/erbsyntax.png">
