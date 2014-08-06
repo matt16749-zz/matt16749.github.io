@@ -26,11 +26,29 @@
         </nav>
     </header>
 
-    <div class="titlename">HTTP Routes and Requests</div>
+    <div class="titlename">HTTP Routes and ERB</div>
 
     <section>
         <article>
-            <h1></h1>
+            <h1>Background</h1>
+            <p>Three weeks. I've been here at DevBootCamp, coding for 19 hours a day, 6 days a week(Sunday is catchup on sleep/laundry day). I've been learning Ruby, HTML, CSS, JavaScript, and recently HTTP Routes and URL requests. And today was the first day that I saw the beginings of my hard work pay off. I was able to build my first complete web app. It was a clone of Craigslist called Craigslist Jr.(I'll put the URL later). But today isn't about that. I'm here to talk HTTP Routes/URL requests and erb(embedded ruby)</p>
+
+            <h1>HTTP Routes</h1>
+            <h1>URL Requests</h1>
+            <h1>.erb</h1>
+            <p>.erb(embedded ruby) files are set up in the controller within HTTP routes(usually <strong>get</strong> routes) and are what your user views (Therefore a file within your view folder). At the very core, they are just HTML files that can use ruby. Usually the ruby objects are run in the background, but they can also be displayed. The syntax for embedding a  ruby object is: </p>
+            <img src="./images/erbsyntax.png">
+            <p>To actually view the ruby object(as when you are calling an attribute of a ruby object) is this: </p>
+            <img src="./images/erbviewsyntax.png">
+            <p>Let's take a deeper look into why we would use the latter.</p>
+            <img src="./images/erbsyntaxexample.png">
+            <p>This is an example of a erb view with a user URL request on line 3.</p>
+            <p>Line 2 is allowing my ruby object(instance variable set to a params[:urlparameter] from my routes in my controller) to run in the background.</p>
+            <p>Line 3 is when we first use our erb display syntax to call the category object's id(remember that all objects and their attributes are in strings) to set our URL Request. After our URL request, we display each one of our categories' title attribute. Note that these are all wrapped up in an HTML "a href link". This should be a hint that we should set up a HTTP route in our controller that looks like '/categories/:id'.</p>
+
+
+
+
         </article>
     </section>
 
