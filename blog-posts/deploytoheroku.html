@@ -26,25 +26,20 @@
         </nav>
     </header>
 
-    <div class="titlename">HTML Forms and Rake</div>
+    <div class="titlename">Heroku Databases</div>
 
     <section>
         <article>
-            <h1>HTML Forms</h1>
-            <h3>Using Sinatra and Shotgun, here is the erb view and what it looks like running on a server.</h3>
-            <p>HTML form erb code</p>
-            <img src="./images/htmlformerb.png">
-            <p>HTML form server view</p>
-            <img src="./images/htmlformserver.png"> 
-
-            <h1>Rake commands:</h1>
-            <p>Rake generate:model NAME="nameofclass"</p>
-            <p>Rake generate:migration NAME="nameofmigrationclass"</p>
-            <p>Rake db:create => Creates database</p>
-            <p>Rake db:migrate => Migrates all file in migration folder to database(setting up schema)</p>
-            <p>Rake db:test:prepare => prepares test database for spec tests</p>
-        
-       </article>
+            <h1>Background</h1>
+            <p>So I had a tough time yesterday and today trying to deploy my very first app to heroku. After talking to a coach and re-reading a heroku page, I was able to figure out why my app wasn't deploying.</p>
+            <h1>Postgres Databases</h1>
+            <p>The problem was that I created postgres databases locally but I didn't create them on my heroku remote. The way I solved this was by changing my Rakefile to have a rescue block as so:</p>
+            <img src="./images/herokurescue.png">
+            <p>Then I had to run the following commands on my console to generate my database on heroku:</p>
+            <p>heroku run rake db:create</p>
+            <p>heroku run rake db:migrate</p>
+            <p>heroku run rake db:seed</p>
+        </article>
     </section>
 
     <img id="cloud0" src="./images/cloud0.png">
