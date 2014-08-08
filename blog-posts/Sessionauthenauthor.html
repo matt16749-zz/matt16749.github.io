@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Matthew Chan| Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="./images/myself.jpg">
+    <nav>
+      <a class="font" href="../index.html">home</a> 
+      <a class="font" href="../about.html">about</a>
+      <a class="font" href="../blog_posts.html">blog</a>
+      <a class="font" href="../projects.html">projects</a>
+      <a class="font" href="../resources.html">resources</a>
+      <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+      <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    </nav>
+  </header>
+
+  <div class="titlename">BCrypt</div>
+
+  <section>
+    <article>
+      <h1>Background</h1>
+      <p>Today I had a chance to work on a team to implement a clone of twitter using Agile development(Postit notes and storyboards and such...). During one of our standups, Ori gave an explanation on how he implemented a gem in creating a login/signup page. These are the concepts he described in making the gem work.</p>
+      <h1>BCrypt</h1>
+      <p><a href="https://github.com/codahale/bcrypt-ruby">BCrypt</a> is a gem that allows developers to quickly implement authentication and authorization to disallow access to your web app to users who haven't signed up.</p>
+      <h1>Session</h1>
+      <p>A session is basically a cookie that stores information on the user. It's what allows users to switch routes in your web application w/o constantly having to sign-in(since HTTP is user agnostic.). You can use sessions in multiple ways, but the usual way would be to set a session to the attribute of a model instance. Here's an example of a session in a helper file. give_token sets a session to the attribute of @user(which is a new model instance) and logged_in is a helper method that will be called upon GET routes in your controller(for authorization)</p>
+      <img src="./images/session.png">
+      <strong>You need to somehow allow   sessions to be used in your controller. Here is one possible way.</strong>
+      <img src="./images/sinatrassessions.png">
+      <h1>Authentication</h1>
+      <p>Authentication is the process of answering "Who are you"</p>
+      <h1>Authorization</h1>
+      <p>Authorization is the process of answering "What do you have permission to do?" A user can only see a web app if they are authorized(aka logged in). The login process itself is the authentication. Below are examples of how you would set an authentication and authorization from controllers using helper methods and sessions.</p>
+      <img src="./images/authcontroller.png">
+      <p>Try to figure out the Authentication and Authorization routes above, as well as how sessions play into this.</p>
+      <img src="./images/sessionhelper.png">
+      <p>Here's the link to a corresponding helper file.</p>
+    </article>
+  </section>
+
+  <img id="cloud0" src="./images/cloud0.png">
+  <img id="cloud1" src="./images/cloud1.png">
+  <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
