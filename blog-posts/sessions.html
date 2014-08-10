@@ -2,43 +2,47 @@
 <html>
 
 <head>
-    <title>Matthew Chan| Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+  <title>Matthew Chan| Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./scripts/blog_template.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src="./images/myself.jpg">
-        <nav>
-            <a class="font" href="../index.html">home</a> 
-            <a class="font" href="../about.html">about</a>
-            <a class="font" href="../blog_posts.html">blog</a>
-            <a class="font" href="../projects.html">projects</a>
-            <a class="font" href="../resources.html">resources</a>
-            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
-            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
-        </nav>
-    </header>
+  <header>
+    <img src="./images/myself.jpg">
+    <nav>
+      <a class="font" href="../index.html">home</a> 
+      <a class="font" href="../about.html">about</a>
+      <a class="font" href="../blog_posts.html">blog</a>
+      <a class="font" href="../projects.html">projects</a>
+      <a class="font" href="../resources.html">resources</a>
+      <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+      <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    </nav>
+  </header>
 
-    <div class="titlename">NewUser/Login/Logout</div>
+  <div class="titlename">NewUser/Login/Logout</div>
 
-    <section>
-        <article>
-            <h1>Background</h1>
-            <p>DevBootCamp has individual portfolio challenges in Phase 2, and one of the portfolio challenges is based upon creating a login page, a signup page, a view for users who have logged in, and a logout button. The premise of authorization and authentication is in setting up <strong>sessions(cookies) as helper methods</strong> and calling them within your controllers. Let's take a look at the views and corresponding routes in the controller.</p>
-            
-        </article>
-    </section>
+  <section>
+    <article>
+      <h1>Background</h1>
+      <p>DevBootCamp has individual portfolio challenges in Phase 2, and one of the portfolio challenges is based upon creating a login page, a signup page, a view for users who have logged in, and a logout button. The premise of authorization and authentication is in setting up <strong>sessions(cookies) as helper methods</strong> and calling them within your controllers. Let's take a look at the views and corresponding routes in the controller.</p>
+      <h1>Model and Migrations</h1>
+        <h3>Migration file</h3>
+        <img src="./images/p3migration">
+        <p>The above is our migration file for the users table. We set password_hash on line 6 instead of password because we are using an encryption gem 'BCrypt'. <strong>hash is an encryption terminology in this sense, not the actual data structure in ruby.</strong></p>
 
-    <img id="cloud0" src="./images/cloud0.png">
-    <img id="cloud1" src="./images/cloud1.png">
-    <img id="cloud2" src="./images/cloud2.png">
+    </article>
+  </section>
+
+  <img id="cloud0" src="./images/cloud0.png">
+  <img id="cloud1" src="./images/cloud1.png">
+  <img id="cloud2" src="./images/cloud2.png">
 </body>
 
 </html>
