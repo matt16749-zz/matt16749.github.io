@@ -47,14 +47,34 @@
         <img src="./images/p3signup.png">
         <p>This is the view that users see when they click on Sign Up in the top right corner. If users click on Sign in and are signed in, the two links on the top(Sign In and Sign Up) change to Sign Out. The code lies within the <strong>layout.erb</strong> view below:</p>
         <img src="./images/p3layoutcode.png">
-        <p>The code for the sign-up form is located in a separate view below:</p>
+        <p>The code for the sign-up form is located in a <strong>separate view</strong> below:</p>
         <img src="./images/p3signupform.png">
         <p>Notice what each name in the form is set to(lines 6, 10, and 14) as well as the URL request(line 4).</p>
-        <p>Here is the corresponding code in the controller.rb</p>
+        <p>Here is the corresponding code in the <strong>controller.rb</strong></p>
         <img src="./images/p3signupcontroller.png">
         <h4>Sign In</h4>
+        <p>This is where things get tricky. If a user signs in, they need to be assigned a session(cookie) which are created as helper methods. Let's take a look at our <strong>helper file:</strong></p>
+        <img src="./images/p3helpers.png">
+        <p>Here is the view that the users will see:</p>
+        <img src="./images/p3signinview.png">
+        <p>Here is the corresponding code in the <strong>sign_in.erb</strong> view</p>
+        <img src="./images/p3signing.png">
+        <p>And the corresponding code in the <strong>controller.rb</strong>Session/cookie is given only if email and password exist in the same User object.</p>
+        <img src="./images/signincontroller.png">        
+        <h4>Signed In Or Not?</h4>
+        <p>Below is the view for someone not signed in.</p>
+        <img src="./images/p3notsigned.png">
+        <p>And for someone signed in.</p>
+        <img src="./images/p3signed.png">
+        <p>The code for the <strong>index.erb view</strong> depending on whether or not a user is signed in is below: (uses conditionals)</p>
+        <img src="./images/p3view.png">
 
-
+        <h4>Sign Out</h4>
+        <p>To sign out, just delete the session/cookie.(As a helper method, the sign-out view button is located in the layout.erb file.</p>
+        <p>Here is the delete code in the <strong>index.rb controller</strong></p>
+        <img src="./images/p3deletecontroller.png">
+        <p>Here is the delete code in the <strong>layout.erb view</strong></p>
+        <img src="./images/p3deleteviewcode.png">
     </article>
   </section>
 
