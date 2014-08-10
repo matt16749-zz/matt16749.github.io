@@ -33,9 +33,17 @@
       <h1>Background</h1>
       <p>DevBootCamp has individual portfolio challenges in Phase 2, and one of the portfolio challenges is based upon creating a login page, a signup page, a view for users who have logged in, and a logout button. The premise of authorization and authentication is in setting up <strong>sessions(cookies) as helper methods</strong> and calling them within your controllers. Let's take a look at the views and corresponding routes in the controller.</p>
       <h1>Model and Migrations</h1>
-        <h3>Migration file</h3>
+        <h4>Migration file</h4>
         <img src="./images/p3migration.png">
         <p>The above is our migration file for the users table. We set password_hash on line 6 instead of password because we are using an encryption gem 'BCrypt'. <strong>hash is an encryption terminology in this sense, not the actual data structure in ruby.</strong></p>
+        <h4>Model file</h4>
+        <img src="./images/p3model.png">
+        <p>The above is our User model.</p>
+        <p>We have 2 methods in our model, a getter method <strong>password</strong> and a setter method <strong>password=</strong> which takes a parameter.</p>
+        <p>The latter will take a parameter and create a new Password object(from BCrypt, which is basically encrypting our password with various numbers and letters), and sets our encrypted password string(Password object) to User attribute password_hash <strong>This is for signing up a new user.</strong></p>
+        <p>The former will decrypt our Password object and compare our html form text input to a particular User(using User.find_by "different attribute")</p>
+        <p>Let's walk through the views and corresponding code.</p>
+        <h4>Sign up</h4>
 
     </article>
   </section>
