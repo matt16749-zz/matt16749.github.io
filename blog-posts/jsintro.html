@@ -31,17 +31,31 @@
     <section>
         <article>
             <h1>Background</h1>
+            <p>Today was my first DBC challenge that focused on manipulating HTML tags using JavaScript. It was a rehash of Ruby Racer, but had an HTML view. But to understand that, let's go over some general concepts.</p>
             <h1>Complex CSS Selectors</h1>
+            <p>CSS selectors identifies an HTML element based on its type(either class, id, or generality)</p>
+            <p><strong>Child Selectors</strong> are decendents of a parent HTML element. The best example is a table with tablerows. Table rows would be the children of the parent table.(This is great because there is a JavaScript method </strong>.children</strong> that can be called on a parent HTML element(using method <em>document.getElementById()</em> to throw all child HTML into an array).</p>
+            <p>Other notable methods is <em>document.createElement("")</em>that will create HTML elements.</p>
+            <p><em>.appendChild("")</em> allows you to add child HTML elements to a selected HTML parent.</p>
             <h1>Intro to Javascript Functions</h1>
                 <h4>Makeup</h4>
+                <p>There are 3 main parts to a Javascript Function: the <strong>name</strong>, <strong>parameter</strong>, and the <strong>body</strong>.</p>
                 <h4>Function Declaration/Expression</h4>
-                <!-- Talk about Anonymous and NonAnonymous Functions. -->
-                <!-- Anonymous are Function Expressions. var myFunction = function(){} -->
-                <!-- Nonanonymous are Function Declarations. function name(){} -->
-                <h4>First Class Objects/Callbacks</h4>
+                <p><strong>Function Declarations</strong> are nonanonymous. They are named functions that loook like:</p>
+                <img src="./images/declarationjs.png">.
+                <p>Notice that the name is not set in a variable. This allows for <strong>hoisting</stron>, the ability to call the function above where it was first placed. At DBC, the teachers opinionate that <strong>we shouldn't use Declarations</strong> because of this effect.</p>
+                <p><strong>Function Expressions</strong> are anonymous functions. The functions are not named themselves, but are called by setting a variable to them. <strong>They do not have the hoisting effect</strong> and look like the image below:</p>
+                <img src="./images/expressionjs.png">
+                 <h4>First Class Objects/Callbacks</h4>
+                 <p><strong>Functions are First-Class Objects in Javascript</strong>. This means that they have the same classification as primitives, which allows functions to be <strong>passed as parameters within other functions</strong>. If you call a function with a nested function, it will only return the nested function, not anything else. This goes into Closures.</p>
                 <h4>Functional Scope/Closures</h4>
-                <h4>Constructors/Object Literals/Prototypes</h4>
-            <h1>Case Study JS method: addEventListener</h1>
+                <p>If we were to set variables within Functions, the variables will 'drip' down into w/e other nested functions that are within the parent function. If we were to set various variables in every function layer and set access the variables at the innermost function, <em>we would only be able to call this function </em> if we have the right number of parameters() as we call it.<strong>This is a Closure.</strong> This protected effect occurs because the return of each function layer aside from the closure will give the nested function, not anything else.</p>
+                <h4>Constructors/Object Literals</h4>
+                <p>Constructors and Object Literals are created when we want a pseudo-Class within JavaScript.</p>
+                <p>Object Literals look like this:</p>
+                <img src="./images/objliterals.png">
+                <p>Constructors look like this:</p>
+                <img src="./images/constructors.png">
         </article>
     </section>
 
