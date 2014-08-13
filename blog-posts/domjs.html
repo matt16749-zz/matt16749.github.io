@@ -30,7 +30,16 @@
 
     <section>
         <article>
-            <h1></h1>
+            <h1>JavaScript Method: .addEventListener</h1>
+            <p>The JS method .addEventListener targets HTML tags via JS through the DOM for use with event helpers(such as 'click', 'keyup' and 'keydown').Format of this method is as follows:</p>
+            <p><strong>'HTMLtag'.addEventListener('EventHelper','CallbackMethod')</strong></p>
+            <h1>Ways to grab HTML tags via JS</h1>
+            <h3>All of these JS methods are bundled into the jQuery method $('')</h3>
+            <p><strong>document.querySelector("<** #/.classname **>")</strong> finds any HTML tag. Needs to prepend ./# based on ID or class. </p>
+            <p><strong>document.createElement("<** element **>")</strong>Creates new HTML element</p>
+            <p><strong>dogument.getElementById("<** ElementID **>")</strong>Selects HTML tag by Id</p>
+            <p><strong>.children</strong> Returns Child HTML tags as an array</p>
+            <p><strong>.appendChild("<** HTML tag **>")</strong>appends Child HTML tag and associated children of Child HTML to HTML tag(use querySelector, getElementById before this method)</p>
         </article>
     </section>
 
