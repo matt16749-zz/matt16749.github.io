@@ -2,50 +2,72 @@
 <html>
 
 <head>
-    <title>Matthew Chan| Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+	<title>Matthew Chan| Web Developer</title>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./scripts/blog_template.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src="./images/myself.jpg">
-        <nav>
-            <a class="font" href="../index.html">home</a> 
-            <a class="font" href="../about.html">about</a>
-            <a class="font" href="../blog_posts.html">blog</a>
-            <a class="font" href="../projects.html">projects</a>
-            <a class="font" href="../resources.html">resources</a>
-            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
-            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
-        </nav>
-    </header>
+	<header>
+		<img src="./images/myself.jpg">
+		<nav>
+			<a class="font" href="../index.html">home</a> 
+			<a class="font" href="../about.html">about</a>
+			<a class="font" href="../blog_posts.html">blog</a>
+			<a class="font" href="../projects.html">projects</a>
+			<a class="font" href="../resources.html">resources</a>
+			<a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+			<a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+			<a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+		</nav>
+	</header>
 
-    <div class="titlename">JQuery</div>
+	<div class="titlename">JQuery</div>
 
-    <section>
-        <article>
-            <h1>A JavaScript Library</h1>
-            <p>JQuery is a client-side JavaScript Utility library that makes manipulating your views much easier than if you used pure JS. The jQuery selector $("") bundles many JS methods such as document.getElementById and document.getElementsByClassName, so you can select based off the jQuery selector instead.</p>
-            <p>Example: $("#id") or $(".className")</p>
-            <p>You can manipulate DOM nodes using jQuery. Some of the most popular are:</p>
-            <ul>
-                <li><strong>.css("cssProperty","cssValue")<strong>. Example: $("#player").css("background-color", "red");</li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </article>
-    </section>
+	<section>
+		<article>
+			<h1>A JavaScript Library</h1>
+			<p>JQuery is a client-side JavaScript Utility library that makes manipulating your views much easier than if you used pure JS. The jQuery selector $("") bundles many JS methods such as document.getElementById and document.getElementsByClassName, so you can select based off the jQuery selector instead.</p>
+			<p>Example: $("#id") or $(".className")</p>
+			<p>You can manipulate DOM nodes using jQuery. Some of the most popular are:</p>
+			<ul>
+				<li><strong>.css("cssProperty","cssValue")</strong>.</li>
+				<ul>
+					<li>Example: $("#player").css("background-color", "red");</li>
+				</ul>
+				<li><strong>.html("innerHTML text")</strong></li>
+				<ul>
+					<li>Example: $("#player").html("Hello World!");</li>
+				</ul>
+				<li><strong>.find("childNodes")</strong></li>
+					<ul>
+						<li>Example: $("ul.className").find("li") will find all li nodes in ul.className</li>
+					</ul>
+				<li><strong>.filter(":functionName")</strong></li>
+				<ul>
+					<li>Example: $("li").filter(":even") selects even indexed li (starts with 0th index)</li>
+				</ul>
+				<li><strong>.animate({cssProperty1="value", cssProperty2="value"}, durationOfAnimation)</strong></li>
+				<ul>
+					<li>Example: $("img#tree").animate({opacity: 0.25, left:"+=500"}, 4000)</li>
+					<li>You can also use jQuery properties such as scrollTop and scrollLeft</li>
+				</ul>
+				<li><strong>.on(eventHandler, callback)</strong></li>
+				<ul>
+				    <li>Example: $(button#id).on("click", function(){})</li>
+				    <li>The method .on is jQuery's equivalent of .addEventListener() in JavaScript.</li>
+ 				</ul>
+			</ul>
+		</article>
+	</section>
 
-    <img id="cloud0" src="./images/cloud0.png">
-    <img id="cloud1" src="./images/cloud1.png">
-    <img id="cloud2" src="./images/cloud2.png">
+	<img id="cloud0" src="./images/cloud0.png">
+	<img id="cloud1" src="./images/cloud1.png">
+	<img id="cloud2" src="./images/cloud2.png">
 </body>
 
 </html>
