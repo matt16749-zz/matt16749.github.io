@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Object Oriented JS</div>
+
+    <section>
+        <article>
+            <h1>On JS Objects</h1>
+            <p>JavaScript Objects are basically blueprints that you can call and reference at a later time. We typically create and set JS objects in the model.js file of our JS folder in our application. Three main ways to make/call JS Objects.</p>
+            <h4>Object Literal = {}</h4>
+            <p>Object literals are just hashes of key, value pairs. You can set the values to functions and use the functional scope within those values, but other than these special cases you do not have functional scope within object literals. <strong>This means you cannot use the keyword 'this'</strong>in object literals because they are <strong>NOT FUNCTIONS!</strong> Example of object literals:</p>
+            <p>var age = { </p>
+            <p> randomFunction : function(){} </p>
+            <p> attribute : 5</p>
+            <p> }</p>
+            <p>Call by <strong>age.randomFunction();</strong></p>
+            <p>or <strong>age.attribute;</strong></p>
+
+            <h4>var Object Constructors = function(){};</h4>
+            <p>Constructors and prototypes are functions, but ony Constructors use the keyword <strong>'this'</strong></p>
+            <p>Example of object constructors:</p>
+            <ul>
+                <li>var myConst = function(){</li>
+                <li>this.attribute = someattribute(e.g. 5)</li>
+                <li>};</li>
+                <li>Call by <strong>var ex = new MyConst();</strong>
+                <li>ex.attribute;</li>
+            </ul>
+
+            <h4>Object.prototypes</h4>
+            <p>Object prototypes are functions as well. We typically use prototypes within constructors and they act as our 'class' methods since prototypes are created only once and not with each instance of an object(as the case with constructors). They look like this:</p>
+            <ul>
+                <li>var myConst=function(){</li>
+                <li>myConst.prototype.<**methodName**>=function(){}</li>
+                <li>};</li>
+                <li>Call by <strong>var ex = new MyConst();</strong>
+                <li>ex.methodName();</li>
+            </ul>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
