@@ -31,6 +31,15 @@
     <section>
         <article>
             <h1>Asynchronous JavaScript and XML</h1>
+            <p>AJAX is a Javascript technique that allows you to update an application's view and controller(and consequently the model) without continuously refreshing the page.</p>
+            <p>This is important since now we can access an application's controller, whereas before we could only change an application's views.</p>
+            <p>Let's walk through the workflow of a particular AJAX challenge.</p>
+            <ol>
+                <li>Include the JS file in your layout.erb view<img src="./images/ajaxlayout.png"></li>
+                <li>Check out your app/views<img src="./images/ajaxview.png"></li>
+                <li>Create your JavaScript File.(needs to select HTML nodes and call the AJAX method)<img src="./images/ajaxjs.png"></li>
+                <li>Modify your app/controllers. Since we are expecting information in our JS file from an HTTP route, we need to remove redirect'/' and put in a JSON generator<img src="./images/ajaxcontroller.png"></li>
+            </ol>
         </article>
     </section>
 
