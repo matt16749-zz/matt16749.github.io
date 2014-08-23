@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">RSpec</div>
+
+    <section>
+        <article>
+            <h1>TDD Using Rspec</h1>
+            <p>A while ago, one of my cohort members asked our teacher Derek what the workflow is in creating RSpec tests. The following is his reply.</p>
+            <p> Hi Hethe,</p>
+
+                <p>Testing is hard, and teaching testing is hard. Thanks for the tips. I wrote a bit of stuff below about how I approach testing. I hope it will help, but let me know if I can explain more and I'll do my best.</p>
+
+                <p>I think what you're looking for might be the rspec documentation. Specifically, "matchers." I specifically didn't talk about all of the extra matchers for two reasons:</p> 
+                <p>1. today's challenge involved writing simple tests for controllers, and I believe the eq() matcher to be sufficient, and</p>
+                <p>2. it can cause option paralysis.</p>
+
+                <p>I can see where a "next steps using rspec" list of resources could be useful, though, so take a look here for the "If you want to accomplish THIS, use THAT":</p>
+
+                <p>https://relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers</p>
+
+                <p>2) Rspec testers best practices always test for..... (things)..... And you'd be doing great for a beginner if your tests also tested for these things.</p>
+
+                <p>Test these things as often as you can (examples)... </p>
+                <ul>
+                <li>THING 1: Rspec test example</li> 
+                <li>THING 2: Rspec test example</li>
+                <li>THING 3: Rspec test example</li>
+                </ul>
+
+                <p>As far as what to test, would it be useful to re-write the challenge to list each step of what to test? I mentioned it in Tuesday's lecture (how we test controllers, why we test the controllers, and what else we could test after that), but it might be worthwhile to reiterate in the challenge itself. </p>
+
+                <p>Here's my workflow for knowing what I want to test. I was hoping by test-driving a few controllers during lecture, the pattern of how I do it would emerge. I think knowing what to test easier when you're practicing TDD, so here's an example of my workflow writing a controller test before the route has been implemented.</p>
+
+                <p>First I think "What do I want?" Let's say I want a webpage that displays blog articles. Ok, first thing's first. Let's create a page that lets us see all the articles in the system. First I'd like to write a test that, when I'm done, will be a step on the way to what I want (a that blog article webpage). I start with the end result: "I want a blog webpage." Then I think about the first step on the way to that end result: "I want a page that lists all of my articles." That's not too hard to test, because it's a pretty straightforward page.</p>
+
+                <p>require 'spec_helper'</p>
+                <p>describe "articles controller" do</p>
+                <p>end</p>
+                 
+                <p>I created a simple describe block that's describing the thing I want to test. Then, my personal (but common) convention is to use another describe block for each route action:</p>
+
+                <p>require 'spec_helper'</p>
+                <p>describe "articles controller" do</p>
+                <p>describe "GET /articles" do</p>
+                    
+                <p>end</p>
+                <p>end</p>
+
+                <p>Now I add the 'it' block, with a useful description of what the thing under test will do. Like "it 'responds with success'" or something. When this test runs, it responds successfully if everything is going well. I'll add that below, but let's thing about what we're testing here.</p>
+
+                 
+                <p>In the "Arrange, Act, Assert" parlance we use, I often start with the Assert part. I think "what am I asserting/expecting here?" "I want a blog page. When I hit a specific route, that route should exist and respond with something." For my purposes now, I don't really care about what that something is.</p>
+
+                <p>How can we translate my answer ("When I hit a specific route, that route should exist and respond with something.") into rspec? I expect that when I hit a route, it responds with some sort of "that route exists!". On the internet, the "that route exists!" part is a status of 200.</p>
+
+                <p>require 'spec_helper'</p>
+                <p>describe "articles controller" do</p>
+                  <p>describe "GET /articles" do</p>
+                    <p>it "responds with success" do</p>
+                      <p># I expect that when I hit a route, it responds with "that route exists!"</p>
+                      <p>expect(last_response.status).to eq(200)</p>
+                    <p>end</p>
+                  <p>end</p>
+                <p>end</p>
+
+                <p>I'm trying to get at the steps I'm taking mentally to write a test. Knowing what to test comes out of asking "what do I want?" I want it to respond with "Yay, it worked!" Ok, I have this expectation, but what is the thing that will respond with "Yay, it worked!"? That is, what action do I have to perform to receive what I expect? That's listed in our second describe block. "GET /articles". Having that answer lets us finish the test:</p>
+
+                <p>require 'spec_helper'</p>
+                <p>describe "articles controller" do</p>
+                  <p>describe "GET /articles" do</p>
+                   <p> it "responds with success" do</p>
+                      <p>get "/articles"</p>
+                     <p> # I expect that when I hit a route, it responds with "that route exists!"</p>
+                      <p>expect(last_response.status).to eq(200)</p>
+                   <p> end</p>
+                  <p>end</p>
+                <p>end</p>
+
+                <p>Is that useful at all? These are the steps I take to write tests all the time. What do I want? Ok, let's write an expectation that fulfills that. Is there anything I need to arrange for that expectation to fulfill my expectation (do I need to build a world for that expectation to be valid)?</p>
+
+
+                <p>The standard unhelpful answer to the question "what do I test?" is "test everything that could possibly break." That's not great. Something that might be better is "test every method/route, then test the branches in that method/route." By branches, it means if there's an if/else, write a test for the if branch, and write a test for the else branch of the flow.</p>
+
+                <p>You should test for things such as:</p>
+
+                <p>was the web request successful?</p>
+                <p>was the user redirected to the right page?</p>
+                <p>was the user successfully authenticated?</p>
+                <p>was the correct object stored in the response template?
+                <p>was the appropriate message displayed to the user in the view?
+                <p>"was the correct object stored in the response template?" isn't applicable to Sinatra and the wording of "was the appropriate message displayed to the user in the view?" is terrible (I believe what they actually mean is testing that a message is being stored in a session). But they're making an attempt at concisely saying what I've tried to get across in my past couple lectures and today's challenge.</p>
+
+                <p>You can look at the rails testing guide here: http://guides.rubyonrails.org/testing.html but be warned it doesn't use rspec and adds a whole bunch of extra rails stuff.
+            </p>
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
