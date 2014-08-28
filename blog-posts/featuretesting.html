@@ -38,7 +38,7 @@
         <p>Rails comes bundled with its own version of testing, but I'll use RSpec for feature testing.</p>
         <p>The first thing that I run from the console is <strong>rails new -T name_of_app</strong>. This will create a new rails application without the test folder.</p>
         <h4>Gemfile</h4>
-        <p>Next I'll setup my gems to allow for Rspec. <strong>Make sure to change gem 'sqlite3' to 'pg'</strong></p>
+        <p>Next I'll setup my gems to allow for Rspec. <strong>Make sure to change gem 'sqlite3' to 'pg'</strong>(note, remove all the versions in group :development, :test and group :test)</p>
         <img src="./images/featuregems.png">
         <p>Run <strong>rails g rspec:install</strong> from shell to create your spec folder and spec_helper.rb</p>
         <p>Put require 'capybara/rspec', 'factory_girl_rails' in rspec_helper and change the RSpec.configure</p>
@@ -60,6 +60,12 @@
         <h4>Feature Testing TDD</h4>
         <p>Now here comes the fun part. Lets setup a factory that creates objects we can test. Create a factories folder with the name of your factory.rb(singular!)</p>
         <img src="./images/featurefactory.png">
+        <p>Now create a features folder with a file named model_name_spec.rb</p>
+        <p>require 'spec_helper' in your features model_name_spec.rb file.</p>
+        <p>Capybara uses syntax <strong>feature</strong> for RSpec's describe and <strong>scenario</strong> for Rspec's it</p>
+        <img src="./images/featurespec.png">
+        <p>From there you can create the Controller#Action and .html.erb views</p>
+        <p>Note: HTTP routes in route.rb goes to controller#action that has corresponding view.html.erb In view, you can use link_to path([object]) to redirect to another http route in routes.rb and its associated controller#action</p>
 
       </article>
     </section>
