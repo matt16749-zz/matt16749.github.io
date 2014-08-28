@@ -29,9 +29,19 @@
     <div class="titlename">Feature Testing in Rails</div>
 
     <section>
-        <article>
-            <h1></h1>
-        </article>
+      <article>
+        <h1>What Is Feature Testing?</h1>
+        <p>Feature testing is using Capybara to test user experience through a web application. Capybara uses its own browser to replicate a user. Use capybara method <strong>save_and_open_page</strong> in feature tests to debug problems quickly.</p>
+        <h4>Why Feature?</h4>
+        <p>Testing in Rails requires you to think about how long it takes to run a test suite. While feature testing can test all restful routes, it takes much longer than a controller test or model test. For this post, I will run feature tests, but in the future I will break my tests down into controller, model, and feature tests.</p>
+        <h4>Setting up RSpec for Rails</h4>
+        <p>Rails comes bundled with its own version of testing, but I'll use RSpec for feature testing.</p>
+        <p>The first thing that I run from the console is <strong>rails new -T name_of_app</strong>. This will create a new rails application without the test folder.</p>
+        <h4>Gemfile</h4>
+        <p>Next I'll setup my gems to allow for Rspec.</p>
+        <img src="./images/featuregems.png">
+
+      </article>
     </section>
 
     <img id="cloud0" src="./images/cloud0.png">
