@@ -40,9 +40,15 @@
         <h4>Gemfile</h4>
         <p>Next I'll setup my gems to allow for Rspec. <strong>Make sure to change gem 'sqlite3' to 'pg'</strong></p>
         <img src="./images/featuregems.png">
+        <p>Run <strong>rails g rspec:install</strong> from shell to create your spec folder and spec_helper.rb</p>
         <h4>Database</h4>
         <p>Let's setup the config file for our databases next. Go to database.yml and setup your databases for development, test, and production. Go to <strong>config/database.yml</strong> and post the following:</p>
         <img src="./images/featurecondb.png">
+        <p>After configuring the database, run <strong>rake db:create:all</strong> to create your databases. </p>
+        <h4>Migrations</h4>
+        <p>run <strong>rails g migration name_of_migration</strong> and make the table with corresponding columns</p>
+        <img src="./images/featuremigration.png">
+        <p>Migrate your databases using <strong>rake db:migrate</strong> (do <strong>db:test:clone</strong> to setup your test db migrations.)</p>
 
       </article>
     </section>
