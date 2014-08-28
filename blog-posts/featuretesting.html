@@ -38,8 +38,11 @@
         <p>Rails comes bundled with its own version of testing, but I'll use RSpec for feature testing.</p>
         <p>The first thing that I run from the console is <strong>rails new -T name_of_app</strong>. This will create a new rails application without the test folder.</p>
         <h4>Gemfile</h4>
-        <p>Next I'll setup my gems to allow for Rspec.</p>
+        <p>Next I'll setup my gems to allow for Rspec. <strong>Make sure to change gem 'sqlite3' to 'pg'</strong></p>
         <img src="./images/featuregems.png">
+        <h4>Database</h4>
+        <p>Let's setup the config file for our databases next. Go to database.yml and setup your databases for development, test, and production. Go to <strong>config/database.yml</strong> and post the following:</p>
+        <img src="./images/featurecondb.png">
 
       </article>
     </section>
