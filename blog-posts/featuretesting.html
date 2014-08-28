@@ -41,6 +41,8 @@
         <p>Next I'll setup my gems to allow for Rspec. <strong>Make sure to change gem 'sqlite3' to 'pg'</strong></p>
         <img src="./images/featuregems.png">
         <p>Run <strong>rails g rspec:install</strong> from shell to create your spec folder and spec_helper.rb</p>
+        <p>Put require 'capybara/rspec', 'factory_girl_rails' in rspec_helper and change the RSpec.configure</p>
+        <img src="./images/featurespechelper.png">
         <h4>Database</h4>
         <p>Let's setup the config file for our databases next. Go to database.yml and setup your databases for development, test, and production. Go to <strong>config/database.yml</strong> and post the following:</p>
         <img src="./images/featurecondb.png">
