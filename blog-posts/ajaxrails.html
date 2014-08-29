@@ -2,42 +2,56 @@
 <html>
 
 <head>
-    <title>Matthew Chan| Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+  <title>Matthew Chan| Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./scripts/blog_template.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src="./images/myself.jpg">
-        <nav>
-            <a class="font" href="../index.html">home</a> 
-            <a class="font" href="../about.html">about</a>
-            <a class="font" href="../blog_posts.html">blog</a>
-            <a class="font" href="../projects.html">projects</a>
-            <a class="font" href="../resources.html">resources</a>
-            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
-            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
-        </nav>
-    </header>
+  <header>
+    <img src="./images/myself.jpg">
+    <nav>
+        <a class="font" href="../index.html">home</a> 
+        <a class="font" href="../about.html">about</a>
+        <a class="font" href="../blog_posts.html">blog</a>
+        <a class="font" href="../projects.html">projects</a>
+        <a class="font" href="../resources.html">resources</a>
+        <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+        <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    </nav>
+  </header>
 
-    <div class="titlename">Ajax in Rails.</div>
+  <div class="titlename">Ajax in Rails.</div>
 
-    <section>
-        <article>
-            <h1>3 Ways...</h1>
-            <p>In phase 3 of DevBootCamp, I have had the opportunity to learn under Steven Harms, one of the most meta-programmatic people I've ever met. He's been teaching us the history of bash, STDIN, STDOUT, and STDERR. Today he gave us the history of AJAX in Rails and how people chose their solutions. This is a quick walkthrough of a standard ajax call that posts an object to a view in rails. You can extrapolate this to make a single page application.</p>
-        </article>
-    </section>
+  <section>
+    <article>
+        <h1>3 Ways...</h1>
+        <p>In phase 3 of DevBootCamp, I have had the opportunity to learn under Steven Harms, one of the most meta-programmatic people I've ever met. He's been teaching us the history of bash, STDIN, STDOUT, and STDERR. Today he gave us the history of AJAX in Rails and how people chose their solutions. This is a quick walkthrough of a standard ajax call that posts an object to a view in rails. You can extrapolate this to make a single page application.</p>
+        <h4>Routes</h4>
+        <p>We started by setting up the routes with <strong>resources :users</strong> This will create RESTful routes in Rails. The ones we are most interested in today are <strong>GET /users/new</strong> and <strong>POST /users</strong></p>
+        <h4>Controller#Action</h4>
+        <p>The RESTful routes mentioned above are associated with Controller#Action(s) <strong>new</strong> and <strong>create</strong>. Here is the code:</p>
+        <img src="./images/ajaxcontrollerrails.png">
+        <p>The new action only displays the new.html.erb form and associates it with the instance @user. The create action will first save the information from the new.html.erb form(line 20) and then format the form information into json that our JS file will grab.</p>
+        <h4>View</h4>
+        <p>The ajaxy new.html.view form looks similar to a normal form, but we passed a option to the helper method form_for on line 3 <strong>remote: true</strong>. This is the Rails way of doing JS ajax.</p>
+        <img src="./images/formajaxrails.png">
+        We also created an empty div with class "users" on line 16 that we will use to display our attributes of our JSON using JavaScript.
+        <h4>JavaScript.</h4>
+        <p>Let's look at our JS file. There are many things different about this file from when we tried using JS on Sinatra. First up is line 1. Instead of .ready, we use <strong>.on("page:change",function(){}</strong>. We need to do this in Rails because turbolinks in Rails hijacks a portion of our JS methods.</p>
+        <p>On line 3 I'm selecting the empty div with class .users in new.html.erb and appending attributes of my JSON object from my controller#create action. Line 5 is for me to just view the JSON object in my DOM console.</p>
+        <img src="./images/jsajaxrails.png">
+      </article>
+  </section>
 
-    <img id="cloud0" src="./images/cloud0.png">
-    <img id="cloud1" src="./images/cloud1.png">
-    <img id="cloud2" src="./images/cloud2.png">
+  <img id="cloud0" src="./images/cloud0.png">
+  <img id="cloud1" src="./images/cloud1.png">
+  <img id="cloud2" src="./images/cloud2.png">
 </body>
 
 </html>
