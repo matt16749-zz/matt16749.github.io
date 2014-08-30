@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">Partials In Rails</div>
+
+    <section>
+        <article>
+            <h1>A Link To The Past</h1>
+            <p>When I was using Sinatra, I had to manually create partials with hard-coded url requests(Checkout <a href="http://matt16749.github.io/blog-posts/partials.html">Sinatra Partials</a>. But now in Rails, I use helper methods to create my partials. Let's take a look at some of sensei Harms's code.</p>
+            <img src="./images/partialrails.png">
+            <p>This is the partial for a form. Notice how he named the file. This is using a resources :twoots in the config/routes.rb file, which is why he can pass in @twoot to the helper method form_for on line 1. Let's checkout the new.html.erb and the edit.html.erb </p>
+            <img src="./images/newpartialrails.png">
+            <img src="./images/editpartialrails.png">
+            <p>Notice how they use render 'form' to throw in the partial. But why does this work? the form_for(@twoot) from _form.html.erb partial comes from the routes edit and new's @twoot</p>
+            <img src="./images/controllersrailspartial.png">
+        </article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
