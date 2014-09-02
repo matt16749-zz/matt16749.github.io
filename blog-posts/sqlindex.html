@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew Chan| Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/blog_template.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/blog_template.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/myself.jpg">
+        <nav>
+            <a class="font" href="../index.html">home</a> 
+            <a class="font" href="../about.html">about</a>
+            <a class="font" href="../blog_posts.html">blog</a>
+            <a class="font" href="../projects.html">projects</a>
+            <a class="font" href="../resources.html">resources</a>
+            <a class="icon" href="http://www.github.com/matt16749"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="icon" href="http://www.linkedin.com/in/matthewchan2000"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="icon" href="mailto:matt16749@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <div class="titlename">SQL Indexing</div>
+
+    <section>
+<article>
+    <h1>Performance Issues...</h1>
+    <p>Today I worked on the challenge of trying to speed up a website that had a very large database. There are two main ways: either by indexing or de-normalizing a database. For this post, I'll just be talking about indexing. </p>
+    <h4>Indexing</h4>
+    <p>Indexing is a technique by which you take a column(usually a foreign_key belongs_to) and place a index on it. What the heck does that mean? In a normal RMDBS, looking up a Product for a User would mean going through the association between a User and a Product. I'd have to navigate from the User's id to the Product's id, then compare the user_id stored in each Product against my User's id. It would be much faster if I could just look at the user_id column in my Product and compare it against my User. That's what Indexes do. Below is a comparison between a database with no indexing and a database with indexing. Note the time differential(8 seconds!).</p>
+    <p>Without Indexing:</p>
+    <img src="./images/withoutindexing.png">
+    <p>With Indexing:</p>
+    <img src="./images/withindexing.png">
+    <p>The Index Migration:</p>
+    <img src="./images/indexmigration.png">
+    <p>The Index Schema:</p>
+    <img src="./images/indexschema.png">
+</article>
+    </section>
+
+    <img id="cloud0" src="./images/cloud0.png">
+    <img id="cloud1" src="./images/cloud1.png">
+    <img id="cloud2" src="./images/cloud2.png">
+</body>
+
+</html>
