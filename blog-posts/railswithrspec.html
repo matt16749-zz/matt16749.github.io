@@ -26,14 +26,20 @@
         </nav>
     </header>
 
-    <div class="titlename">Rails With Rspec</div>
+    <div class="titlename">Setup Rails Projects</div>
 
     <section>
         <article>
             <h1>Setup</h1>
-            <p>This post is meant to be a reminder for me on how to quickly setup a Rails project with PostgreSQL and Rspec.</p>
-            <p>Run the following in terminal</p>
-            <em> rails new project -T -d=postgresql</em>
+            <p>This post is meant to be a reminder for me on how to quickly setup a Rails project.</p>
+            <p>Run the following in terminal to remove Minitest and setup database.yml with postgresql. Remove username and pass from production initially(optional)</p>
+            <strong> rails new project -T -d=postgresql</strong>
+            <p>Refer to blog post <a href="http://matt16749.github.io/blog-posts/featuretesting.html">Feature Testing</a> to see how to setup Rspec Feature testing with factory-girl and capybara.</p>
+            <p>If using devise and omniauth for authorization, need to install <strong>devise, omniauth, and activerecord-session_store</strong> gems in Gemfile. (activerecord-session_store allows for more bytes to be transferred in sessions)</p>
+            <p><strong>dotenv</strong> gem allows for storage of environment variables in development and testing.</p>
+            <p><strong>unicorn</strong> gem is a Rack based http server. Need to config Procfile for production on Heroku.</p>
+            <strong>web: bundle exec unicorn config.ru -p $PORT</strong>
+
         </article>
     </section>
 
