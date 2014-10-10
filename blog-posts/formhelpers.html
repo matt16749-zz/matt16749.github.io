@@ -29,11 +29,18 @@
   <div class="titlename">Rails Form Helpers</div>
 
   <section>
-      <article>
-          <h1>Background:</h1>
-          <p>So this post is way overdue, but I'll put it out anyways. Form helpers are helper methods that allow you to quickly generate forms. Let's take a look at what RailsGuides has to say.</p>
-          <img src="./images/formfor.png">
-      </article>
+  <article>
+    <h1>Background:</h1>
+    <p>So this post is way overdue, but I'll put it out anyways. Form helpers are helper methods that allow you to quickly generate forms. Let's take a look at what RailsGuides has to say.</p>
+    <img src="./images/formfor.png">
+    <p>In the example above, we are creating the form_for helper within the corresponding article#new view.</p>
+    <p>@article is first defined in the new action as shown below.</p>
+    <img src="./images/newhtmlerb.png">
+    <p>The url: hash in the first image are routing options. In our example we define which corresponding controller#action we will be posting @article to.</p>
+    <p>The html: hash is for html options. Take a look at how this helper method is translated to semantic html below.</p>
+    <img src="semantichtmlformhelper.png">
+    <a href="http://guides.rubyonrails.org/form_helpers.html">RailsGuides:Form Helpers</a>
+  </article>
   </section>
 
   <img id="cloud0" src="./images/cloud0.png">
