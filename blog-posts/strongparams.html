@@ -40,8 +40,12 @@
       <img src="./images/actionattraccessible.png">
       <p>W/o the ability to mass-assign attributes, you would have had to manually assign attributes as so: </p>
       <img src="./images/manualattraccessible.png">
-
       <h1>Strong Parameters</h1>
+      <p>In Rails 4 attr_accessible is deprecated. Instead we use something called strong parameters. Instead of mass-assigning attributes in the model, you move the responsibility into the controller via a private method as so: </p>
+      <img src="./images/standardstrongparams.png">
+      <p>You can even customize specific methods in your strong params. The example below is assigning user_id attribute of Path model to a helper method <strong>current user</strong>.</p>
+      <img src="./images/modifiedstrongparams.png">
+      <h1>References:</h1>
       <a href="http://easyactiverecord.com/blog/2014/04/01/rails4-strong-parameters-and-the-attr-accessible-macro/">More on Strong Parameters</a>
     </article>
   </section>
