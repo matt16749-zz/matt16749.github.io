@@ -31,8 +31,16 @@
   <section>
     <article>
       <h1>Background</h1>
-      <p>Like my post on <a href="http://matt16749.github.io/blog-posts/formhelpers.html">Rails form helpers</a>, this is a long overdue post. I've been busy with learning Javascript, Java, and other non-programming things lately that when I started doing some personal projects in Rails, I realized I forgot some of the essentials. This post will give me something to reference should I forget again.</p>
+      <p>Like my post on <a href="http://matt16749.github.io/blog-posts/formhelpers.html">Rails form helpers</a>, this is a long overdue post. I've been busy with learning Javascript, Java, and other non-programming things lately that when I started doing some personal projects in Rails, I realized I forgot some of the essentials. This post will give me something to reference should I forget again. Most examples come from <a href="http://easyactiverecord.com/blog/2014/04/01/rails4-strong-parameters-and-the-attr-accessible-macro/">Jason Gilmore</a>.</p>
       <h1>Attr_accessible</h1>
+      <p>In prior Rails versions, Attr_accessible allowed users to mass-assign model attributes. Take a look at the code snippets below.</p>
+      <p>Model:</p>
+      <img src="./images/modelattraccessible.png">
+      <p>Controller Action:</p>
+      <img src="./images/actionattraccessible.png">
+      <p>W/o the ability to mass-assign attributes, you would have had to manually assign attributes as so: </p>
+      <img src="manualattraccessible.png">
+      
       <h1>Strong Parameters</h1>
       <a href="http://easyactiverecord.com/blog/2014/04/01/rails4-strong-parameters-and-the-attr-accessible-macro/">More on Strong Parameters</a>
     </article>
