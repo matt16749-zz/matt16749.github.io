@@ -32,6 +32,21 @@
     <article>
       <h1>Backbone.Router</h1>
       <p>Backbone's Router component watches for any changes to URL router and provides a list of callback functions that grab JSON data and renders a view.</p>
+
+      <h1>Backbone.View</h1>
+      <p>Paired with an HTML template that can be populated with model data via Backbone.Router. The actual functions that populate the data come from the view.</p>
+
+      <h1>Backbone.Collection/Model</h1>
+      <p>A collection consists of multiple models. Models take data JSON endpoints of an API(which would be our Rails)</p>
+    </article>
+    <article>
+      <h1>Backbone Workflow</h1>
+      <ol>
+        <li>Instantiate Backbone router to listen for URL hashchange events.</li>
+        <li>On specific hashchange, Router will fetch model/collection data from server.</li>
+        <li>After fetching model/collection data, Router instantiates a parent collection view and render into the DOM.</li>
+        <li>Parent collection view also should have a reset function so that when server lists new data, the collection view will automatically iterate through each model data and output the subset model view within the collection view.</li>
+      </ol>
     </article>
   </section>
 
