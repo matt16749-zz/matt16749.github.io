@@ -37,6 +37,15 @@
       <h4>Rails + Backbone.</h4>
       <p>I've decided on creating applications that use a Rails backend with a Backbone.js frontend and then eventually migrating over to an entirely JS stack using a variation of the MEAN stack, but without the Angular. That way I can quickly pick up the other frameworks as necessary. I'll try to keep a log of my journey.</p>
     </article>
+    <article>
+      <h1>Backbone Workflow</h1>
+      <ol>
+        <li>Instantiate Backbone router to listen for URL hashchange events.</li>
+        <li>On specific hashchange, Router will fetch model/collection data from server.</li>
+        <li>After fetching model/collection data, Router instantiates a parent collection view and render into the DOM.</li>
+        <li>Parent collection view also should have a reset function so that when server lists new data, the collection view will automatically iterate through each model data and output the subset model view within the collection view.</li>
+      </ol>
+    </article>
   </section>
 
   <img id="cloud0" src="./images/cloud0.png">

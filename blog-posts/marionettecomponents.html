@@ -26,20 +26,20 @@
       </nav>
   </header>
 
-  <div class="titlename">Backbone Components</div>
+  <div class="titlename">Marionette Components</div>
 
   <section>
     <article>
-      <h1>Backbone.Router</h1>
-      <p>Backbone's Router component watches for any changes to URL router and provides a list of callback functions that grab JSON data and renders a view.</p>
-
-      <h1>Backbone.View</h1>
-      <p>Paired with an HTML template that can be populated with model data via Backbone.Router. The actual functions that populate the data come from the view.</p>
-
-      <h1>Backbone.Collection/Model</h1>
-      <p>A collection consists of multiple models. Models take data JSON endpoints of an API(which would be our Rails)</p>
+      <h1>Background</h1>
+      <p>As seen from my last post, Marionette has alot of components that break down the Backbone.Router into more modularized parts. One reason is to remove boilerplate code. We'll take a look at the components of Marionette.</p>
+      <h4>Marionette Views</h4>
+      <p>4 Main Views.</p>
+      <p><strong>ItemView</strong> is view for a single item/model. No special automated behavior. Most primitive view type.</p>
+      <p><strong>CollectionView</strong> manages a collection. Wired up to iterate through each model in the collection and create a new sub-view for each of those models. Typically CollectionView creates ItemViews for each model, but you can also have CollectionView create subset CollectionView.</p>
+      <p><strong>CompositeView</strong> is identical to CollectionView but has a template whereas CollectionView doesn't have a template. When to use CollectionView or CompositeView depends on how you want your subset ItemViews inserted.</p>
+      <p><strong>Layout</strong> are ItemViews but also can manage regions within itself. All layouts have a template and you can pair portions of the template with DOM elements via jquery. A layout is a frame by which you can insert views into parts of the frame.</p>
+      
     </article>
-
   </section>
 
   <img id="cloud0" src="./images/cloud0.png">
