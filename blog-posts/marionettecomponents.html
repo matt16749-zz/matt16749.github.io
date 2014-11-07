@@ -32,13 +32,39 @@
     <article>
       <h1>Background</h1>
       <p>As seen from my last post, Marionette has alot of components that break down the Backbone.Router into more modularized parts. One reason is to remove boilerplate code. We'll take a look at the components of Marionette.</p>
-      <h4>Marionette Views</h4>
+      </article>
+      <article>
+      <h1>Marionette Views</h1>
       <p>4 Main Views.</p>
       <p><strong>ItemView</strong> is view for a single item/model. No special automated behavior. Most primitive view type.</p>
       <p><strong>CollectionView</strong> manages a collection. Wired up to iterate through each model in the collection and create a new sub-view for each of those models. Typically CollectionView creates ItemViews for each model, but you can also have CollectionView create subset CollectionView.</p>
       <p><strong>CompositeView</strong> is identical to CollectionView but has a template whereas CollectionView doesn't have a template. When to use CollectionView or CompositeView depends on how you want your subset ItemViews inserted.</p>
       <p><strong>Layout</strong> are ItemViews but also can manage regions within itself. All layouts have a template and you can pair portions of the template with DOM elements via jquery. A layout is a frame by which you can insert views into parts of the frame.</p>
-      
+    </article>
+    <article>
+      <h1>Application Object</h1>
+      <p>The starting place of your application. Encapsulates and Namespaces. This is also where you define application regions (header-region, main-region, and footer-region).</p>
+      <p>Will also automatially clean up old views that have previously existed.</p>
+    </article>
+    <article>
+      <h1>Module</h1>
+      <p>Independent top level applications. Modules have the highest level of responsibilities and are placed upon application regions. These modules then function as seperate sub-applications with their own models and views.</p>
+    </article>
+    <article>
+      <h1>App Router</h1>
+      <p>The same as Backbone.Router. Defined in top level module.</p>
+    </article>
+    <article>
+      <h1>Controllers</h1>
+      <p>Manages each sub-module. Responsible for determining which entities(models/collections) are fetched and which views are shown.</p>
+    </article>
+    <article>
+      <h1>Layouts</h1>
+      <p>Allow you to define a set of sub-regions within a top level region determined by a module. This allows more precise control of which views to be shown, thereby making nested views simple. You can also customize sub-regions to add transitions.</p>
+    </article>
+    <article>
+      <h1>Messaging Bus</h1>
+      <p>Top level of Marionette. Manages events at the module or application level. Has built-in pub/sub design pattern.</p>
     </article>
   </section>
 
